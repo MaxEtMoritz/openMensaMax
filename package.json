@@ -1,0 +1,44 @@
+{
+  "name": "openmensamax",
+  "version": "0.0.0",
+  "description": "OpenMensa parser for MensaMax canteens",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dec": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaxEtMoritz/openMensaMax.git"
+  },
+  "keywords": [
+    "canteen",
+    "openmensa",
+    "parser",
+    "mensamax"
+  ],
+  "author": "MaxEtMoritz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MaxEtMoritz/openMensaMax/issues"
+  },
+  "homepage": "https://github.com/MaxEtMoritz/openMensaMax#readme",
+  "dependencies": {
+    "@philippdormann/mensamax-api": "file:../mensamax-api",
+    "xml2js": "^0.6.2"
+  },
+  "types": "./types",
+  "engines": {
+    "node": "*"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.4",
+    "@types/xml2js": "^0.4.14",
+    "typescript": "^5.3.3"
+  },
+  "prettier": {
+    "tabWidth": 4,
+    "printWidth": 200
+  }
+}

@@ -1,0 +1,14 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "dec",
+			"problemMatcher": [
+				"$tsc"
+			],
+			"label": "npm: dec",
+			"detail": "tsc"
+		}
+	]
+}
