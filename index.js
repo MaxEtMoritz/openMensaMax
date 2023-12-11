@@ -84,12 +84,14 @@ async function processCanteen(p, e, provider) {
 }
 
 (async () => {
-    let canteens = readFileSync(join(__dirname, "canteens.json"), { encoding: "utf-8" });
     /**@type {any[]} */
+    let canteens = readFileSync(join(__dirname, "canteens.json"), { encoding: "utf-8" });
     canteens = JSON.parse(canteens);
     const promises = [];
+    const feed_index = {};
 
     for (const canteen of canteens) {
+        feed_index[`${canteen.provider}/${canteen.p}/${canteen.e}`] = `${process.env.BASE_URL}/${canteen.provider}/${canteen.p}/${canteen.e}.xml`;
         promises.push(
             (async () => {
                 console.info("processing canteen", canteen.name ?? `${canteen.provider}/${canteen.p}/${canteen.e}`);
@@ -103,4 +105,5 @@ async function processCanteen(p, e, provider) {
         );
     }
     await Promise.all(promises);
+    writeFileSync(join(__dirname, "feeds", "index.json"), JSON.stringify(feed_index, undefined, 2));
 })();
