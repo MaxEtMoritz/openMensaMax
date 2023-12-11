@@ -201,6 +201,7 @@ function parse_meta(data) {
             xml.feed.push(xmlFeed);
         }
     }
+    return xml
 }
 
 /**

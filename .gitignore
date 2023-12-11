@@ -134,3 +134,4 @@ types/
 
 # xml files in feeds dir
 feeds/**/*.xml
+feeds/**/*.json

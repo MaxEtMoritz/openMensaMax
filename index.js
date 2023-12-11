@@ -5,7 +5,7 @@ const { join } = require("path");
 const package_json = JSON.parse(readFileSync(join(__dirname, "package.json"), { encoding: "utf-8" }));
 const MAX_WEEKS_FORWARD = 3;
 
-async function processCanteen(p, e, provider) {
+async function processCanteen(p, e, provider, name=undefined) {
     const parsed = {};
     let html = {};
     let last_parse_had_data;
@@ -79,8 +79,21 @@ async function processCanteen(p, e, provider) {
     }
     //console.log(Object.getOwnPropertyNames(parsed.json), parsed.hinweis);
     const xml_doc = build(result, null, package_json.version);
+    const meta_feed = build(null,{
+        name,
+        additionalFeeds:[{
+            name: "all",
+            source: `https://${provider}/LOGINPLAN.ASPX?p=${encodeURIComponent(p)}&e=${encodeURIComponent(e)}`,
+            url: `${process.env.BASE_URL}/${provider}/${p}/${e}.xml`,
+            schedule:{
+                hour: "10",
+                dayOfWeek: "1"
+            }
+        }]
+    },package_json.version)
     if (!existsSync(join(__dirname, "feeds", provider, p))) mkdirSync(join(__dirname, "feeds", provider, p), { recursive: true });
     writeFileSync(join(__dirname, "feeds", provider, p, e + ".xml"), xml_doc, { encoding: "utf-8" });
+    writeFileSync(join(__dirname, "feeds", provider, p, e + ".meta.xml"), meta_feed, { encoding: "utf-8" });
 }
 
 (async () => {
@@ -91,7 +104,7 @@ async function processCanteen(p, e, provider) {
     const feed_index = {};
 
     for (const canteen of canteens) {
-        feed_index[`${canteen.provider}/${canteen.p}/${canteen.e}`] = `${process.env.BASE_URL}/${canteen.provider}/${canteen.p}/${canteen.e}.xml`;
+        feed_index[`${canteen.provider}/${canteen.p}/${canteen.e}`] = `${process.env.BASE_URL}/${canteen.provider}/${canteen.p}/${canteen.e}.meta.xml`;
         promises.push(
             (async () => {
                 console.info("processing canteen", canteen.name ?? `${canteen.provider}/${canteen.p}/${canteen.e}`);
