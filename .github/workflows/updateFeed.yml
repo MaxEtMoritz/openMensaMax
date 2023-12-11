@@ -1,0 +1,50 @@
+name: 🔁 RunParsers
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+    paths-ignore:
+    - 'feeds/**'
+    # - 'luxembourg/**'
+  schedule:
+    - cron: "31 6,8 * * *" # UTC
+    - cron: "59 23 * * 0" # Run once sunday night
+
+concurrency:
+  group: parsers-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  generateXMLFeeds:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up NodeJS
+      uses: actions/setup-node@v4
+      with:
+        node-version: "lts"
+        cache: "npm"
+    - name: Install package.json
+      run: |
+        npm install
+    - name: git config
+      run: |
+        git config --global user.name github-actions
+        git config --global user.email 41898282+github-actions[bot]@users.noreply.github.com
+        git pull --ff-only
+    - name: Run parsers & update xml feeds
+      run: |
+        npm run start
+    - name: git commit & push
+      if: always()
+      run: |
+        git add feeds
+        # Use "|| true" or "--allow-empty"  otherwise the action fails for empty commits
+        git commit -m "Updated xml feeds" || true
+        git push
+    # - name: Test files in github pages
+    #   if: always()
+    #   run: |
+    #     python tests/test_ghpages.py

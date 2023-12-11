@@ -20,8 +20,7 @@ function build(days = null, meta = null, parser_version = null) {
                 "xsi:schemaLocation": "http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd",
             },
             version: undefined,
-            canteen: {
-            },
+            canteen: {},
         },
     };
     if (meta) {
@@ -35,7 +34,7 @@ function build(days = null, meta = null, parser_version = null) {
     }
     const xml = new Builder();
     const xml_string = xml.buildObject(feed);
-    console.debug(xml_string);
+    //console.debug(xml_string);
     return xml_string;
 }
 
@@ -55,8 +54,8 @@ function parse_days(data) {
         if (day.closed) {
             xml.closed = "";
         } else {
-            if(!day.categories || day.categories.length <= 0 || day.categories.every((c)=>!c.meals||c.meals.length <= 0)){
-                continue
+            if (!day.categories || day.categories.length <= 0 || day.categories.every((c) => !c.meals || c.meals.length <= 0)) {
+                continue;
             }
             xml.category = [];
             for (const cat of day.categories) {

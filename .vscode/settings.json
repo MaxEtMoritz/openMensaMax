@@ -1,0 +1,8 @@
+{
+    "json.schemas": [{
+        "fileMatch": [
+            "canteens.json"
+        ],
+        "url": "./canteens.schema.json"
+    }]
+}

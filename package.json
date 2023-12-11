@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/MaxEtMoritz/openMensaMax#readme",
   "dependencies": {
-    "@philippdormann/mensamax-api": "file:../mensamax-api",
+    "@philippdormann/mensamax-api": "github:MaxEtMoritz/mensamax-api",
     "xml2js": "^0.6.2"
   },
   "types": "./types",

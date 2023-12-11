@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
+  <version>0.0.0</version>
+  <canteen>
+    <day date="2023-12-11">
+      <category name="Normal">
+        <meal>
+          <name>Rinderhackfleischsoße "Bologneser Art", Gabelspaghetti, kleiner Nachtisch</name>
+          <note>mit Rindfleisch</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Gluten</note>
+          <note>Gluten-Weizen</note>
+          <note>Hühnereiweiß, Eier und Eierzeugnisse</note>
+          <note>vegetarisch</note>
+        </meal>
+      </category>
+      <category name="Alternativ">
+        <meal>
+          <name>Tomatensoße mild und fruchtig, Gabelspaghetti, kleiner Nachtisch</name>
+          <note>Gluten</note>
+          <note>Gluten-Weizen</note>
+          <note>Milcheiweiß, Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Sesam und Sesamerzeugnisse</note>
+          <note>vegetarisch</note>
+          <note>Hühnereiweiß, Eier und Eierzeugnisse</note>
+        </meal>
+      </category>
+    </day>
+    <day date="2023-12-12">
+      <category name="Normal">
+        <meal>
+          <name>Hähnchengyros mit Joghurtsoße, Langkorn-Reis, Joghurt</name>
+          <note>Milcheiweiß, Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>vegetarisch</note>
+          <note>Fruktose</note>
+          <note>Süßstoff / Süßungsmittel</note>
+        </meal>
+      </category>
+      <category name="Alternativ">
+        <meal>
+          <name>Gemüse-Linsen-Curry, Langkorn-Reis, Joghurt</name>
+          <note>vegetarisch</note>
+          <note>Fruktose</note>
+          <note>Milcheiweiß, Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Süßstoff / Süßungsmittel</note>
+        </meal>
+      </category>
+    </day>
+    <day date="2023-12-13">
+      <category name="Normal">
+        <meal>
+          <name>Puten-Hacksteak, Salzkartoffeln ohne Petersilie, Rote Gemüsesoße mit Zucchini, Gemüsepaprika und Zwiebeln</name>
+          <note>Gluten-Weizen</note>
+          <note>vegetarisch</note>
+          <note>Gluten</note>
+          <note>Milcheiweiß, Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+        </meal>
+      </category>
+      <category name="Alternativ">
+        <meal>
+          <name>Speisequark (Zubereitung mit Sahne und Schnittlauch), Salzkartoffeln ohne Petersilie, Rohkost</name>
+          <note>Milcheiweiß, Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>vegetarisch</note>
+        </meal>
+      </category>
+    </day>
+    <day date="2023-12-14">
+      <category name="Normal">
+        <meal>
+          <name>Maccaroni-Platte mit Putenbrustschinken und Tomatensoße, überbacken mit Käse, Obst</name>
+          <note>Antioxidationsmittel</note>
+          <note>Gluten-Weizen</note>
+          <note>Hühnereiweiß, Eier und Eierzeugnisse</note>
+          <note>Milcheiweiß, Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Nitritpökelsalz und Nitrat</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+        </meal>
+      </category>
+      <category name="Alternativ">
+        <meal>
+          <name>Teigtäschchen "Teddy" mit Spinat-Ricottafüllung in Karotten-Sahnesoße, Obst</name>
+          <note>Gluten</note>
+          <note>Gluten-Weizen</note>
+          <note>Hühnereiweiß, Eier und Eierzeugnisse</note>
+          <note>Milcheiweiß, Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>vegetarisch</note>
+        </meal>
+      </category>
+    </day>
+    <day date="2023-12-18">
+      <category name="Normal">
+        <meal>
+          <name>Penne al Pomodoro: Nudeln mit italienischer Kräuter-Tomatensoße, mit Käse bestreut, Pudding</name>
+          <note>Gluten</note>
+          <note>Gluten-Weizen</note>
+          <note>Milcheiweiß, Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Sesam und Sesamerzeugnisse</note>
+          <note>vegetarisch</note>
+          <note>Emulgatoren</note>
+          <note>Verdickungsmittel</note>
+        </meal>
+      </category>
+      <category name="Alternativ">
+        <meal>
+          <name>Penne al Pomodoro: Nudeln mit italienischer Kräuter-Tomatensoße, mit Käse bestreut, Pudding</name>
+          <note>Gluten</note>
+          <note>Gluten-Weizen</note>
+          <note>Milcheiweiß, Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Sesam und Sesamerzeugnisse</note>
+          <note>vegetarisch</note>
+          <note>Emulgatoren</note>
+          <note>Verdickungsmittel</note>
+        </meal>
+      </category>
+    </day>
+    <day date="2023-12-19">
+      <category name="Normal">
+        <meal>
+          <name>Pürierte Gemüsesuppe (mit Kartoffeln, Blumenkohl, Karotten, Broccoli, Sellerie und Erbsen), Milchreis, Sauerkirschen</name>
+          <note>Milcheiweiß, Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>vegetarisch</note>
+        </meal>
+      </category>
+      <category name="Alternativ">
+        <meal>
+          <name>Pürierte Gemüsesuppe (mit Kartoffeln, Blumenkohl, Karotten, Broccoli, Sellerie und Erbsen), Milchreis, Sauerkirschen</name>
+          <note>Milcheiweiß, Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>vegetarisch</note>
+        </meal>
+      </category>
+    </day>
+    <day date="2023-12-20">
+      <category name="Normal">
+        <meal>
+          <name>FB182 Rindfleisch-Frikadellen-Burger, Pommes frites (Backofenfrites, Wellenschnitt)</name>
+          <note>Gluten</note>
+          <note>glutenhaltiges Getreide</note>
+          <note>Gluten-Weizen</note>
+          <note>Hühnereiweiß, Eier und Eierzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Sesam und Sesamerzeugnisse</note>
+          <note>Verdickungsmittel</note>
+          <note>vegetarisch</note>
+        </meal>
+      </category>
+      <category name="Alternativ">
+        <meal>
+          <name>FB990 Gemüseschnitzel-Burger, Pommes frites (Backofenfrites, Wellenschnitt)</name>
+          <note>Gluten</note>
+          <note>Gluten-Gerste</note>
+          <note>glutenhaltiges Getreide</note>
+          <note>Gluten-Weizen</note>
+          <note>Sesam und Sesamerzeugnisse</note>
+          <note>Verdickungsmittel</note>
+          <note>vegetarisch</note>
+        </meal>
+      </category>
+    </day>
+    <day date="2023-12-21">
+      <category name="Normal">
+        <meal>
+          <name>Drumsticks gegrillte Hähnchenunterkeulen, gebackene Kartoffelspalten, Salat</name>
+          <note>vegetarisch</note>
+        </meal>
+      </category>
+      <category name="Alternativ">
+        <meal>
+          <name>Rote-Linsen-Lasagne mit roten Linsen, Karotten, Lauch, mit Käse überbacken, Salat</name>
+          <note>Gluten-Weizen</note>
+          <note>Milcheiweiß, Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+        </meal>
+      </category>
+    </day>
+    <day date="2023-12-25">
+      <category name="Normal">
+        <meal>
+          <name>Mittagsbestellung</name>
+        </meal>
+      </category>
+      <category name="Alternativ">
+        <meal>
+          <name>Mittagsbestellung vegetarisch</name>
+        </meal>
+      </category>
+    </day>
+    <day date="2023-12-26">
+      <category name="Normal">
+        <meal>
+          <name>Mittagsbestellung</name>
+        </meal>
+      </category>
+      <category name="Alternativ">
+        <meal>
+          <name>Mittagsbestellung vegetarisch</name>
+        </meal>
+      </category>
+    </day>
+    <day date="2023-12-27">
+      <category name="Normal">
+        <meal>
+          <name>Mittagsbestellung</name>
+        </meal>
+      </category>
+      <category name="Alternativ">
+        <meal>
+          <name>Mittagsbestellung vegetarisch</name>
+        </meal>
+      </category>
+    </day>
+    <day date="2023-12-28">
+      <category name="Normal">
+        <meal>
+          <name>Mittagsbestellung</name>
+        </meal>
+      </category>
+      <category name="Alternativ">
+        <meal>
+          <name>Mittagsbestellung vegetarisch</name>
+        </meal>
+      </category>
+    </day>
+    <day date="2024-1-1">
+      <category name="Normal">
+        <meal>
+          <name>Mittagsbestellung</name>
+        </meal>
+      </category>
+      <category name="Alternativ">
+        <meal>
+          <name>Mittagsbestellung vegetarisch</name>
+        </meal>
+      </category>
+    </day>
+    <day date="2024-1-2">
+      <category name="Normal">
+        <meal>
+          <name>Mittagsbestellung</name>
+        </meal>
+      </category>
+      <category name="Alternativ">
+        <meal>
+          <name>Mittagsbestellung vegetarisch</name>
+        </meal>
+      </category>
+    </day>
+    <day date="2024-1-3">
+      <category name="Normal">
+        <meal>
+          <name>Mittagsbestellung</name>
+        </meal>
+      </category>
+      <category name="Alternativ">
+        <meal>
+          <name>Mittagsbestellung vegetarisch</name>
+        </meal>
+      </category>
+    </day>
+    <day date="2024-1-4">
+      <category name="Normal">
+        <meal>
+          <name>Mittagsbestellung</name>
+        </meal>
+      </category>
+      <category name="Alternativ">
+        <meal>
+          <name>Mittagsbestellung vegetarisch</name>
+        </meal>
+      </category>
+    </day>
+  </canteen>
+</openmensa>

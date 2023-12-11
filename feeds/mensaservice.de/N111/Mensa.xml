@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
+  <version>0.0.0</version>
+  <canteen>
+    <day date="2023-12-11">
+      <category name="Menü 1">
+        <meal>
+          <name>Veganes Kürbisgemüse mit Getreide, Obst</name>
+        </meal>
+      </category>
+      <category name="Menü 2">
+        <meal>
+          <name>Grießschnitte mit Beeren, Obst</name>
+          <note>Eier und Eierzeugnisse</note>
+          <note>Glutenhaltiges Getreide</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+        </meal>
+      </category>
+    </day>
+    <day date="2023-12-12">
+      <category name="Menü 1">
+        <meal>
+          <name>Spanische Reispfanne mit mediterranem Gemüse und Joghurt Dip, Eis</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+        </meal>
+      </category>
+      <category name="Menü 2">
+        <meal>
+          <name>Hackbraten mit Kohlrabigemüse und Kartoffelpürree, Eis</name>
+          <note>Eier und Eierzeugnisse</note>
+          <note>Glutenhaltiges Getreide</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Senf und Senferzeugnisse</note>
+        </meal>
+      </category>
+    </day>
+    <day date="2023-12-13">
+      <category name="Menü 1">
+        <meal>
+          <name>Gurkensalat, Nudeln mit Tomaten-Gemüsesoße</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Glutenhaltiges Getreide</note>
+        </meal>
+      </category>
+      <category name="Menü 2">
+        <meal>
+          <name>Gurkensalat, Kartoffelgemüse mit Putenstückchen</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Senf und Senferzeugnisse</note>
+        </meal>
+      </category>
+    </day>
+    <day date="2023-12-14">
+      <category name="Menü 1">
+        <meal>
+          <name>Gemüserösti auf Tomatenragout, Fruchtjoghurt</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+        </meal>
+      </category>
+      <category name="Menü 2">
+        <meal>
+          <name>Rindergulasch mit Nudeln, Fruchtjoghurt</name>
+          <note>Glutenhaltiges Getreide</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+        </meal>
+      </category>
+    </day>
+    <day date="2023-12-15">
+      <category name="Menü 1">
+        <meal>
+          <name>Vegagnes Gemüsechili mit Reis, Dessertauswahl</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+        </meal>
+      </category>
+      <category name="Menü 2">
+        <meal>
+          <name>Fischstäbchen mit Kartoffelsalat dazu Sauerrahmdip, Dessertauswahl</name>
+          <note>Eier und Eierzeugnisse</note>
+          <note>Glutenhaltiges Getreide</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+        </meal>
+      </category>
+    </day>
+    <day date="2023-12-18">
+      <category name="Menü 1">
+        <meal>
+          <name>Käse Tortellini mit Tomatensoße, Obst</name>
+          <note>Eier und Eierzeugnisse</note>
+          <note>Glutenhaltiges Getreide</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+        </meal>
+      </category>
+      <category name="Menü 2">
+        <meal>
+          <name>Vegane Italienische Ratatouille-Reis Pfanne, Obst</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+        </meal>
+      </category>
+    </day>
+    <day date="2023-12-19">
+      <category name="Menü 1">
+        <meal>
+          <name>Apfelstrudel mit Vanillesoße, Pudding</name>
+          <note>Eier und Eierzeugnisse</note>
+          <note>Glutenhaltiges Getreide</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+        </meal>
+      </category>
+      <category name="Menü 2">
+        <meal>
+          <name>Currywurst mit Kartoffelwedges, Pudding</name>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Nitritpökelsalz</note>
+          <note>mit Säuerungsmittel</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+        </meal>
+      </category>
+    </day>
+    <day date="2023-12-20">
+      <category name="Menü 1">
+        <meal>
+          <name>Farfalle mit Tomaten-Gemüsesoße, Fruchtjoghurt</name>
+          <note>Glutenhaltiges Getreide</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+        </meal>
+      </category>
+      <category name="Menü 2">
+        <meal>
+          <name>Farfalle mit Schinken-Sahnesoße, Fruchtjoghurt</name>
+          <note>Glutenhaltiges Getreide</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Nitritpökelsalz</note>
+          <note>mit Phosphat</note>
+        </meal>
+      </category>
+    </day>
+    <day date="2023-12-21">
+      <category name="Menü 1">
+        <meal>
+          <name>Salat mit klarem Dressing, Kartoffel-Gemüsegratin</name>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+        </meal>
+      </category>
+      <category name="Menü 2">
+        <meal>
+          <name>Salat mit klarem Dressing, Gebackenes Schweineschnitzel mit Kartoffelecken</name>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Eier und Eierzeugnisse</note>
+          <note>Glutenhaltiges Getreide</note>
+        </meal>
+      </category>
+    </day>
+    <day date="2023-12-22">
+      <category name="Menü 1">
+        <meal>
+          <name>Achtung am Mittwoch 22.12.2023ist die Mensa ab 11.30h geschlossen es gibt kein Mittagessen in der Mensa Altbau, Hausgemachte vegetarische Pizza, Dessertauswahl</name>
+          <note>Glutenhaltiges Getreide</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+        </meal>
+      </category>
+      <category name="Menü 2">
+        <meal>
+          <name>Achtung am Mittwoch 22.12.2023ist die Mensa ab 11.30h geschlossen es gibt kein Mittagessen in der Mensa Altbau, Hausgemachte Blechpizza mit Schinken,Paprika und Käse, Dessertauswahl</name>
+          <note>Glutenhaltiges Getreide</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Phosphat</note>
+        </meal>
+      </category>
+    </day>
+  </canteen>
+</openmensa>

@@ -1,0 +1,14 @@
+[
+    {
+        "provider": "mensaservice.de",
+        "p": "N111",
+        "e": "Mensa",
+        "name": "Wilhelm-Löhe-Schule Nürnberg"
+    },
+    {
+        "provider": "mensadigital.de",
+        "p": "FO111",
+        "e": "dts",
+        "name": "Dr.-Theo-Schöller-Mittelschule in Nürnberg"
+    }
+]

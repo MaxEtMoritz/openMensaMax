@@ -1,0 +1,30 @@
+{
+    "type": "array",
+    "items": {
+        "type":"object",
+        "properties": {
+            "p":{
+                "type": "string",
+                "description": "MensaMax project for this canteen.",
+                "examples": ["N111"]
+            },
+            "e":{
+                "type":"string",
+                "description": "MensaMax institution (\"Einrichtung\") for this canteen.",
+                "examples": ["Mensa"]
+            },
+            "provider":{
+                "type": "string",
+                "description": "MensaMax provider this canteen is on (MensaMax has some distinct systems under different URLs).",
+                "examples": ["mensadigital.de", "mensaservice.de", "mensaonline.de", "mensapoint.de", "mensahome.de", "mensaland.de", "mensa365.de", "mensaweb.de", "mensawelten.de", "mensacity.de", "mensaoffice.de", "mammasmensa.de", "mensalokal.de", "mensastadt.de", "mensahaus.de"]
+            },
+            "name":{
+                "type":"string",
+                "description": "Human-readable name for the canteen (optional)."
+            }
+        },
+        "required": ["p", "e", "provider"],
+        "additionalProperties": false
+    },
+    "additionalItems": false
+}
