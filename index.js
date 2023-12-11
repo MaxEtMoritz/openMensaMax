@@ -79,8 +79,8 @@ async function processCanteen(p, e, provider) {
     }
     //console.log(Object.getOwnPropertyNames(parsed.json), parsed.hinweis);
     const xml_doc = build(result, null, package_json.version);
-    if (!existsSync(join(__dirname, "feeds", provider, p))) mkdirSync(join(__dirname, "feeds", provider, p), { recursive: true });
-    writeFileSync(join(__dirname, "feeds", provider, p, e + ".xml"), xml_doc, { encoding: "utf-8" });
+    if (!existsSync(join(__dirname, "docs", provider, p))) mkdirSync(join(__dirname, "docs", provider, p), { recursive: true });
+    writeFileSync(join(__dirname, "docs", provider, p, e + ".xml"), xml_doc, { encoding: "utf-8" });
 }
 
 (async () => {
