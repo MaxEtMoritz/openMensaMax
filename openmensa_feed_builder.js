@@ -48,7 +48,7 @@ function parse_days(data) {
     for (const day of data) {
         const xml = {
             $: {
-                date: day.date instanceof Date ? `${day.date.getFullYear()}-${day.date.getMonth() + 1}-${day.date.getDate()}` : day.date,
+                date: day.date instanceof Date ? `${day.date.getFullYear().padStart(4,'0')}-${(day.date.getMonth() + 1).padStart(2,'0')}-${day.date.getDate().padStart(2,'0')}` : day.date,
             },
         };
         if (day.closed) {
