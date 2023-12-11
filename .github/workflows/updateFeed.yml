@@ -35,7 +35,7 @@ jobs:
             - name: Upload feeds as artifact
               uses: actions/upload-pages-artifact@v2
               with:
-                  path: docs
+                  path: feeds
     deployPages:
         needs: generateXMLFeeds
         permissions:
