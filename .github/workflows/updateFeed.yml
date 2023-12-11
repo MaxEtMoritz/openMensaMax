@@ -32,6 +32,10 @@ jobs:
             - name: Run parsers & update xml feeds
               run: |
                   npm run start
+            - name: Generate directory listing
+              uses: jayanta525/github-pages-directory-listing@v4.0.0
+              with:
+                FOLDER: feeds
             - name: Upload feeds as artifact
               uses: actions/upload-pages-artifact@v2
               with:
