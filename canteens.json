@@ -10,5 +10,700 @@
         "p": "FO111",
         "e": "dts",
         "name": "Dr.-Theo-Schöller-Mittelschule in Nürnberg"
+    },
+    {
+        "provider": "mensadigital.de",
+        "p": "FO111",
+        "e": "DSK",
+        "name": "Dreiberg Schule Knetzgau"
+    },
+    {
+        "provider": "mensadigital.de",
+        "p": "FO111",
+        "e": "ghr",
+        "name": "Georg-Hartmann-Realschule Forchheim"
+    },
+    {
+        "provider": "mensadigital.de",
+        "p": "FO111",
+        "e": "hoch",
+        "name": "Gymnasium Höchstadt a.d.Aisch"
+    },
+    {
+        "provider": "mensadigital.de",
+        "p": "FO111",
+        "e": "herz",
+        "name": "Gymnasium Herzogenaurach"
+    },
+    {
+        "provider": "mensadigital.de",
+        "p": "FO111",
+        "e": "mscadolzburg",
+        "name": "Mittelschule Cadolzburg"
+    },
+    {
+        "provider": "mensadigital.de",
+        "p": "HH2306",
+        "e": "Irena-Sendler"
+    },
+    {
+        "provider": "mensadigital.de",
+        "p": "HH2306",
+        "e": "STS-Hegholt"
+    },
+    {
+        "provider": "mensadigital.de",
+        "p": "HH2306",
+        "e": "GS-Hegholt",
+        "name": "Grundschule Bramfeld"
+    },
+    {
+        "provider": "mensadigital.de",
+        "p": "HH2306",
+        "e": "STS-Brado"
+    },
+    {
+        "provider": "mensadigital.de",
+        "p": "HP2329",
+        "e": "Goethe",
+        "name": "Goethe-Gymnasium Bensheim"
+    },
+    {
+        "provider": "mensadigital.de",
+        "p": "HP2329",
+        "e": "Gutenberg"
+    },
+    {
+        "provider": "mensadigital.de",
+        "p": "HB2349",
+        "e": "AG"
+    },
+    {
+        "provider": "mensadigital.de",
+        "p": "F197",
+        "e": "MPS"
+    },
+    {
+        "provider": "mensadigital.de",
+        "p": "DON2354",
+        "e": "Mensation"
+    },
+    {
+        "provider": "mensadigital.de",
+        "p": "STA2336",
+        "e": "BSZ-Wasserburg"
+    },
+    {
+        "provider": "mensadigital.de",
+        "p": "WI243",
+        "e": "Leibniz"
+    },
+    {
+        "provider": "mensadigital.de",
+        "p": "WI243",
+        "e": "Oranien"
+    },
+    {
+        "provider": "mensadigital.de",
+        "p": "EN2322",
+        "e": "GySue"
+    },
+    {
+        "provider": "mensadigital.de",
+        "p": "FO111",
+        "e": "frid",
+        "name": "Gymnasium Fridericianum"
+    },
+    {
+        "provider": "mensadigital.de",
+        "p": "FO111",
+        "e": "msf",
+        "name": "Grund und Mittelschule Feucht/ Kinderhort St. Jakob in Feucht"
+    },
+    {
+        "provider": "mensadigital.de",
+        "p": "FO111",
+        "e": "feu",
+        "name": "Realschule Feucht"
+    },
+    {
+        "provider": "mensadigital.de",
+        "p": "FO111",
+        "e": "SLM",
+        "name": "Mittelschule St. Leonhard Nürnberg"
+    },
+    {
+        "provider": "mensadigital.de",
+        "p": "FO111",
+        "e": "gpa",
+        "name": "Georg-Paul-Amberger Grundschule"
+    },
+    {
+        "provider": "mensadigital.de",
+        "p": "FO111",
+        "e": "Schulhaus",
+        "name": "Evangelisches Montessori Kinderhaus Röttenbach"
+    },
+    {
+        "provider": "mensadigital.de",
+        "p": "FO111",
+        "e": "ggo",
+        "name": "Grundschule Großgründlach"
+    },
+    {
+        "provider": "mensadigital.de",
+        "p": "FO111",
+        "e": "sjw",
+        "name": "St. Josef Kinderhaus"
+    },
+    {
+        "provider": "mensadigital.de",
+        "p": "FO111",
+        "e": "drb",
+        "name": "Dientzenhofer Realschule in Brannenburg"
+    },
+    {
+        "provider": "mensadigital.de",
+        "p": "FO111",
+        "e": "gsr",
+        "name": "Graf-Stauffenberg-Realschule in Bamberg"
+    },
+    {
+        "provider": "mensadigital.de",
+        "p": "FO111",
+        "e": "lurf",
+        "name": "Leopold-Ullstein-Realschule Fürth"
+    },
+    {
+        "provider": "mensadigital.de",
+        "p": "FO111",
+        "e": "kat",
+        "name": "Grund- und Mittelschule Nürnberg-Katzwang"
+    },
+    {
+        "provider": "mensadigital.de",
+        "p": "FO111",
+        "e": "sfh",
+        "name": "St. Franziskus Kinderhaus"
+    },
+    {
+        "provider": "mensadigital.de",
+        "p": "FO111",
+        "e": "GSHerzogenaurach",
+        "name": "Grundschule Herzogenaurach"
+    },
+    {
+        "provider": "mensapoint.de",
+        "p": "KEH111",
+        "e": "ggm",
+        "name": "Gabelsberger-Gymnasium Mainburg"
+    },
+    {
+        "provider": "mensapoint.de",
+        "p": "GOE444",
+        "e": "BBS"
+    },
+    {
+        "provider": "mensapoint.de",
+        "p": "GOE444",
+        "e": "TRG"
+    },
+    {
+        "provider": "mensapoint.de",
+        "p": "FL111",
+        "e": "Ramsharde"
+    },
+    {
+        "provider": "mensapoint.de",
+        "p": "PB197",
+        "e": "Marienschule"
+    },
+    {
+        "provider": "mensapoint.de",
+        "p": "HAM111",
+        "e": "THRS"
+    },
+    {
+        "provider": "mensapoint.de",
+        "p": "LL124",
+        "e": "FWS",
+        "name": "Freie Waldorfschule Landsberg"
+    },
+    {
+        "provider": "mammasmensa.de",
+        "p": "HH222",
+        "e": "STS-Lohbruegge"
+    },
+    {
+        "provider": "mensaonline.de",
+        "p": "AZ000",
+        "e": "OHS"
+    },
+    {
+        "provider": "mensaonline.de",
+        "p": "EMD160",
+        "e": "MAX",
+        "name": "Max-Windmüller-Gymnasium Emden"
+    },
+    {
+        "provider": "mensaonline.de",
+        "p": "S243",
+        "e": "MBS"
+    },
+    {
+        "provider": "mensaonline.de",
+        "p": "FN222",
+        "e": "RS"
+    },
+    {
+        "provider": "mensaonline.de",
+        "p": "FN222",
+        "e": "MGTT",
+        "name": "Montfort-Gymnasium Tettnang"
+    },
+    {
+        "provider": "mensaweb.de",
+        "p": "Brilon",
+        "e": "H-L-S"
+    },
+    {
+        "provider": "mensaland.de",
+        "p": "RZ222",
+        "e": "CGW"
+    },
+    {
+        "provider": "mensaland.de",
+        "p": "LOE111",
+        "e": "FWS"
+    },
+    {
+        "provider": "mensaland.de",
+        "p": "FR333",
+        "e": "GS"
+    },
+    {
+        "provider": "mensaonline.de",
+        "p": "BOR000",
+        "e": "Euregio"
+    },
+    {
+        "provider": "mensaonline.de",
+        "p": "PF111",
+        "e": "kepler"
+    },
+    {
+        "provider": "mensaweb.de",
+        "p": "HDH111",
+        "e": "WG"
+    },
+    {
+        "provider": "mensaservice.de",
+        "p": "TUE124",
+        "e": "ALS"
+    },
+    {
+        "provider": "mensaservice.de",
+        "p": "ES222",
+        "e": "Sprache"
+    },
+    {
+        "provider": "mensaland.de",
+        "p": "DA124",
+        "e": "FES"
+    },
+    {
+        "provider": "mensaland.de",
+        "p": "MR222",
+        "e": "RGS"
+    },
+    {
+        "provider": "mensaland.de",
+        "p": "CUX124",
+        "e": "IGS-Stade"
+    },
+    {
+        "provider": "mensaland.de",
+        "p": "ES243",
+        "e": "LUG"
+    },
+    {
+        "provider": "mensaland.de",
+        "p": "HH666",
+        "e": "RLW"
+    },
+    {
+        "provider": "mensaservice.de",
+        "p": "WF111",
+        "e": "KarlGS"
+    },
+    {
+        "provider": "mensaservice.de",
+        "p": "WF111",
+        "e": "WBGS"
+    },
+    {
+        "provider": "mensaservice.de",
+        "p": "WF111",
+        "e": "EKHS"
+    },
+    {
+        "provider": "mensaservice.de",
+        "p": "WF111",
+        "e": "LeibnizRS"
+    },
+    {
+        "provider": "mensaservice.de",
+        "p": "WF111",
+        "e": "WRS"
+    },
+    {
+        "provider": "mensaservice.de",
+        "p": "WF111",
+        "e": "DenkteGS"
+    },
+    {
+        "provider": "mensaservice.de",
+        "p": "WF111",
+        "e": "KissenGS"
+    },
+    {
+        "provider": "mensaservice.de",
+        "p": "WF111",
+        "e": "SchuleRemlingen"
+    },
+    {
+        "provider": "mensaservice.de",
+        "p": "WF111",
+        "e": "GsSchoepp"
+    },
+    {
+        "provider": "mensaservice.de",
+        "p": "WF111",
+        "e": "WinnigstedtGS"
+    },
+    {
+        "provider": "mensaservice.de",
+        "p": "WF111",
+        "e": "HortSchoeppenstedt"
+    },
+    {
+        "provider": "mensaservice.de",
+        "p": "WF111",
+        "e": "KitaAhlum"
+    },
+    {
+        "provider": "mensaservice.de",
+        "p": "WF111",
+        "e": "Phantasia"
+    },
+    {
+        "provider": "mensaservice.de",
+        "p": "WF111",
+        "e": "Sonnenschein"
+    },
+    {
+        "provider": "mensaservice.de",
+        "p": "WF111",
+        "e": "KitaHummelburg"
+    },
+    {
+        "provider": "mensaservice.de",
+        "p": "WF111",
+        "e": "KitaRasselbande"
+    },
+    {
+        "provider": "mensaservice.de",
+        "p": "WF111",
+        "e": "Assewind"
+    },
+    {
+        "provider": "mensawelten.de",
+        "p": "BS111",
+        "e": "KB"
+    },
+    {
+        "provider": "mensawelten.de",
+        "p": "GOE197",
+        "e": "SaBG"
+    },
+    {
+        "provider": "mensaland.de",
+        "p": "S419",
+        "e": "Hegel",
+        "name": "Hegel-Gymnasium Stuttgart"
+    },
+    {
+        "provider": "mensastadt.de",
+        "p": "UN2396",
+        "e": "Mensa"
+    },
+    {
+        "provider": "mensastadt.de",
+        "p": "ERB2378",
+        "e": "EGS",
+        "name": "Ernst-Göbel-Schule - Höchst im Odenwald"
+    },
+    {
+        "provider": "mensastadt.de",
+        "p": "GT2435",
+        "e": "Droste-Haus",
+        "name": "Droste-Haus - Jugendaustauschwerk im Kreis Gütersloh e.V."
+    },
+    {
+        "provider": "mensastadt.de",
+        "p": "BB2369",
+        "e": "SZ",
+        "name": "Stadt Rutesheim"
+    },
+    {
+        "provider": "mensastadt.de",
+        "p": "LDK2427",
+        "e": "ABS",
+        "name": "August-Bebel-Gesamtschule Wetzlar"
+    },
+    {
+        "provider": "mensastadt.de",
+        "p": "LDK2427",
+        "e": "GS-Dalheim",
+        "name": "Dalheim-Schule Wetzlar"
+    },
+    {
+        "provider": "mensastadt.de",
+        "p": "LDK2427",
+        "e": "GS-Lahnaue",
+        "name": "Grundschule an der Lahnaue / Lahnau"
+    },
+    {
+        "provider": "mensastadt.de",
+        "p": "WAF2455",
+        "e": "GSVW",
+        "name": "Gemeinde Wadersloh"
+    },
+    {
+        "provider": "mensastadt.de",
+        "p": "WAF2455",
+        "e": "SKW",
+        "name": "Sekundarschule Wadersloh"
+    },
+    {
+        "provider": "mensastadt.de",
+        "p": "KN2387",
+        "e": "Teggingerschule",
+        "name": "Teggingerschule Radolfzell"
+    },
+    {
+        "provider": "mensastadt.de",
+        "p": "MeineMensa",
+        "e": "KN-GSS",
+        "name": "Geschwister-Scholl-Schule Konstanz"
+    },
+    {
+        "provider": "mensastadt.de",
+        "p": "HB2385",
+        "e": "GyVege",
+        "name": "Gymnasium Vegesack"
+    },
+    {
+        "provider": "mensastadt.de",
+        "p": "HR2454",
+        "e": "EVS",
+        "name": "EVS - Treysa"
+    },
+    {
+        "provider": "mensalokal.de",
+        "p": "WF2247",
+        "e": "Teichgarten",
+        "name": "Schule am Teichgarten - Wolfenbüttel"
+    },
+    {
+        "provider": "mensalokal.de",
+        "p": "H2289",
+        "e": "GBG"
+    },
+    {
+        "provider": "mensalokal.de",
+        "p": "WI2237",
+        "e": "IGS"
+    },
+    {
+        "provider": "mensalokal.de",
+        "p": "FO2224",
+        "e": "MensaGym"
+    },
+    {
+        "provider": "mensalokal.de",
+        "p": "AC333",
+        "e": "Ritzefeld"
+    },
+    {
+        "provider": "mensalokal.de",
+        "p": "UL271",
+        "e": "VBS"
+    },
+    {
+        "provider": "mensalokal.de",
+        "p": "H2289",
+        "e": "IGSBüss",
+        "name": "IGS Büssingweg"
+    },
+    {
+        "provider": "mensalokal.de",
+        "p": "H2289",
+        "e": "Roderbruch",
+        "name": "IGS Roderbruch"
+    },
+    {
+        "provider": "mensaservice.de",
+        "p": "BC243",
+        "e": "JCGS",
+        "name": "Joseph-Christian-Gemeinschaftsschule Riedlingen"
+    },
+    {
+        "provider": "mensahaus.de",
+        "p": "PB2499",
+        "e": "maxcluster",
+        "name": "maxcluster GmbH"
+    },
+    {
+        "provider": "mensaweb.de",
+        "p": "HB309",
+        "e": "Horn",
+        "name": "Schulverein Gymnasium Horn e.V."
+    },
+    {
+        "provider": "mensaonline.de",
+        "p": "HH394",
+        "e": "Scholl"
+    },
+    {
+        "provider": "mensaonline.de",
+        "p": "HH394",
+        "e": "Heilwig"
+    },
+    {
+        "provider": "mensaonline.de",
+        "p": "HH394",
+        "e": "FSS",
+        "name": "Fritz-Schumacher-Schule Hamburg"
+    },
+    {
+        "provider": "mensaonline.de",
+        "p": "H-U",
+        "e": "Gym"
+    },
+    {
+        "provider": "mensaonline.de",
+        "p": "hdh000",
+        "e": "mensa"
+    },
+    {
+        "provider": "mensaonline.de",
+        "p": "R000",
+        "e": "GL",
+        "name": "Gymnasium Lappersdorf"
+    },
+    {
+        "provider": "mensaonline.de",
+        "p": "AC000",
+        "e": "SMG",
+        "name": "St.-Michael-Gymnasium Monschau"
+    },
+    {
+        "provider": "mensaonline.de",
+        "p": "PF111",
+        "e": "Stromberg"
+    },
+    {
+        "provider": "mensaonline.de",
+        "p": "PF111",
+        "e": "Nordstadt"
+    },
+    {
+        "provider": "mensaonline.de",
+        "p": "CUX000",
+        "e": "OBSB"
+    },
+    {
+        "provider": "mensaonline.de",
+        "p": "CUX000",
+        "e": "SaW"
+    },
+    {
+        "provider": "mensaonline.de",
+        "p": "CUX000",
+        "e": "SAM"
+    },
+    {
+        "provider": "mensaonline.de",
+        "p": "CUX000",
+        "e": "SZO"
+    },
+    {
+        "provider": "mensaonline.de",
+        "p": "FN000",
+        "e": "Kluftern"
+    },
+    {
+        "provider": "mensaonline.de",
+        "p": "FN000",
+        "e": "AilingenGS"
+    },
+    {
+        "provider": "mensaonline.de",
+        "p": "FN000",
+        "e": "Berg"
+    },
+    {
+        "provider": "mensaonline.de",
+        "p": "FN000",
+        "e": "GZG"
+    },
+    {
+        "provider": "mensaonline.de",
+        "p": "FHBOSH",
+        "e": "424"
+    },
+    {
+        "provider": "mensaonline.de",
+        "p": "BL111",
+        "e": "SZ"
+    },
+    {
+        "provider": "mensaonline.de",
+        "p": "HB111",
+        "e": "WFO",
+        "name": "Wilhelm-Focke-Oberschule Bremen"
+    },
+    {
+        "provider": "mensaonline.de",
+        "p": "HB111",
+        "e": "KSA",
+        "name": "Oberschule an der Kurt-Schumacher-Allee Bremen"
+    },
+    {
+        "provider": "mensaonline.de",
+        "p": "EMS012",
+        "e": "IGS"
+    },
+    {
+        "provider": "mensaonline.de",
+        "p": "Renningen",
+        "e": "Mensaverein"
+    },
+    {
+        "provider": "mensaonline.de",
+        "p": "H012",
+        "e": "List"
+    },
+    {
+        "provider": "mensaonline.de",
+        "p": "CUX000",
+        "e": "AAG"
+    },
+    {
+        "provider": "mensaweb.de",
+        "p": "DD111",
+        "e": "fws",
+        "name": "Freie Waldorfschule Dresden"
     }
 ]

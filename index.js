@@ -1,6 +1,7 @@
 const { fetchHTML, parser } = require("@philippdormann/mensamax-api");
 const build = require("./openmensa_feed_builder.js");
-const { readFileSync, writeFileSync, mkdirSync, existsSync } = require("fs");
+const { readFile, writeFile, mkdir } = require("fs/promises");
+const { readFileSync, existsSync} = require('fs')
 const { join } = require("path");
 const package_json = JSON.parse(readFileSync(join(__dirname, "package.json"), { encoding: "utf-8" }));
 const MAX_WEEKS_FORWARD = 3;
@@ -91,32 +92,42 @@ async function processCanteen(p, e, provider, name=undefined) {
             }
         }]
     },package_json.version)
-    if (!existsSync(join(__dirname, "feeds", provider, p))) mkdirSync(join(__dirname, "feeds", provider, p), { recursive: true });
-    writeFileSync(join(__dirname, "feeds", provider, p, e + ".xml"), xml_doc, { encoding: "utf-8" });
-    writeFileSync(join(__dirname, "feeds", provider, p, e + ".meta.xml"), meta_feed, { encoding: "utf-8" });
+    if (!existsSync(join(__dirname, "feeds", provider, p))) await mkdir(join(__dirname, "feeds", provider, p), { recursive: true });
+    await Promise.all([
+        writeFile(join(__dirname, "feeds", provider, p, e + ".xml"), xml_doc, { encoding: "utf-8" }),
+        writeFile(join(__dirname, "feeds", provider, p, e + ".meta.xml"), meta_feed, { encoding: "utf-8" })
+    ])
 }
 
 (async () => {
     /**@type {any[]} */
-    let canteens = readFileSync(join(__dirname, "canteens.json"), { encoding: "utf-8" });
+    let canteens = await readFile(join(__dirname, "canteens.json"), { encoding: "utf-8" });
     canteens = JSON.parse(canteens);
+    let canteen_groups = canteens.reduce((prev, current, i, a)=>{
+        if(!prev[current.provider])
+            prev[current.provider] = []
+        prev[current.provider].push(current)
+        return prev
+    },{})
     const promises = [];
     const feed_index = {};
 
-    for (const canteen of canteens) {
-        feed_index[`${canteen.provider}/${canteen.p}/${canteen.e}`] = `${process.env.BASE_URL}/${canteen.provider}/${canteen.p}/${canteen.e}.meta.xml`;
+    for (const group of Object.values(canteen_groups)) {
         promises.push(
             (async () => {
-                console.info("processing canteen", canteen.name ?? `${canteen.provider}/${canteen.p}/${canteen.e}`);
-                try {
-                    await processCanteen(canteen.p, canteen.e, canteen.provider);
-                } catch (e) {
-                    console.error("Error processing canteen", canteen.name ?? `${canteen.provider}/${canteen.p}/${canteen.e}`, e);
+                for(const canteen of group){
+                    console.info("processing canteen", `${canteen.name?canteen.name+' (':''}${canteen.provider}/${canteen.p}/${canteen.e}${canteen.name?')':''}`);
+                    try {
+                        await processCanteen(canteen.p, canteen.e, canteen.provider, canteen.name);
+                        feed_index[`${canteen.provider}/${canteen.p}/${canteen.e}`] = `${process.env.BASE_URL}/${canteen.provider}/${canteen.p}/${canteen.e}.meta.xml`;
+                    } catch (e) {
+                        console.error("::warning title={Canteen Error}::{Error processing canteen", `${canteen.name?canteen.name+' (':''}${canteen.provider}/${canteen.p}/${canteen.e}${canteen.name?')':''}`, e, '}');
+                    }
+                    console.info("done processing canteen", `${canteen.name?canteen.name+' (':''}${canteen.provider}/${canteen.p}/${canteen.e}${canteen.name?')':''}`);
                 }
-                console.info("done processing canteen", canteen.name ?? `${canteen.provider}/${canteen.p}/${canteen.e}`);
             })()
         );
     }
     await Promise.all(promises);
-    writeFileSync(join(__dirname, "feeds", "index.json"), JSON.stringify(feed_index, undefined, 2));
+    await writeFile(join(__dirname, "feeds", "index.json"), JSON.stringify(feed_index, undefined, 2));
 })();
