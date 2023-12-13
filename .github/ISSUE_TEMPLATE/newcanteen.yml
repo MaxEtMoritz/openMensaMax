@@ -25,7 +25,7 @@ body:
     - type: input
       id: provider
       attributes:
-          label: Provider for this canteen
+          label: Provider
           description: The MensaMax domain this canteen is hosted on, without scheme (http://, https://)
           placeholder: e.g. mensadigital.de
       validations:
@@ -33,7 +33,7 @@ body:
     - type: input
       id: project
       attributes:
-          label: Project ID for this canteen
+          label: Project ID
           description: The project ("Projekt") ID this canteen belongs to
           placeholder: e.g. N111
       validations:
@@ -41,7 +41,7 @@ body:
     - type: input
       id: institution
       attributes:
-          label: Institution ID for this canteen
+          label: Institution ID
           description: The institution ("Einrichtung") ID this canteen belongs to
           placeholder: e.g. Mensa
       validations:

@@ -1,0 +1,38 @@
+name: Add a new Canteen
+on:
+    issues:
+        types: [opened, labeled]
+jobs:
+    create_pr:
+        name: Create a Pull Request to add the new canteen
+        runs-on: ubuntu-latest
+        # TODO: issue should be open
+        if: ${{ contains(github.event.issue.labels.*.name, 'new-canteen') }}
+        permissions:
+            contents: write
+            pull_requests: write
+        steps:
+            - uses: actions/checkout@v4
+            - uses: stefanbuck/github-issue-parser@v3
+              id: issue-parser
+              with:
+                  template-path: .github/ISSUE_TEMPLATE/newcanteen.yml
+            - name: Update canteens.json
+              run: node utils/add_new_canteen.js "${{ steps.issue-parser.outputs.issueparser_provider }}" "${{ steps.issue-parser.outputs.issueparser_project }}" "${{steps.issue-parser.outputs.issueparser_institution}}" "${{steps.issue-parser.outputs.issueparser_name}}"
+            - name: Open Pull Request
+              id: pr
+              # Note: If you want pull requests created by this action to trigger an on: push or on: pull_request workflow then you cannot use the default GITHUB_TOKEN.
+              # See the [documentation here](https://github.com/peter-evans/create-pull-request/blob/main/docs/concepts-guidelines.md#triggering-further-workflow-runs) for workarounds.
+              uses: peter-evans/create-pull-request@v5
+              with:
+                  commit-message: Add new canteen to canteens.json
+                  branch: newcanteen/${{steps.issue-parser.outputs.issueparser_project}}_${{steps.issue-parser.outputs.issueparser_institution}}
+                  delete-branch: true
+                  title: ${{github.event.issue.title}}
+                  body: "fixes #${{github.event.issue.number}}"
+                  labels: new-canteen
+            # - name: Trigger Feed test workflow
+            #   uses: .github/workflows/testNewCanteen.yml@main
+            #   with:
+            #     pr: ${{steps.pr.outputs.pull-request-number}}
+            #     branch: newcanteen/${{steps.issue-parser.outputs.issueparser_project}}_${{steps.issue-parser.outputs.issueparser_institution}}
