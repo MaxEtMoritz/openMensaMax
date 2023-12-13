@@ -121,7 +121,14 @@ async function processCanteen(p, e, provider, name=undefined) {
                         await processCanteen(canteen.p, canteen.e, canteen.provider, canteen.name);
                         feed_index[`${canteen.provider}/${canteen.p}/${canteen.e}`] = `${process.env.BASE_URL}/${canteen.provider}/${canteen.p}/${canteen.e}.meta.xml`;
                     } catch (e) {
-                        console.error("::warning title={Canteen Error}::{Error processing canteen", `${canteen.name?canteen.name+' (':''}${canteen.provider}/${canteen.p}/${canteen.e}${canteen.name?')':''}`, e, '}');
+                        if(e instanceof AggregateError && e.errors[0]?.line){
+                            // XML validation errors
+                            for(const error of e.errors)
+                                console.error(`::error file=feeds/${canteen.provider}/${canteen.p}/${canteen.e}.xml,line=${error.line + 1},col=${error.column + 1},title=Malformed XML Feed::${error.message.trim()}`)
+                        } else{
+                            console.error("::group:: ::warning title=Canteen Error::Error processing canteen", `${canteen.name?canteen.name+' (':''}${canteen.provider}/${canteen.p}/${canteen.e}${canteen.name?')':''}`, e);
+                            console.error("::endgroup::")
+                        }
                     }
                     console.info("done processing canteen", `${canteen.name?canteen.name+' (':''}${canteen.provider}/${canteen.p}/${canteen.e}${canteen.name?')':''}`);
                 }

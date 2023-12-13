@@ -1,16 +1,22 @@
+const libxml = require("libxmljs");
 const { Builder } = require("xml2js");
+const { readFileSync } = require("fs");
+const { join } = require("path");
+const schema = libxml.parseXml(readFileSync(join(__dirname, "open-mensa-v2.xsd")));
 
 /**
  * Build an XML string compatible with OpenMensa [Feed v2](https://docs.openmensa.org/feed/v2) Schema.
  * @param {CanteenMeta} [meta = undefined] Canteen Metadata
  * @param {Day[]} [days = undefined] Food information
+ * @param {boolean} [validate=true] Should the generated XML be validated against the OpenMensa Feed v2.1 schema?
  * @param {string} [parser_version = undefined] The top version tag is *optional*. It can be inserted to define the **version of the parser**. It has nothing to do with the canteen or its menu.
  *
  * Alternative the parser version can be return as `X-OpenMensa-ParserVersion` HTTP-Header. If both are provided, the value from the XML has precedence.
  *
  * The version itself is a normal string that must not exceed 63 characters. OpenMensa does only check whether two versions are the same. There is relation derived from the versions. You are free to choose your matching version format.
+ * @throws {AggregateError} if `validate` is true and there were XML validation errors.
  */
-function build(days = null, meta = null, parser_version = null) {
+function build(days = null, meta = null, parser_version = null, validate = true) {
     let feed = {
         openmensa: {
             $: {
@@ -34,8 +40,22 @@ function build(days = null, meta = null, parser_version = null) {
     }
     const xml = new Builder();
     const xml_string = xml.buildObject(feed);
-    //console.debug(xml_string);
+    if (validate) {
+        let errors = schemaErrors(xml_string);
+        if (errors) throw new AggregateError(errors);
+    }
     return xml_string;
+}
+
+/**
+ * Validate an XML string against the OpenMensa Feed v2(.1) schema.
+ * @param {string} xml The XML string to be validated against the OpenMensa schema
+ * @returns {any[]|null} if validation errors are found, returns them as array. returns null otherwise.
+ */
+function schemaErrors(xml) {
+    const document = libxml.parseXml(xml);
+    result = document.validate(schema);
+    return result ? null : document.validationErrors;
 }
 
 /**
@@ -48,7 +68,10 @@ function parse_days(data) {
     for (const day of data) {
         const xml = {
             $: {
-                date: day.date instanceof Date ? `${day.date.getFullYear().toString().padStart(4,'0')}-${(day.date.getMonth() + 1).toString().padStart(2,'0')}-${day.date.getDate().toString().padStart(2,'0')}` : day.date,
+                date:
+                    day.date instanceof Date
+                        ? `${day.date.getFullYear().toString().padStart(4, "0")}-${(day.date.getMonth() + 1).toString().padStart(2, "0")}-${day.date.getDate().toString().padStart(2, "0")}`
+                        : day.date,
             },
         };
         if (day.closed) {
@@ -201,7 +224,7 @@ function parse_meta(data) {
             xml.feed.push(xmlFeed);
         }
     }
-    return xml
+    return xml;
 }
 
 /**
