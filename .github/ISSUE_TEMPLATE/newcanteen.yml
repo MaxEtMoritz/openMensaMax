@@ -1,0 +1,53 @@
+name: Canteen Addition Request
+description: Request a new (MensaMax-Based) Canteen to be added to the parser.
+title: "New Canteen: "
+labels: ["new-canteen"]
+body:
+    - type: markdown
+      attributes:
+          value: |
+              Thank You for your Interest in this project.
+    - type: checkboxes
+      id: checks
+      attributes:
+          label: Preliminary checks
+          description: "Please reassure yourself you are not submitting a duplicate canteen by double-checking the following:"
+          options:
+              - label: I checked that the canteen i want to add is not already added.
+                required: true
+              - label: I checked that there is no open issue to add this specific canteen.
+                required: true
+    - type: markdown
+      attributes:
+          value: |
+              ## Canteen Details
+              Please supply the details for this canteen.
+    - type: input
+      id: provider
+      attributes:
+          label: Provider for this canteen
+          description: The MensaMax domain this canteen is hosted on, without scheme (http://, https://)
+          placeholder: e.g. mensadigital.de
+      validations:
+          required: true
+    - type: input
+      id: project
+      attributes:
+          label: Project ID for this canteen
+          description: The project ("Projekt") ID this canteen belongs to
+          placeholder: e.g. N111
+      validations:
+          required: true
+    - type: input
+      id: institution
+      attributes:
+          label: Institution ID for this canteen
+          description: The institution ("Einrichtung") ID this canteen belongs to
+          placeholder: e.g. Mensa
+      validations:
+          required: true
+    - type: input
+      id: name
+      attributes:
+          label: Name
+          description: human-readable name for this canteen (optional)
