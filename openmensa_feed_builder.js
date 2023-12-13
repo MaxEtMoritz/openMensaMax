@@ -3,6 +3,8 @@ const { Builder } = require("xml2js");
 const { readFileSync } = require("fs");
 const { join } = require("path");
 const schema = libxml.parseXml(readFileSync(join(__dirname, "open-mensa-v2.xsd")));
+const MAX_VERSION_LENGTH = 63;
+const MAX_DATA_LENGTH = 250;
 
 /**
  * Build an XML string compatible with OpenMensa [Feed v2](https://docs.openmensa.org/feed/v2) Schema.
@@ -17,6 +19,9 @@ const schema = libxml.parseXml(readFileSync(join(__dirname, "open-mensa-v2.xsd")
  * @throws {AggregateError} if `validate` is true and there were XML validation errors.
  */
 function build(days = null, meta = null, parser_version = null, validate = true) {
+    if (parser_version && parser_version.length > MAX_VERSION_LENGTH) {
+        throw new Error(`parser_version "${parser_version}" is too long. Max length is ${MAX_VERSION_LENGTH}.`);
+    }
     let feed = {
         openmensa: {
             $: {
@@ -59,6 +64,16 @@ function schemaErrors(xml) {
 }
 
 /**
+ * Truncates a string to a given maximum length, stripping all overflowing characters from the end and adding ellipsis character (&hellip;) as last allowed char.
+ * @param {string} text the text to trim down
+ * @param {number} maxLength the maximum allowed length for the text
+ * @returns {string} the truncated text
+ */
+function truncateText(text, maxLength) {
+    return text.length > maxLength ? text.slice(0, maxLength - 1) + "…" : text;
+}
+
+/**
  * Parse meal days into XML structure.
  * @param {Day[]} data  data to parse
  * @returns {object[]} XML day tags + content
@@ -84,16 +99,16 @@ function parse_days(data) {
             for (const cat of day.categories) {
                 const xmlCategory = {
                     $: {
-                        name: cat.name,
+                        name: truncateText(cat.name, MAX_DATA_LENGTH),
                     },
                     meal: [],
                 };
                 for (const meal of cat.meals) {
                     const xmlMeal = {
-                        name: meal.name,
+                        name: truncateText(meal.name, MAX_DATA_LENGTH),
                     };
                     if (meal.notes && meal.notes.length > 0) {
-                        xmlMeal.note = meal.notes.filter(n=>Boolean(n));
+                        xmlMeal.note = meal.notes.filter((n) => Boolean(n)).map((n) => truncateText(n, MAX_DATA_LENGTH));
                     }
                     if (meal.prices && meal.prices.length > 0) {
                         xmlMeal.price = [];
