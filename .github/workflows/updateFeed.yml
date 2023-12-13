@@ -5,10 +5,10 @@ on:
     push:
         branches: [main]
         paths-ignore:
-            - "docs/**"
+        # - "docs/**"
         # - 'luxembourg/**'
     schedule:
-        - cron: "31 6,8 * * *" # UTC
+    #   - cron: "31 6,8 * * *" # UTC
         - cron: "59 23 * * 0" # Run once sunday night
 
 concurrency:
