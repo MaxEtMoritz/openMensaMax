@@ -93,7 +93,7 @@ function parse_days(data) {
                         name: meal.name,
                     };
                     if (meal.notes && meal.notes.length > 0) {
-                        xmlMeal.note = meal.notes;
+                        xmlMeal.note = meal.notes.filter(n=>Boolean(n));
                     }
                     if (meal.prices && meal.prices.length > 0) {
                         xmlMeal.price = [];
