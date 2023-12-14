@@ -1,6 +1,6 @@
 {
   "name": "openmensamax",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "OpenMensa parser for MensaMax canteens",
   "main": "index.js",
   "scripts": {
