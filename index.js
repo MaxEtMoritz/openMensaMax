@@ -82,7 +82,7 @@ async function processCanteen(p, e, provider, name = undefined) {
         name,
         additionalFeeds: [
             {
-                name: "all",
+                name: e,
                 source: `https://${provider}/LOGINPLAN.ASPX?p=${encodeURIComponent(p)}&e=${encodeURIComponent(e)}`,
                 url: `${process.env.BASE_URL}/${p} ${e}.xml`,
                 schedule: {
