@@ -75,6 +75,9 @@ async function processCanteen(p, e, provider, name = undefined) {
         //console.debug(parsed_date, Object.getOwnPropertyNames(meals));
         result.push(day);
     }
+    if(result.length == 0){
+        console.info("::info::Canteen", `${name ? name + " (" : ""}${p} ${e}${name ? ")" : ""}`, "has no data.")
+    }
     //console.log(Object.getOwnPropertyNames(parsed.json), parsed.hinweis);
     const xml_doc = build(result, null, package_json.version);
     /**@type {build.CanteenMeta} */
@@ -84,7 +87,7 @@ async function processCanteen(p, e, provider, name = undefined) {
             {
                 name: e,
                 source: `https://${provider}/LOGINPLAN.ASPX?p=${encodeURIComponent(p)}&e=${encodeURIComponent(e)}`,
-                url: `${process.env.BASE_URL}/${p} ${e}.xml`,
+                url: encodeURI(`${process.env.BASE_URL}/${p} ${e}.xml`),
                 schedule: {
                     hour: "10",
                     dayOfWeek: "1",
