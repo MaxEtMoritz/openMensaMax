@@ -83,7 +83,7 @@ async function processCanteen(p, e, provider, name = undefined) {
                 {
                     name: "all",
                     source: `https://${provider}/LOGINPLAN.ASPX?p=${encodeURIComponent(p)}&e=${encodeURIComponent(e)}`,
-                    url: `${process.env.BASE_URL}/${provider}/${p}/${e}.xml`,
+                    url: `${process.env.BASE_URL}/${p} ${e}.xml`,
                     schedule: {
                         hour: "10",
                         dayOfWeek: "1",
@@ -93,10 +93,10 @@ async function processCanteen(p, e, provider, name = undefined) {
         },
         package_json.version
     );
-    if (!existsSync(join(__dirname, "feeds", provider, p))) await mkdir(join(__dirname, "feeds", provider, p), { recursive: true });
+    if (!existsSync(join(__dirname, "feeds"))) await mkdir(join(__dirname, "feeds"), { recursive: true });
     await Promise.all([
-        writeFile(join(__dirname, "feeds", provider, p, e + ".xml"), xml_doc, { encoding: "utf-8" }),
-        writeFile(join(__dirname, "feeds", provider, p, e + ".meta.xml"), meta_feed, { encoding: "utf-8" }),
+        writeFile(join(__dirname, "feeds", p + " " + e + ".xml"), xml_doc, { encoding: "utf-8" }),
+        writeFile(join(__dirname, "feeds", p + " " + e + ".meta.xml"), meta_feed, { encoding: "utf-8" }),
     ]);
 }
 
@@ -116,29 +116,25 @@ async function processCanteen(p, e, provider, name = undefined) {
         promises.push(
             (async () => {
                 for (const canteen of group) {
-                    console.info("processing canteen", `${canteen.name ? canteen.name + " (" : ""}${canteen.provider}/${canteen.p}/${canteen.e}${canteen.name ? ")" : ""}`);
+                    console.info("processing canteen", `${canteen.name ? canteen.name + " (" : ""}${canteen.p} ${canteen.e}${canteen.name ? ")" : ""}`);
                     try {
                         await processCanteen(canteen.p, canteen.e, canteen.provider, canteen.name);
-                        feed_index[`${canteen.provider}/${canteen.p}/${canteen.e}`] = `${process.env.BASE_URL}/${canteen.provider}/${canteen.p}/${canteen.e}.meta.xml`;
+                        feed_index[`${canteen.p}_${canteen.e}`] = `${process.env.BASE_URL}/${canteen.p} ${canteen.e}.meta.xml`;
                     } catch (e) {
                         if (e instanceof AggregateError && e.errors[0]?.line) {
                             // XML validation errors
                             for (const error of e.errors)
-                                console.error(
-                                    `::error file=feeds/${canteen.provider}/${canteen.p}/${canteen.e}.xml,line=${error.line + 1},col=${
-                                        error.column + 1
-                                    },title=Malformed XML Feed::${error.message.trim()}`
-                                );
+                                console.error(`::error file=feeds/${canteen.p}_${canteen.e}.xml,line=${error.line + 1},col=${error.column + 1},title=Malformed XML Feed::${error.message.trim()}`);
                         } else {
                             console.error(
                                 "::group:: ::warning title=Canteen Error::Error processing canteen",
-                                `${canteen.name ? canteen.name + " (" : ""}${canteen.provider}/${canteen.p}/${canteen.e}${canteen.name ? ")" : ""}`,
+                                `${canteen.name ? canteen.name + " (" : ""}${canteen.p} ${canteen.e}${canteen.name ? ")" : ""}`,
                                 e
                             );
                             console.error("::endgroup::");
                         }
                     }
-                    console.info("done processing canteen", `${canteen.name ? canteen.name + " (" : ""}${canteen.provider}/${canteen.p}/${canteen.e}${canteen.name ? ")" : ""}`);
+                    console.info("done processing canteen", `${canteen.name ? canteen.name + " (" : ""}${canteen.p} ${canteen.e}${canteen.name ? ")" : ""}`);
                 }
             })()
         );
