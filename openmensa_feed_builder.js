@@ -171,7 +171,7 @@ function parse_meta(data) {
                 type: "opening",
             },
         };
-        for (const weekday of ["monday", "tuesady", "wednesday", "thursday", "friday", "saturday", "sunday"]) {
+        for (const weekday of ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]) {
             if (typeof data.openingTimes[weekday] === "boolean" || data.openingTimes[weekday]) {
                 if (typeof data.openingTimes[weekday] === "boolean") {
                     if (data.openingTimes[weekday]) {

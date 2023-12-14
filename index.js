@@ -10,6 +10,7 @@ async function processCanteen(p, e, provider, name = undefined) {
     const parsed = {};
     let html = {};
     let last_parse_had_data;
+    let open_days = [];
     let i = 0;
     do {
         i++;
@@ -27,6 +28,7 @@ async function processCanteen(p, e, provider, name = undefined) {
         });
         //console.debug(html)
         let parse_result = await parser(html.data);
+        open_days = parse_result.days.map((d) => d.substring(0, 2).toLowerCase()); //.sort((a,b)=>WEEKDAYS.indexOf(b)-WEEKDAYS.indexOf(a))
         //console.debug(parse_result);
         if (parse_result.json && Object.getOwnPropertyNames(parse_result.json).length > 0) {
             Object.assign(parsed, parse_result.json);
@@ -75,24 +77,33 @@ async function processCanteen(p, e, provider, name = undefined) {
     }
     //console.log(Object.getOwnPropertyNames(parsed.json), parsed.hinweis);
     const xml_doc = build(result, null, package_json.version);
-    const meta_feed = build(
-        null,
-        {
-            name,
-            additionalFeeds: [
-                {
-                    name: "all",
-                    source: `https://${provider}/LOGINPLAN.ASPX?p=${encodeURIComponent(p)}&e=${encodeURIComponent(e)}`,
-                    url: `${process.env.BASE_URL}/${p} ${e}.xml`,
-                    schedule: {
-                        hour: "10",
-                        dayOfWeek: "1",
-                    },
+    /**@type {build.CanteenMeta} */
+    let meta = {
+        name,
+        additionalFeeds: [
+            {
+                name: "all",
+                source: `https://${provider}/LOGINPLAN.ASPX?p=${encodeURIComponent(p)}&e=${encodeURIComponent(e)}`,
+                url: `${process.env.BASE_URL}/${p} ${e}.xml`,
+                schedule: {
+                    hour: "10",
+                    dayOfWeek: "1",
                 },
-            ],
-        },
-        package_json.version
-    );
+            },
+        ],
+    };
+    if (open_days.length < 7 && open_days.length > 0) {
+        meta.openingTimes = {
+            monday: !open_days.includes("mo") ? false : undefined,
+            tuesday: !open_days.includes("di") ? false : undefined,
+            wednesday: !open_days.includes("mi") ? false : undefined,
+            thursday: !open_days.includes("do") ? false : undefined,
+            friday: !open_days.includes("fr") ? false : undefined,
+            saturday: !open_days.includes("sa") ? false : undefined,
+            sunday: !open_days.includes("so") ? false : undefined,
+        };
+    }
+    const meta_feed = build(null, meta, package_json.version);
     if (!existsSync(join(__dirname, "feeds"))) await mkdir(join(__dirname, "feeds"), { recursive: true });
     await Promise.all([
         writeFile(join(__dirname, "feeds", p + " " + e + ".xml"), xml_doc, { encoding: "utf-8" }),
