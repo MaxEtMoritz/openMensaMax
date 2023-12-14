@@ -76,7 +76,7 @@ async function processCanteen(p, e, provider, name = undefined) {
         result.push(day);
     }
     if(result.length == 0){
-        console.info("::info::Canteen", `${name ? name + " (" : ""}${p} ${e}${name ? ")" : ""}`, "has no data.")
+        console.info("::notice::Canteen", `${name ? name + " (" : ""}${p} ${e}${name ? ")" : ""}`, "has no data.")
     }
     //console.log(Object.getOwnPropertyNames(parsed.json), parsed.hinweis);
     const xml_doc = build(result, null, package_json.version);
