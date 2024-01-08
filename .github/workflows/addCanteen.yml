@@ -10,7 +10,7 @@ jobs:
         if: ${{ contains(github.event.issue.labels.*.name, 'new-canteen') }}
         permissions:
             contents: write
-            pull_requests: write
+            pull-requests: write
         steps:
             - uses: actions/checkout@v4
             - uses: stefanbuck/github-issue-parser@v3
