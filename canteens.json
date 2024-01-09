@@ -6,37 +6,37 @@
         "name": "Wilhelm-Löhe-Schule Nürnberg"
     },
     {
-        "provider": "mensadigital.de",
+        "provider": "mensaaktiv.de",
         "p": "FO111",
         "e": "dts",
         "name": "Dr.-Theo-Schöller-Mittelschule in Nürnberg"
     },
     {
-        "provider": "mensadigital.de",
+        "provider": "mensaaktiv.de",
         "p": "FO111",
         "e": "DSK",
         "name": "Dreiberg Schule Knetzgau"
     },
     {
-        "provider": "mensadigital.de",
+        "provider": "mensaaktiv.de",
         "p": "FO111",
         "e": "ghr",
         "name": "Georg-Hartmann-Realschule Forchheim"
     },
     {
-        "provider": "mensadigital.de",
+        "provider": "mensaaktiv.de",
         "p": "FO111",
         "e": "hoch",
         "name": "Gymnasium Höchstadt a.d.Aisch"
     },
     {
-        "provider": "mensadigital.de",
+        "provider": "mensaaktiv.de",
         "p": "FO111",
         "e": "herz",
         "name": "Gymnasium Herzogenaurach"
     },
     {
-        "provider": "mensadigital.de",
+        "provider": "mensaaktiv.de",
         "p": "FO111",
         "e": "mscadolzburg",
         "name": "Mittelschule Cadolzburg"
@@ -44,7 +44,8 @@
     {
         "provider": "mensadigital.de",
         "p": "HH2306",
-        "e": "Irena-Sendler"
+        "e": "Irena-Sendler",
+        "name": "Irena-Sendler-Schule"
     },
     {
         "provider": "mensadigital.de",
@@ -71,123 +72,107 @@
     {
         "provider": "mensadigital.de",
         "p": "HP2329",
-        "e": "Gutenberg"
+        "e": "Gutenberg",
+        "name": "Johannes-Gutenberg-Schule Gernsheim"
     },
     {
         "provider": "mensadigital.de",
         "p": "HB2349",
-        "e": "AG"
+        "e": "AG",
+        "name": "Altes Gymnasium Bremen"
     },
     {
         "provider": "mensadigital.de",
         "p": "F197",
-        "e": "MPS"
-    },
-    {
-        "provider": "mensadigital.de",
-        "p": "DON2354",
-        "e": "Mensation"
-    },
-    {
-        "provider": "mensadigital.de",
-        "p": "STA2336",
-        "e": "BSZ-Wasserburg"
+        "e": "MPS",
+        "name": "Max-Planck-Schule Rüsselsheim"
     },
     {
         "provider": "mensadigital.de",
         "p": "WI243",
-        "e": "Leibniz"
+        "e": "Leibniz",
+        "name": "Leibnizschule Wiesbaden"
     },
     {
         "provider": "mensadigital.de",
         "p": "WI243",
-        "e": "Oranien"
+        "e": "Oranien",
+        "name": "Oranienschule Wiesbaden"
     },
     {
         "provider": "mensadigital.de",
         "p": "EN2322",
-        "e": "GySue"
+        "e": "GySue",
+        "name": "Gymnasium Süderelbe"
     },
     {
-        "provider": "mensadigital.de",
+        "provider": "mensaaktiv.de",
         "p": "FO111",
         "e": "frid",
         "name": "Gymnasium Fridericianum"
     },
     {
-        "provider": "mensadigital.de",
+        "provider": "mensaaktiv.de",
         "p": "FO111",
         "e": "msf",
-        "name": "Grund und Mittelschule Feucht/ Kinderhort St. Jakob in Feucht"
+        "name": "Grund- und Mittelschule Feucht / Kinderhort St. Jakob"
     },
     {
-        "provider": "mensadigital.de",
+        "provider": "mensaaktiv.de",
         "p": "FO111",
         "e": "feu",
         "name": "Realschule Feucht"
     },
     {
-        "provider": "mensadigital.de",
+        "provider": "mensaaktiv.de",
         "p": "FO111",
         "e": "SLM",
         "name": "Mittelschule St. Leonhard Nürnberg"
     },
     {
-        "provider": "mensadigital.de",
+        "provider": "mensaaktiv.de",
         "p": "FO111",
         "e": "gpa",
         "name": "Georg-Paul-Amberger Grundschule"
     },
     {
-        "provider": "mensadigital.de",
+        "provider": "mensaaktiv.de",
         "p": "FO111",
         "e": "Schulhaus",
         "name": "Evangelisches Montessori Kinderhaus Röttenbach"
     },
     {
-        "provider": "mensadigital.de",
+        "provider": "mensaaktiv.de",
         "p": "FO111",
         "e": "ggo",
         "name": "Grundschule Großgründlach"
     },
     {
-        "provider": "mensadigital.de",
+        "provider": "mensaaktiv.de",
         "p": "FO111",
         "e": "sjw",
-        "name": "St. Josef Kinderhaus"
+        "name": "Kinderhaus St. Josef"
     },
     {
-        "provider": "mensadigital.de",
+        "provider": "mensaaktiv.de",
         "p": "FO111",
         "e": "drb",
-        "name": "Dientzenhofer Realschule in Brannenburg"
+        "name": "Dientzenhofer-Realschule Brannenburg"
     },
     {
-        "provider": "mensadigital.de",
+        "provider": "mensaaktiv.de",
         "p": "FO111",
         "e": "gsr",
-        "name": "Graf-Stauffenberg-Realschule in Bamberg"
+        "name": "Graf-Stauffenberg-Realschule Bamberg"
     },
     {
-        "provider": "mensadigital.de",
-        "p": "FO111",
-        "e": "lurf",
-        "name": "Leopold-Ullstein-Realschule Fürth"
-    },
-    {
-        "provider": "mensadigital.de",
+        "provider": "mensaaktiv.de",
         "p": "FO111",
         "e": "kat",
-        "name": "Grund- und Mittelschule Nürnberg-Katzwang"
+        "name": "Grund- und Mittelschule Katzwang"
     },
     {
-        "provider": "mensadigital.de",
-        "p": "FO111",
-        "e": "sfh",
-        "name": "St. Franziskus Kinderhaus"
-    },
-    {
-        "provider": "mensadigital.de",
+        "provider": "mensaaktiv.de",
         "p": "FO111",
         "e": "GSHerzogenaurach",
         "name": "Grundschule Herzogenaurach"
@@ -201,27 +186,20 @@
     {
         "provider": "mensapoint.de",
         "p": "GOE444",
-        "e": "BBS"
+        "e": "BBS",
+        "name": "Berufsbildende Schule Osterode"
     },
     {
         "provider": "mensapoint.de",
         "p": "GOE444",
-        "e": "TRG"
+        "e": "TRG",
+        "name": "Tilman-Riemenschneider-Gymnasium Osterode"
     },
     {
         "provider": "mensapoint.de",
         "p": "FL111",
-        "e": "Ramsharde"
-    },
-    {
-        "provider": "mensapoint.de",
-        "p": "PB197",
-        "e": "Marienschule"
-    },
-    {
-        "provider": "mensapoint.de",
-        "p": "HAM111",
-        "e": "THRS"
+        "e": "Ramsharde",
+        "name": "Grundschule Ramsharde"
     },
     {
         "provider": "mensapoint.de",
@@ -232,28 +210,32 @@
     {
         "provider": "mammasmensa.de",
         "p": "HH222",
-        "e": "STS-Lohbruegge"
+        "e": "STS-Lohbruegge",
+        "name": "Stadtteilschule Lohbrügge"
     },
     {
         "provider": "mensaonline.de",
         "p": "AZ000",
-        "e": "OHS"
+        "e": "OHS",
+        "name": "Otto-Hahn-Schule Westhofen"
     },
     {
-        "provider": "mensaonline.de",
-        "p": "EMD160",
+        "provider": "mensalokal.de",
+        "p": "EMD999",
         "e": "MAX",
         "name": "Max-Windmüller-Gymnasium Emden"
     },
     {
         "provider": "mensaonline.de",
         "p": "S243",
-        "e": "MBS"
+        "e": "MBS",
+        "name": "Michael-Bauer-Schule"
     },
     {
         "provider": "mensaonline.de",
         "p": "FN222",
-        "e": "RS"
+        "e": "RS",
+        "name": "Mensa Schulzentrum Manzenberg"
     },
     {
         "provider": "mensaonline.de",
@@ -264,7 +246,14 @@
     {
         "provider": "mensaweb.de",
         "p": "Brilon",
-        "e": "H-L-S"
+        "e": "H-L-S",
+        "name": "Heinrich-Lübke-Schule Brilon"
+    },
+    {
+        "provider": "mensaweb.de",
+        "p": "Brilon",
+        "e": "Petrinum",
+        "name": "Gymnasium Petrinum"
     },
     {
         "provider": "mensaland.de",
@@ -274,7 +263,8 @@
     {
         "provider": "mensaland.de",
         "p": "LOE111",
-        "e": "FWS"
+        "e": "FWS",
+        "name": "Freie Waldorfschule Lörrach"
     },
     {
         "provider": "mensaland.de",
