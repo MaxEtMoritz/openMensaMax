@@ -3,6 +3,8 @@ const build = require("./openmensa_feed_builder.js");
 const { readFile, writeFile, mkdir } = require("fs/promises");
 const { readFileSync, existsSync } = require("fs");
 const { join } = require("path");
+require('dotenv')
+require('./gh_workflow_annotations.js')
 const package_json = JSON.parse(readFileSync(join(__dirname, "package.json"), { encoding: "utf-8" }));
 const MAX_WEEKS_FORWARD = 3;
 
@@ -76,7 +78,7 @@ async function processCanteen(p, e, provider, name = undefined) {
         result.push(day);
     }
     if(result.length == 0){
-        console.info("::notice::Canteen", `${name ? name + " (" : ""}${p} ${e}${name ? ")" : ""}`, "has no data.")
+        console.info("Canteen", `${name ? name + " (" : ""}${p} ${e}${name ? ")" : ""}`, "has no data.")
     }
     //console.log(Object.getOwnPropertyNames(parsed.json), parsed.hinweis);
     const xml_doc = build(result, null, package_json.version);
@@ -130,7 +132,7 @@ async function processCanteen(p, e, provider, name = undefined) {
         promises.push(
             (async () => {
                 for (const canteen of group) {
-                    console.info("processing canteen", `${canteen.name ? canteen.name + " (" : ""}${canteen.p} ${canteen.e}${canteen.name ? ")" : ""}`);
+                    console.log("processing canteen", `${canteen.name ? canteen.name + " (" : ""}${canteen.p} ${canteen.e}${canteen.name ? ")" : ""}`);
                     try {
                         await processCanteen(canteen.p, canteen.e, canteen.provider, canteen.name);
                         feed_index[`${canteen.p}_${canteen.e}`] = encodeURI(`${process.env.BASE_URL}/${canteen.p} ${canteen.e}.meta.xml`);
@@ -138,17 +140,16 @@ async function processCanteen(p, e, provider, name = undefined) {
                         if (e instanceof AggregateError && e.errors[0]?.line) {
                             // XML validation errors
                             for (const error of e.errors)
-                                console.error(`::error file=feeds/${canteen.p}_${canteen.e}.xml,line=${error.line + 1},col=${error.column + 1},title=Malformed XML Feed::${error.message.trim()}`);
+                                console.log(`::error file=feeds/${canteen.p}_${canteen.e}.xml,line=${error.line + 1},col=${error.column + 1},title=Malformed XML Feed::${error.message.trim()}`);
                         } else {
-                            console.error(
-                                "::group:: ::warning title=Canteen Error::Error processing canteen",
+                            console.warn(
+                                "Error processing canteen",
                                 `${canteen.name ? canteen.name + " (" : ""}${canteen.p} ${canteen.e}${canteen.name ? ")" : ""}`,
                                 e
                             );
-                            console.error("::endgroup::");
                         }
                     }
-                    console.info("done processing canteen", `${canteen.name ? canteen.name + " (" : ""}${canteen.p} ${canteen.e}${canteen.name ? ")" : ""}`);
+                    console.log("done processing canteen", `${canteen.name ? canteen.name + " (" : ""}${canteen.p} ${canteen.e}${canteen.name ? ")" : ""}`);
                 }
             })()
         );
