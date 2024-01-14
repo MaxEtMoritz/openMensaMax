@@ -3,6 +3,7 @@ const build = require("./openmensa_feed_builder.js");
 const { readFile, writeFile, mkdir } = require("fs/promises");
 const { readFileSync, existsSync } = require("fs");
 const { join } = require("path");
+const JSON5 = require('json5')
 require('dotenv')
 require('./gh_workflow_annotations.js')
 const package_json = JSON.parse(readFileSync(join(__dirname, "package.json"), { encoding: "utf-8" }));
@@ -119,7 +120,7 @@ async function processCanteen(p, e, provider, name = undefined) {
 (async () => {
     /**@type {any[]} */
     let canteens = await readFile(join(__dirname, "canteens.json"), { encoding: "utf-8" });
-    canteens = JSON.parse(canteens);
+        canteens = JSON5.parse(canteens);
     let canteen_groups = canteens.reduce((prev, current, i, a) => {
         if (!prev[current.provider]) prev[current.provider] = [];
         prev[current.provider].push(current);
