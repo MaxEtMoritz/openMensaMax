@@ -38,7 +38,7 @@ async function processCanteen(p, e, provider, name = undefined) {
         next = parse_result.hasNext;
         //console.debug(parse_result);
         if (parse_result.json && Object.getOwnPropertyNames(parse_result.json).length > 0) Object.assign(parsed, parse_result.json);
-        if (!parse_result.hasNext) console.debug("No next after KW", html.kw, "for", p, e);
+        if (!parse_result.hasNext) console.log("No next after KW", html.kw, "for", p, e);
     } while (next && i <= weeksForward);
     /** @type {build.Day[]} */
     const result = [];
