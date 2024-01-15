@@ -1,4 +1,5 @@
 {
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "array",
     "items": {
         "type": "object",
@@ -23,7 +24,6 @@
                     "mensapoint.de",
                     "mensahome.de",
                     "mensaland.de",
-                    "mensa365.de",
                     "mensaweb.de",
                     "mensawelten.de",
                     "mensacity.de",
@@ -35,7 +35,12 @@
                     "parentsmensa.de",
                     "mensaaktiv.de",
                     "mensacenter.de"
-                ]
+                ],
+                "not": {
+                    "type": "string",
+                    "description": "This MensaMax provider is unsupported.",
+                    "pattern": "^mensa365.de$"
+                }
             },
             "name": {
                 "type": "string",
@@ -45,5 +50,6 @@
         "required": ["p", "e", "provider"],
         "additionalProperties": false
     },
-    "additionalItems": false
+    "additionalItems": false,
+    "uniqueItems": true
 }
