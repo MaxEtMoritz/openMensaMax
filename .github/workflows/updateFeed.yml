@@ -46,9 +46,14 @@ jobs:
               with:
                   key: feed-cache
                   path: feeds/*.xml
-            - name: Run parsers & update xml feeds
+            - name: Run full parsers
+              if: inputs.type == 'full' || github.event.schedule != '0 6 * * 0,2-6'
               run: |
-                  npm run start${{ (inputs.type == 'full' || github.event.schedule != '0 6 * * 0,2-6') ? ':allweeks' : '' }}
+                  npm run start:allweeks
+            - name: Run today parsers only
+              if: inputs.type == 'partial' || github.event.schedule == '0 6 * * 0,2-6'
+              run: |
+                  npm run start
             - name: Generate directory listing
               uses: jayanta525/github-pages-directory-listing@v4.0.0
               with:
