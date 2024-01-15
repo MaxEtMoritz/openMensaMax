@@ -100,7 +100,6 @@
         "name": "Leibnizschule Wiesbaden"
     },
     {
-        // TODO
         // New Feed for Leibniz Schule for caterer WISAG
         "provider": "mensadigital.de",
         "p": "WI2372",
@@ -115,7 +114,6 @@
         "name": "Oranienschule Wiesbaden"
     },
     {
-        // TODO
         // New Feed for Oranienschule, Caterer WISAG.
         "provider": "mensadigital.de",
         "p": "WI2372",
@@ -245,7 +243,7 @@
         "name": "Otto-Hahn-Schule Westhofen"
     },
     {
-        // TODO
+        // TODO: https://max-emden.de
         "provider": "mensalokal.de",
         "p": "EMD999",
         "e": "MAX",
@@ -276,17 +274,18 @@
         "name": "Heinrich-Lübke-Schule Brilon"
     },
     {
-        // TODO
+        // TODO: https://www.petrinum-brilon.de/schulleben/mensa/
         "provider": "mensaweb.de",
         "p": "Brilon",
         "e": "Petrinum",
         "name": "Gymnasium Petrinum"
     },
     {
-        // TODO: Couldn't find out what CGW is for...
+        // TODO: https://www.gymnasium-wentorf.de/service/cafeteria.html
         "provider": "mensaland.de",
         "p": "RZ222",
-        "e": "CGW"
+        "e": "CGW",
+        "name": "Cafeteria des Gymnasiums Wentorf e.V."
     },
     {
         "provider": "mensaland.de",
