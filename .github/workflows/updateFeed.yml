@@ -62,7 +62,12 @@ jobs:
               uses: actions/upload-pages-artifact@v2
               with:
                   path: feeds
-            - name: Save feed cache # only for full runs.
+            - name: Delete old feed cache
+              if: inputs.type == 'full' || github.event.schedule == '0 6 * * 1'
+              uses: prantlf/delete-cache-action@v2
+              with:
+                  key: feed-cache
+            - name: Save new feed cache # only for full runs.
               if: inputs.type == 'full' || github.event.schedule == '0 6 * * 1'
               uses: actions/cache/save@v3
               with:
