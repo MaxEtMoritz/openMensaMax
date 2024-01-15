@@ -48,7 +48,7 @@ jobs:
                   path: feeds/*.xml
             - name: Run parsers & update xml feeds
               run: |
-                  npm run start${{ inputs.type == 'full' || github.event.schedule != '0 6 * * 0,2-6' ? ':allweeks' : '' }}
+                  npm run start${{ (inputs.type == 'full' || github.event.schedule != '0 6 * * 0,2-6') ? ':allweeks' : '' }}
             - name: Generate directory listing
               uses: jayanta525/github-pages-directory-listing@v4.0.0
               with:
