@@ -9,6 +9,16 @@ on:
     schedule:
         - cron: "0 6 * * 1" # Run on Monday, 6:00 (to check if full run is due or not)
         - cron: "0 6 * * 0,2-6" # Run 6:00 every day except monday
+    workflow_dispatch:
+        inputs:
+            type:
+                description: Run Type
+                required: true
+                default: full
+                type: choice
+                options:
+                    - full
+                    - partial
 
 concurrency:
     group: parsers-${{ github.ref }}
@@ -31,14 +41,14 @@ jobs:
               run: |
                   npm install
             - name: Restore feed cache # only for partial runs, to preserve full feeds.
-              if: github.event.schedule == '0 6 * * 0,2-6'
+              if: inputs.type == 'partial' || github.event.schedule == '0 6 * * 0,2-6'
               uses: actions/cache/restore@v3
               with:
                   key: feed-cache
                   path: feeds/*.xml
             - name: Run parsers & update xml feeds
               run: |
-                  npm run start${{ github.event.schedule != '0 6 * * 0,2-6' ? ':allweeks' : '' }}
+                  npm run start${{ inputs.type == 'full' || github.event.schedule != '0 6 * * 0,2-6' ? ':allweeks' : '' }}
             - name: Generate directory listing
               uses: jayanta525/github-pages-directory-listing@v4.0.0
               with:
@@ -48,7 +58,7 @@ jobs:
               with:
                   path: feeds
             - name: Save feed cache # only for full runs.
-              if: github.event.schedule != '0 6 * * 0,2-6'
+              if: inputs.type == 'full' || github.event.schedule != '0 6 * * 0,2-6'
               uses: actions/cache/save@v3
               with:
                   key: feed-cache
