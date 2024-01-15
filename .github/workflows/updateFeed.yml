@@ -47,7 +47,7 @@ jobs:
                   key: feed-cache
                   path: feeds/*.xml
             - name: Run full parsers
-              if: inputs.type == 'full' || github.event.schedule != '0 6 * * 0,2-6'
+              if: inputs.type == 'full' || github.event.schedule == '0 6 * * 1'
               run: |
                   npm run start:allweeks
             - name: Run today parsers only
@@ -63,7 +63,7 @@ jobs:
               with:
                   path: feeds
             - name: Save feed cache # only for full runs.
-              if: inputs.type == 'full' || github.event.schedule != '0 6 * * 0,2-6'
+              if: inputs.type == 'full' || github.event.schedule == '0 6 * * 1'
               uses: actions/cache/save@v3
               with:
                   key: feed-cache
