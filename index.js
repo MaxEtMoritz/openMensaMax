@@ -3,18 +3,21 @@ const build = require("./openmensa_feed_builder.js");
 const { readFile, writeFile, mkdir } = require("fs/promises");
 const { readFileSync, existsSync } = require("fs");
 const { join } = require("path");
-const JSON5 = require('json5')
-require('dotenv')
-require('./gh_workflow_annotations.js')
+const JSON5 = require("json5");
+require("dotenv");
+require("./gh_workflow_annotations.js");
+
 const package_json = JSON.parse(readFileSync(join(__dirname, "package.json"), { encoding: "utf-8" }));
-const MAX_WEEKS_FORWARD = 3;
+const MAX_WEEKS_FORWARD = 4;
+const thisWeekOnly = !process.argv.includes("preview");
+const weeksForward = thisWeekOnly ? 1 : MAX_WEEKS_FORWARD;
 
 async function processCanteen(p, e, provider, name = undefined) {
     const parsed = {};
     let html = {};
-    let last_parse_had_data;
     let open_days = [];
     let i = 0;
+    let next = true;
     do {
         i++;
         //console.debug(html.__EVENTVALIDATION && html.__VIEWSTATE && html.__VIEWSTATEGENERATOR);
@@ -32,21 +35,19 @@ async function processCanteen(p, e, provider, name = undefined) {
         //console.debug(html)
         let parse_result = await parser(html.data);
         open_days = parse_result.days.map((d) => d.substring(0, 2).toLowerCase()); //.sort((a,b)=>WEEKDAYS.indexOf(b)-WEEKDAYS.indexOf(a))
+        next = parse_result.hasNext;
         //console.debug(parse_result);
-        if (parse_result.json && Object.getOwnPropertyNames(parse_result.json).length > 0) {
-            Object.assign(parsed, parse_result.json);
-            last_parse_had_data = true;
-        } else {
-            last_parse_had_data = false;
-        }
-    } while (last_parse_had_data && i <= MAX_WEEKS_FORWARD);
+        if (parse_result.json && Object.getOwnPropertyNames(parse_result.json).length > 0) Object.assign(parsed, parse_result.json);
+        if (!parse_result.hasNext) console.debug("No next after KW", html.kw, "for", p, e);
+    } while (next && i <= weeksForward);
     /** @type {build.Day[]} */
     const result = [];
+    const todayResult = [];
     for (let [date, days] of Object.entries(parsed)) {
         date = date.substring(Math.max(date.indexOf(",") + 1, 0));
         date = date.trim();
         const [d, m, y] = date.split(".", 3);
-        const parsed_date = new Date(+y, +m - 1, +d);
+        const parsed_date = new Date(+y, +m - 1, +d, 0, 0, 0, 0);
         /**@type {build.Day}*/
         const day = {};
         day.date = parsed_date;
@@ -76,23 +77,36 @@ async function processCanteen(p, e, provider, name = undefined) {
         }
         day.categories = categories;
         //console.debug(parsed_date, Object.getOwnPropertyNames(meals));
-        result.push(day);
+        if (isDateInThisWeek(parsed_date)) todayResult.push(day);
+        else result.push(day);
     }
-    if(result.length == 0){
-        console.info("Canteen", `${name ? name + " (" : ""}${p} ${e}${name ? ")" : ""}`, "has no data.")
+    if (todayResult.length == 0 && result.length == 0) {
+        console.info("Canteen", `${name ? name + " (" : ""}${p} ${e}${name ? ")" : ""}`, "has no data.");
     }
     //console.log(Object.getOwnPropertyNames(parsed.json), parsed.hinweis);
-    const xml_doc = build(result, null, package_json.version);
+    const xml_doc_today = build(todayResult, null, package_json.version);
+    let xml_doc_preview;
+    if (!thisWeekOnly) {
+        xml_doc_preview = build(result, null, package_json.version);
+    }
     /**@type {build.CanteenMeta} */
     let meta = {
         name,
         additionalFeeds: [
             {
+                name: "thisWeek",
+                source: `https://${provider}/LOGINPLAN.ASPX?p=${encodeURIComponent(p)}&e=${encodeURIComponent(e)}`,
+                url: encodeURI(`${process.env.BASE_URL}/${p} ${e}.today.xml`),
+                schedule: {
+                    hour: "7",
+                },
+            },
+            {
                 name: e,
                 source: `https://${provider}/LOGINPLAN.ASPX?p=${encodeURIComponent(p)}&e=${encodeURIComponent(e)}`,
                 url: encodeURI(`${process.env.BASE_URL}/${p} ${e}.xml`),
                 schedule: {
-                    hour: "10",
+                    hour: "7",
                     dayOfWeek: "1",
                 },
             },
@@ -111,16 +125,42 @@ async function processCanteen(p, e, provider, name = undefined) {
     }
     const meta_feed = build(null, meta, package_json.version);
     if (!existsSync(join(__dirname, "feeds"))) await mkdir(join(__dirname, "feeds"), { recursive: true });
-    await Promise.all([
-        writeFile(join(__dirname, "feeds", p + " " + e + ".xml"), xml_doc, { encoding: "utf-8" }),
+    let tasks = [
+        writeFile(join(__dirname, "feeds", p + " " + e + ".today.xml"), xml_doc_today, { encoding: "utf-8" }),
         writeFile(join(__dirname, "feeds", p + " " + e + ".meta.xml"), meta_feed, { encoding: "utf-8" }),
-    ]);
+    ];
+    if (!thisWeekOnly) {
+        tasks.push(writeFile(join(__dirname, "feeds", p + " " + e + ".xml"), xml_doc_preview, { encoding: "utf-8" }));
+    }
+    await Promise.all(tasks);
+}
+
+/**
+ * Utility function that checks if a date is within the current week.
+ * @param {Date} date The date to check
+ * @returns true if the supplied date is in the current week, otherwise false.
+ */
+function isDateInThisWeek(date) {
+    const todayObj = new Date();
+    const todayDate = todayObj.getDate();
+    const todayDay = todayObj.getDay();
+
+    // get first date of week (remove the +1 if you want this to be sunday instead of monday)
+    const firstDayOfWeek = new Date(todayObj.setDate(todayDate - todayDay + 1));
+    firstDayOfWeek.setHours(0, 0, 0, 0);
+
+    // get last date of week
+    const lastDayOfWeek = new Date(firstDayOfWeek);
+    lastDayOfWeek.setDate(lastDayOfWeek.getDate() + 7);
+
+    // if date is equal or within the first and last dates of the week
+    return date >= firstDayOfWeek && date < lastDayOfWeek;
 }
 
 (async () => {
     /**@type {any[]} */
     let canteens = await readFile(join(__dirname, "canteens.json"), { encoding: "utf-8" });
-        canteens = JSON5.parse(canteens);
+    canteens = JSON5.parse(canteens);
     let canteen_groups = canteens.reduce((prev, current, i, a) => {
         if (!prev[current.provider]) prev[current.provider] = [];
         prev[current.provider].push(current);
@@ -143,11 +183,7 @@ async function processCanteen(p, e, provider, name = undefined) {
                             for (const error of e.errors)
                                 console.log(`::error file=feeds/${canteen.p}_${canteen.e}.xml,line=${error.line + 1},col=${error.column + 1},title=Malformed XML Feed::${error.message.trim()}`);
                         } else {
-                            console.warn(
-                                "Error processing canteen",
-                                `${canteen.name ? canteen.name + " (" : ""}${canteen.p} ${canteen.e}${canteen.name ? ")" : ""}`,
-                                e
-                            );
+                            console.error("Error processing canteen", `${canteen.name ? canteen.name + " (" : ""}${canteen.p} ${canteen.e}${canteen.name ? ")" : ""}`, e);
                         }
                     }
                     console.log("done processing canteen", `${canteen.name ? canteen.name + " (" : ""}${canteen.p} ${canteen.e}${canteen.name ? ")" : ""}`);
