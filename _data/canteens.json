@@ -3,7 +3,8 @@
         "provider": "mensaservice.de",
         "p": "N111",
         "e": "Mensa",
-        "name": "Wilhelm-Löhe-Schule Nürnberg"
+        "name": "Wilhelm-Löhe-Schule Nürnberg",
+        "om_id": 1799
     },
     {
         "provider": "mensaaktiv.de",
@@ -48,8 +49,7 @@
         "name": "Irena-Sendler-Schule"
     },
     {
-        // maybe https://www.stadtteilschule-bramfeld.de/, but mensa plans on website and OpenMensa do not match
-        // (https://www.stadtteilschule-bramfeld.de/wir-ueber-uns/mittagessen/#c663 vs. https://mensadigital.de/loginplan.aspx?p=hh2306&e=sts-hegholt).
+        "$comment": "maybe https://www.stadtteilschule-bramfeld.de/, but mensa plans on website and OpenMensa do not match (https://www.stadtteilschule-bramfeld.de/wir-ueber-uns/mittagessen/#c663 vs. https://mensadigital.de/loginplan.aspx?p=hh2306&e=sts-hegholt).",
         "provider": "mensadigital.de",
         "p": "HH2306",
         "e": "STS-Hegholt"
@@ -61,7 +61,7 @@
         "name": "Grundschule Bramfeld"
     },
     {
-        // maybe also https://www.stadtteilschule-bramfeld.de, but the plan has no meals so no need to figure out if that's true. BraDo = Bramfeld Dorfplatz?
+        "$comment":"maybe also https://www.stadtteilschule-bramfeld.de, but the plan has no meals so no need to figure out if that's true. BraDo = Bramfeld Dorfplatz?",
         "provider": "mensadigital.de",
         "p": "HH2306",
         "e": "STS-Brado"
@@ -91,30 +91,28 @@
         "name": "Max-Planck-Schule Rüsselsheim"
     },
     {
-        // https://www.fr.de/rhein-main/wiesbaden/neuer-lieferant-alter-preis-11663978.html (from 2019)
-        // states that El Tucano (with code WI243) took over catering for Leibniz Schule.
-        // https://leibnizschule.de/menuebestellung has different project code (new caterer WISAG). probably outdated feed (but still having data)...
+        "$comment": "https://www.fr.de/rhein-main/wiesbaden/neuer-lieferant-alter-preis-11663978.html (from 2019) states that El Tucano (with code WI243) took over catering for Leibniz Schule. https://leibnizschule.de/menuebestellung has different project code (new caterer WISAG). probably outdated feed (but still having data)...",
         "provider": "mensadigital.de",
         "p": "WI243",
         "e": "Leibniz",
         "name": "Leibnizschule Wiesbaden"
     },
     {
-        // New Feed for Leibniz Schule for caterer WISAG
+        "$comment": "New Feed for Leibniz Schule for caterer WISAG",
         "provider": "mensadigital.de",
         "p": "WI2372",
         "e": "Leibniz",
         "name": "Leibnizschule Wiesbaden"
     },
     {
-        // Same story as Leibnizschule. linked flyer lists WISAG project code (WI2372): https://oranienschule.de/mensa.html
+        "$comment": "Same story as Leibnizschule. linked flyer lists WISAG project code (WI2372): https://oranienschule.de/mensa.html",
         "provider": "mensadigital.de",
         "p": "WI243",
         "e": "Oranien",
         "name": "Oranienschule Wiesbaden"
     },
     {
-        // New Feed for Oranienschule, Caterer WISAG.
+        "$comment": "New Feed for Oranienschule, Caterer WISAG.",
         "provider": "mensadigital.de",
         "p": "WI2372",
         "e": "Oranien",
@@ -193,8 +191,7 @@
         "name": "Grund- und Mittelschule Katzwang"
     },
     {
-        // should be https://www.grundschule-herzogenaurach.de/, but the menus from https://www.grundschule-herzogenaurach.de/ganztag/speiseplaene-sj-23-24/ do not match.
-        // Maybe one of the "Hort"? https://kitas-asg.de/unsere-einrichtungen/kinder-und-jugendhort-1/ or https://kitas-asg.de/unsere-einrichtungen/kinder-und-jugendhort-2/
+        "$comment": "should be https://www.grundschule-herzogenaurach.de/, but the menus from https://www.grundschule-herzogenaurach.de/ganztag/speiseplaene-sj-23-24/ do not match. Maybe one of the \"Hort\"? https://kitas-asg.de/unsere-einrichtungen/kinder-und-jugendhort-1/ or https://kitas-asg.de/unsere-einrichtungen/kinder-und-jugendhort-2/",
         "provider": "mensaaktiv.de",
         "p": "FO111",
         "e": "GSHerzogenaurach",
@@ -243,7 +240,7 @@
         "name": "Otto-Hahn-Schule Westhofen"
     },
     {
-        // TODO: https://max-emden.de
+        "$comment": "TODO: https://max-emden.de",
         "provider": "mensalokal.de",
         "p": "EMD999",
         "e": "MAX",
@@ -274,14 +271,14 @@
         "name": "Heinrich-Lübke-Schule Brilon"
     },
     {
-        // TODO: https://www.petrinum-brilon.de/schulleben/mensa/
+        "$comment": "TODO: https://www.petrinum-brilon.de/schulleben/mensa/",
         "provider": "mensaweb.de",
         "p": "Brilon",
         "e": "Petrinum",
         "name": "Gymnasium Petrinum"
     },
     {
-        // TODO: https://www.gymnasium-wentorf.de/service/cafeteria.html
+        "$comment": "TODO: https://www.gymnasium-wentorf.de/service/cafeteria.html",
         "provider": "mensaland.de",
         "p": "RZ222",
         "e": "CGW",
@@ -293,7 +290,8 @@
         "e": "FWS",
         "name": "Freie Waldorfschule Lörrach"
     },
-    { // TODO: All Below are un-mapped.
+    {
+        "$comment": "TODO: All Below are un-mapped.",
         "provider": "mensaland.de",
         "p": "FR333",
         "e": "GS"

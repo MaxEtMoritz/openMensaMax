@@ -45,6 +45,14 @@
             "name": {
                 "type": "string",
                 "description": "Human-readable name for the canteen (optional)."
+            },
+            "$comment": {
+                "type": "string",
+                "description": "Any notes for this canteen."
+            },
+            "om_id":{
+                "type": "integer",
+                "description": "ID of the canteen in OpenMensa if already created there."
             }
         },
         "required": ["p", "e", "provider"],

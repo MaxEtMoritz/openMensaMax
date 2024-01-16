@@ -1,7 +1,7 @@
 # openMensaMax
 [![🔁 RunParsers](https://github.com/MaxEtMoritz/openMensaMax/actions/workflows/updateFeed.yml/badge.svg)](https://github.com/MaxEtMoritz/openMensaMax/actions/workflows/updateFeed.yml)
 
-OpenMensa parser for canteens using MensaMax.
+[OpenMensa](https://openmensa.org) parser for canteens using [MensaMax](https://mensamax.de/).
 
 ## Credits
 Created with a modified version of [mensamax-api](https://github.com/philippdormann/mensamax-api) (Licensed under AGPL3.0 license).
