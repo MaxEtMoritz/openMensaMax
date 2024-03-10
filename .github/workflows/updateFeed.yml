@@ -86,3 +86,13 @@ jobs:
             - name: Deploy to GitHub pages
               id: deployment
               uses: actions/deploy-pages@v3
+
+    workflow-keepalive:
+        if: github.event_name == 'schedule'
+        runs-on: ubuntu-latest
+        permissions:
+            actions: write
+        steps:
+            - uses: liskin/gh-workflow-keepalive@v1
+              with:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
