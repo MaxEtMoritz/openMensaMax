@@ -42,7 +42,7 @@ jobs:
                   npm install
             - name: Restore feed cache # only for partial runs, to preserve full feeds.
               if: inputs.type == 'partial' || github.event.schedule == '0 6 * * 0,2-6'
-              uses: actions/cache/restore@v3
+              uses: actions/cache/restore@v4
               with:
                   key: feed-cache
                   path: feeds/*.xml
@@ -59,17 +59,17 @@ jobs:
               with:
                   FOLDER: feeds
             - name: Upload feeds as artifact
-              uses: actions/upload-pages-artifact@v2
+              uses: actions/upload-pages-artifact@v3
               with:
                   path: feeds
             - name: Delete old feed cache
               if: inputs.type == 'full' || github.event.schedule == '0 6 * * 1'
-              uses: prantlf/delete-cache-action@v2
+              uses: prantlf/delete-cache-action@v3
               with:
                   key: feed-cache
             - name: Save new feed cache # only for full runs.
               if: inputs.type == 'full' || github.event.schedule == '0 6 * * 1'
-              uses: actions/cache/save@v3
+              uses: actions/cache/save@v4
               with:
                   key: feed-cache
                   path: feeds/*.xml
@@ -85,7 +85,7 @@ jobs:
         steps:
             - name: Deploy to GitHub pages
               id: deployment
-              uses: actions/deploy-pages@v3
+              uses: actions/deploy-pages@v4
 
     workflow-keepalive:
         if: github.event_name == 'schedule'
