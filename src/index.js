@@ -7,7 +7,7 @@ const JSON5 = require("json5");
 require("dotenv");
 require("./gh_workflow_annotations.js");
 
-const package_json = JSON.parse(readFileSync(join(__dirname, "package.json"), { encoding: "utf-8" }));
+const package_json = JSON.parse(readFileSync(join(__dirname, "..", "package.json"), { encoding: "utf-8" }));
 const MAX_WEEKS_FORWARD = 4;
 const thisWeekOnly = !process.argv.includes("preview");
 const weeksForward = thisWeekOnly ? 1 : MAX_WEEKS_FORWARD;
@@ -124,13 +124,13 @@ async function processCanteen(p, e, provider, name = undefined) {
         };
     }
     const meta_feed = build(null, meta, package_json.version);
-    if (!existsSync(join(__dirname, "feeds"))) await mkdir(join(__dirname, "feeds"), { recursive: true });
+    if (!existsSync(join(__dirname, "..", "pages", "feeds"))) await mkdir(join(__dirname, "..", "pages", "feeds"), { recursive: true });
     let tasks = [
-        writeFile(join(__dirname, "feeds", p + " " + e + ".today.xml"), xml_doc_today, { encoding: "utf-8" }),
-        writeFile(join(__dirname, "feeds", p + " " + e + ".meta.xml"), meta_feed, { encoding: "utf-8" }),
+        writeFile(join(__dirname, "..", "pages", "feeds", p + " " + e + ".today.xml"), xml_doc_today, { encoding: "utf-8" }),
+        writeFile(join(__dirname, "..", "pages", "feeds", p + " " + e + ".meta.xml"), meta_feed, { encoding: "utf-8" }),
     ];
     if (!thisWeekOnly) {
-        tasks.push(writeFile(join(__dirname, "feeds", p + " " + e + ".xml"), xml_doc_preview, { encoding: "utf-8" }));
+        tasks.push(writeFile(join(__dirname, "..", "pages", "feeds", p + " " + e + ".xml"), xml_doc_preview, { encoding: "utf-8" }));
     }
     await Promise.all(tasks);
 }
@@ -159,7 +159,7 @@ function isDateInThisWeek(date) {
 
 (async () => {
     /**@type {any[]} */
-    let canteens = await readFile(join(__dirname, "canteens.json"), { encoding: "utf-8" });
+    let canteens = await readFile(join(__dirname, "..", "canteens.json"), { encoding: "utf-8" });
     canteens = JSON5.parse(canteens);
     let canteen_groups = canteens.reduce((prev, current, i, a) => {
         if (!prev[current.provider]) prev[current.provider] = [];
@@ -181,7 +181,7 @@ function isDateInThisWeek(date) {
                         if (e instanceof AggregateError && e.errors[0]?.line) {
                             // XML validation errors
                             for (const error of e.errors)
-                                console.log(`::error file=feeds/${canteen.p}_${canteen.e}.xml,line=${error.line + 1},col=${error.column + 1},title=Malformed XML Feed::${error.message.trim()}`);
+                                console.log(`::error file=pages/feeds/${canteen.p}_${canteen.e}.xml,line=${error.line + 1},col=${error.column + 1},title=Malformed XML Feed::${error.message.trim()}`);
                         } else {
                             console.error("Error processing canteen", `${canteen.name ? canteen.name + " (" : ""}${canteen.p} ${canteen.e}${canteen.name ? ")" : ""}`, e);
                         }
@@ -192,5 +192,5 @@ function isDateInThisWeek(date) {
         );
     }
     await Promise.all(promises);
-    await writeFile(join(__dirname, "feeds", "index.json"), JSON.stringify(feed_index, undefined, 2));
+    await writeFile(join(__dirname, "..", "pages", "feeds", "index.json"), JSON.stringify(feed_index, undefined, 2));
 })();

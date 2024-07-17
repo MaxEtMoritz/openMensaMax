@@ -133,8 +133,8 @@ dist
 src/types/
 
 # xml files in feeds dir
-feeds/**/*.xml
-feeds/**/*.json
+pages/feeds/**/*.xml
+pages/feeds/**/*.json
 
 # jekyll
 _site
