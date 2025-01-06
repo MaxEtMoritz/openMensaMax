@@ -105,7 +105,7 @@ async function processCanteen(p, e, provider, name = undefined, loc = undefined)
             {
                 name: "thisWeek",
                 source: `https://${provider}/LOGINPLAN.ASPX?p=${encodeURIComponent(p)}&e=${encodeURIComponent(e)}`,
-                url: encodeURI(`${process.env.BASE_URL}/${p} ${e}.today.xml`),
+                url: encodeURI(`${process.env.BASE_URL}/feeds/${p} ${e}.today.xml`),
                 schedule: {
                     hour: "7",
                 },
@@ -113,7 +113,7 @@ async function processCanteen(p, e, provider, name = undefined, loc = undefined)
             {
                 name: e,
                 source: `https://${provider}/LOGINPLAN.ASPX?p=${encodeURIComponent(p)}&e=${encodeURIComponent(e)}`,
-                url: encodeURI(`${process.env.BASE_URL}/${p} ${e}.xml`),
+                url: encodeURI(`${process.env.BASE_URL}/feeds/${p} ${e}.xml`),
                 schedule: {
                     hour: "7",
                     dayOfWeek: "1",
