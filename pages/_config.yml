@@ -28,8 +28,8 @@ url: "https://maxetmoritz.github.io" # the base hostname & protocol for your sit
 github_username:  MaxEtMoritz
 
 # Build settings
-source: pages/
-destination: pages/_site/
+source: .
+destination: _site/
 theme: minima
 sass:
   sass_dir: _sass
