@@ -159,7 +159,7 @@ function isDateInThisWeek(date) {
 
 (async () => {
     /**@type {any[]} */
-    let canteens = await readFile(join(__dirname, "..", "canteens.json"), { encoding: "utf-8" });
+    let canteens = await readFile(join(__dirname, "..", "pages", "_data", "canteens.json"), { encoding: "utf-8" });
     canteens = JSON5.parse(canteens);
     let canteen_groups = canteens.reduce((prev, current, i, a) => {
         if (!prev[current.provider]) prev[current.provider] = [];
