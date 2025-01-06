@@ -4,49 +4,64 @@
         "p": "N111",
         "e": "Mensa",
         "name": "Wilhelm-Löhe-Schule Nürnberg",
+        "loc": "Nürnberg",
         "om_id": 1799
     },
     {
         "provider": "mensaaktiv.de",
         "p": "FO111",
         "e": "dts",
-        "name": "Dr.-Theo-Schöller-Mittelschule in Nürnberg"
+        "name": "Dr.-Theo-Schöller-Mittelschule in Nürnberg",
+        "loc": "Nürnberg",
+        "om_id": 1800
     },
     {
         "provider": "mensaaktiv.de",
         "p": "FO111",
         "e": "DSK",
-        "name": "Dreiberg Schule Knetzgau"
+        "name": "Dreiberg Schule Knetzgau",
+        "loc": "Knetzgau",
+        "om_id": 1801
     },
     {
         "provider": "mensaaktiv.de",
         "p": "FO111",
         "e": "ghr",
-        "name": "Georg-Hartmann-Realschule Forchheim"
+        "name": "Georg-Hartmann-Realschule Forchheim",
+        "loc": "Forchheim",
+        "om_id": 1802
     },
     {
         "provider": "mensaaktiv.de",
         "p": "FO111",
         "e": "hoch",
-        "name": "Gymnasium Höchstadt a.d.Aisch"
+        "name": "Gymnasium Höchstadt a.d.Aisch",
+        "loc": "Höchstadt a.d.Aisch",
+        "om_id": 1803
     },
     {
         "provider": "mensaaktiv.de",
         "p": "FO111",
         "e": "herz",
-        "name": "Gymnasium Herzogenaurach"
+        "name": "Gymnasium Herzogenaurach",
+        "loc": "Herzogenaurach",
+        "om_id": 1804
     },
     {
         "provider": "mensaaktiv.de",
         "p": "FO111",
         "e": "mscadolzburg",
-        "name": "Mittelschule Cadolzburg"
+        "name": "Mittelschule Cadolzburg",
+        "loc": "Cadolzburg",
+        "om_id": 1805
     },
     {
         "provider": "mensadigital.de",
         "p": "HH2306",
         "e": "Irena-Sendler",
-        "name": "Irena-Sendler-Schule"
+        "name": "Irena-Sendler-Schule",
+        "loc": "Hamburg",
+        "om_id": 1806
     },
     {
         "$comment": "maybe https://www.stadtteilschule-bramfeld.de/, but mensa plans on website and OpenMensa do not match (https://www.stadtteilschule-bramfeld.de/wir-ueber-uns/mittagessen/#c663 vs. https://mensadigital.de/loginplan.aspx?p=hh2306&e=sts-hegholt).",
@@ -58,7 +73,9 @@
         "provider": "mensadigital.de",
         "p": "HH2306",
         "e": "GS-Hegholt",
-        "name": "Grundschule Bramfeld"
+        "name": "Grundschule Bramfeld",
+        "loc": "Hamburg",
+        "om_id": 1807
     },
     {
         "$comment":"maybe also https://www.stadtteilschule-bramfeld.de, but the plan has no meals so no need to figure out if that's true. BraDo = Bramfeld Dorfplatz?",
@@ -70,25 +87,33 @@
         "provider": "mensadigital.de",
         "p": "HP2329",
         "e": "Goethe",
-        "name": "Goethe-Gymnasium Bensheim"
+        "name": "Goethe-Gymnasium Bensheim",
+        "loc": "Bensheim",
+        "om_id": 1808
     },
     {
         "provider": "mensadigital.de",
         "p": "HP2329",
         "e": "Gutenberg",
-        "name": "Johannes-Gutenberg-Schule Gernsheim"
+        "name": "Johannes-Gutenberg-Schule Gernsheim",
+        "loc": "Gernsheim",
+        "om_id": 1809
     },
     {
         "provider": "mensadigital.de",
         "p": "HB2349",
         "e": "AG",
-        "name": "Altes Gymnasium Bremen"
+        "name": "Altes Gymnasium Bremen",
+        "loc": "Bremen",
+        "om_id": 1810
     },
     {
         "provider": "mensadigital.de",
         "p": "F197",
         "e": "MPS",
-        "name": "Max-Planck-Schule Rüsselsheim"
+        "name": "Max-Planck-Schule Rüsselsheim",
+        "loc": "Rüsselsheim am Main",
+        "om_id": 1811
     },
     {
         "$comment": "https://www.fr.de/rhein-main/wiesbaden/neuer-lieferant-alter-preis-11663978.html (from 2019) states that El Tucano (with code WI243) took over catering for Leibniz Schule. https://leibnizschule.de/menuebestellung has different project code (new caterer WISAG). probably outdated feed (but still having data)...",
@@ -102,7 +127,9 @@
         "provider": "mensadigital.de",
         "p": "WI2372",
         "e": "Leibniz",
-        "name": "Leibnizschule Wiesbaden"
+        "name": "Leibnizschule Wiesbaden",
+        "loc": "Wiesbaden",
+        "om_id": 1836
     },
     {
         "$comment": "Same story as Leibnizschule. linked flyer lists WISAG project code (WI2372): https://oranienschule.de/mensa.html",
@@ -116,79 +143,105 @@
         "provider": "mensadigital.de",
         "p": "WI2372",
         "e": "Oranien",
-        "name": "Oranienschule Wiesbaden"
+        "name": "Oranienschule Wiesbaden",
+        "loc": "Wiesbaden",
+        "om_id": 1837
     },
     {
         "provider": "mensadigital.de",
         "p": "EN2322",
         "e": "GySue",
-        "name": "Gymnasium Süderelbe"
+        "name": "Gymnasium Süderelbe",
+        "loc": "Hamburg",
+        "om_id": 1812
     },
     {
         "provider": "mensaaktiv.de",
         "p": "FO111",
         "e": "frid",
-        "name": "Gymnasium Fridericianum"
+        "name": "Gymnasium Fridericianum",
+        "loc": "Erlangen",
+        "om_id": 1813
     },
     {
         "provider": "mensaaktiv.de",
         "p": "FO111",
         "e": "msf",
-        "name": "Grund- und Mittelschule Feucht / Kinderhort St. Jakob"
+        "name": "Grund- und Mittelschule Feucht / Kinderhort St. Jakob",
+        "loc": "Feucht",
+        "om_id": 1814
     },
     {
         "provider": "mensaaktiv.de",
         "p": "FO111",
         "e": "feu",
-        "name": "Realschule Feucht"
+        "name": "Realschule Feucht",
+        "loc": "Feucht",
+        "om_id": 1815
     },
     {
         "provider": "mensaaktiv.de",
         "p": "FO111",
         "e": "SLM",
-        "name": "Mittelschule St. Leonhard Nürnberg"
+        "name": "Mittelschule St. Leonhard Nürnberg",
+        "loc": "Nürnberg",
+        "om_id": 1816
     },
     {
         "provider": "mensaaktiv.de",
         "p": "FO111",
         "e": "gpa",
-        "name": "Georg-Paul-Amberger Grundschule"
+        "name": "Georg-Paul-Amberger Grundschule",
+        "loc": "Nürnberg",
+        "om_id": 1817
     },
     {
         "provider": "mensaaktiv.de",
         "p": "FO111",
         "e": "Schulhaus",
-        "name": "Evangelisches Montessori Kinderhaus Röttenbach"
+        "name": "Evangelisches Montessori Kinderhaus Röttenbach",
+        "loc": "Röttenbach",
+        "om_id": 1818
     },
     {
         "provider": "mensaaktiv.de",
         "p": "FO111",
         "e": "ggo",
-        "name": "Grundschule Großgründlach"
+        "name": "Grundschule Großgründlach",
+        "loc": "Nürnberg",
+        "om_id": 1819
     },
     {
         "provider": "mensaaktiv.de",
         "p": "FO111",
         "e": "sjw",
-        "name": "Kinderhaus St. Josef"
+        "name": "Kinderhaus St. Josef",
+        "loc": "Weisendorf",
+        "om_id": 1820
     },
     {
         "provider": "mensaaktiv.de",
         "p": "FO111",
         "e": "drb",
-        "name": "Dientzenhofer-Realschule Brannenburg"
+        "name": "Dientzenhofer-Realschule Brannenburg",
+        "loc": "Brannenburg",
+        "om_id": 1821
     },
     {
         "provider": "mensaaktiv.de",
         "p": "FO111",
         "e": "gsr",
-        "name": "Graf-Stauffenberg-Realschule Bamberg"
+        "name": "Graf-Stauffenberg-Realschule Bamberg",
+        "loc": "Bamberg",
+        "om_id": 1822
     },
     {
         "provider": "mensaaktiv.de",
         "p": "FO111",
         "e": "kat",
-        "name": "Grund- und Mittelschule Katzwang"
+        "name": "Grund- und Mittelschule Katzwang",
+        "loc": "Nürnberg",
+        "om_id": 1823
     },
     {
         "$comment": "should be https://www.grundschule-herzogenaurach.de/, but the menus from https://www.grundschule-herzogenaurach.de/ganztag/speiseplaene-sj-23-24/ do not match. Maybe one of the \"Hort\"? https://kitas-asg.de/unsere-einrichtungen/kinder-und-jugendhort-1/ or https://kitas-asg.de/unsere-einrichtungen/kinder-und-jugendhort-2/",
@@ -201,43 +254,57 @@
         "provider": "mensapoint.de",
         "p": "KEH111",
         "e": "ggm",
-        "name": "Gabelsberger-Gymnasium Mainburg"
+        "name": "Gabelsberger-Gymnasium Mainburg",
+        "loc": "Mainburg",
+        "om_id": 1824
     },
     {
         "provider": "mensapoint.de",
         "p": "GOE444",
         "e": "BBS",
-        "name": "Berufsbildende Schule Osterode"
+        "name": "Berufsbildende Schule Osterode",
+        "loc": "Osterode am Harz",
+        "om_id": 1825
     },
     {
         "provider": "mensapoint.de",
         "p": "GOE444",
         "e": "TRG",
-        "name": "Tilman-Riemenschneider-Gymnasium Osterode"
+        "name": "Tilman-Riemenschneider-Gymnasium Osterode",
+        "loc": "Osterode am Harz",
+        "om_id": 1826
     },
     {
         "provider": "mensapoint.de",
         "p": "FL111",
         "e": "Ramsharde",
-        "name": "Grundschule Ramsharde"
+        "name": "Grundschule Ramsharde",
+        "loc": "Flensburg",
+        "om_id": 1827
     },
     {
         "provider": "mensapoint.de",
         "p": "LL124",
         "e": "FWS",
-        "name": "Freie Waldorfschule Landsberg"
+        "name": "Freie Waldorfschule Landsberg",
+        "loc": "Landsberg am Lech",
+        "om_id": 1828
     },
     {
         "provider": "mammasmensa.de",
         "p": "HH222",
         "e": "STS-Lohbruegge",
-        "name": "Stadtteilschule Lohbrügge"
+        "name": "Stadtteilschule Lohbrügge",
+        "loc": "Hamburg",
+        "om_id": 1829
     },
     {
         "provider": "mensaonline.de",
         "p": "AZ000",
         "e": "OHS",
-        "name": "Otto-Hahn-Schule Westhofen"
+        "name": "Otto-Hahn-Schule Westhofen",
+        "loc": "Westhofen",
+        "om_id": 1830
     },
     {
         "$comment": "TODO: https://max-emden.de",
@@ -250,25 +317,33 @@
         "provider": "mensaonline.de",
         "p": "S243",
         "e": "MBS",
-        "name": "Michael-Bauer-Schule"
+        "name": "Michael-Bauer-Schule",
+        "loc": "Stuttgart",
+        "om_id": 1831
     },
     {
         "provider": "mensaonline.de",
         "p": "FN222",
         "e": "RS",
-        "name": "Mensa Schulzentrum Manzenberg"
+        "name": "Mensa Schulzentrum Manzenberg",
+        "loc": "Tettnang",
+        "om_id": 1832
     },
     {
         "provider": "mensaonline.de",
         "p": "FN222",
         "e": "MGTT",
-        "name": "Montfort-Gymnasium Tettnang"
+        "name": "Montfort-Gymnasium Tettnang",
+        "loc": "Tettnang",
+        "om_id": 1833
     },
     {
         "provider": "mensaweb.de",
         "p": "Brilon",
         "e": "H-L-S",
-        "name": "Heinrich-Lübke-Schule Brilon"
+        "name": "Heinrich-Lübke-Schule Brilon",
+        "loc": "Brilon",
+        "om_id": 1834
     },
     {
         "$comment": "TODO: https://www.petrinum-brilon.de/schulleben/mensa/",
@@ -288,7 +363,9 @@
         "provider": "mensaland.de",
         "p": "LOE111",
         "e": "FWS",
-        "name": "Freie Waldorfschule Lörrach"
+        "name": "Freie Waldorfschule Lörrach",
+        "loc": "Lörrach",
+        "om_id": 1835
     },
     {
         "$comment": "TODO: All Below are un-mapped.",

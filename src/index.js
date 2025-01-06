@@ -12,7 +12,15 @@ const MAX_WEEKS_FORWARD = 4;
 const thisWeekOnly = !process.argv.includes("preview");
 const weeksForward = thisWeekOnly ? 1 : MAX_WEEKS_FORWARD;
 
-async function processCanteen(p, e, provider, name = undefined) {
+/**
+ * 
+ * @param {string} p 
+ * @param {string} e 
+ * @param {string} provider 
+ * @param {string|undefined} name 
+ * @param {string|undefined} loc 
+ */
+async function processCanteen(p, e, provider, name = undefined, loc = undefined) {
     const parsed = {};
     let html = {};
     let open_days = [];
@@ -92,6 +100,7 @@ async function processCanteen(p, e, provider, name = undefined) {
     /**@type {build.CanteenMeta} */
     let meta = {
         name,
+        city: loc,
         additionalFeeds: [
             {
                 name: "thisWeek",
@@ -175,7 +184,7 @@ function isDateInThisWeek(date) {
                 for (const canteen of group) {
                     console.log("processing canteen", `${canteen.name ? canteen.name + " (" : ""}${canteen.p} ${canteen.e}${canteen.name ? ")" : ""}`);
                     try {
-                        await processCanteen(canteen.p, canteen.e, canteen.provider, canteen.name);
+                        await processCanteen(canteen.p, canteen.e, canteen.provider, canteen.name, canteen.loc);
                         feed_index[`${canteen.p}_${canteen.e}`] = encodeURI(`${process.env.BASE_URL}/${canteen.p} ${canteen.e}.meta.xml`);
                     } catch (e) {
                         if (e instanceof AggregateError && e.errors[0]?.line) {

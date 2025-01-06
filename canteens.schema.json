@@ -53,6 +53,10 @@
             "om_id":{
                 "type": "integer",
                 "description": "ID of the canteen in OpenMensa if already created there."
+            },
+            "loc":{
+                "type": "string",
+                "description": "Location of the canteen (e.g. name of city/village/...)"
             }
         },
         "required": ["p", "e", "provider"],
