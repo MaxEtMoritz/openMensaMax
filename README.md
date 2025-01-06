@@ -1,9 +1,3 @@
----
-layout: home
-title: Home
-order: 1
-permalink: /
----
 # openMensaMax
 [![🔁 RunParsers](https://github.com/MaxEtMoritz/openMensaMax/actions/workflows/updateFeed.yml/badge.svg)](https://github.com/MaxEtMoritz/openMensaMax/actions/workflows/updateFeed.yml)
 
