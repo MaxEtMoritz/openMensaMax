@@ -185,7 +185,7 @@ function isDateInThisWeek(date) {
                     console.log("processing canteen", `${canteen.name ? canteen.name + " (" : ""}${canteen.p} ${canteen.e}${canteen.name ? ")" : ""}`);
                     try {
                         await processCanteen(canteen.p, canteen.e, canteen.provider, canteen.name, canteen.loc);
-                        feed_index[`${canteen.p}_${canteen.e}`] = encodeURI(`${process.env.BASE_URL}/${canteen.p} ${canteen.e}.meta.xml`);
+                        feed_index[`${canteen.p}_${canteen.e}`] = encodeURI(`${process.env.BASE_URL}/feeds/${canteen.p} ${canteen.e}.meta.xml`);
                     } catch (e) {
                         if (e instanceof AggregateError && e.errors[0]?.line) {
                             // XML validation errors
