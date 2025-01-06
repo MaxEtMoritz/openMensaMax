@@ -1,0 +1,18 @@
+---
+---
+
+.error {
+    color: red;
+}
+
+.warning {
+    color: khaki;
+}
+
+.debug {
+    color: lightgray;
+}
+
+$content-width: 100%;
+
+@import "minima";

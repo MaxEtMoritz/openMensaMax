@@ -35,7 +35,7 @@ jobs:
             - name: Set up NodeJS
               uses: actions/setup-node@v4
               with:
-                  node-version: "20"
+                  node-version: "22"
                   cache: "npm"
             - name: Install package.json
               run: |
@@ -45,7 +45,7 @@ jobs:
               uses: actions/cache/restore@v4
               with:
                   key: feed-cache
-                  path: feeds/*.xml
+                  path: pages/feeds/*.xml
             - name: Run full parsers
               if: inputs.type == 'full' || github.event.schedule == '0 6 * * 1'
               run: |
@@ -54,14 +54,17 @@ jobs:
               if: inputs.type == 'partial' || github.event.schedule == '0 6 * * 0,2-6'
               run: |
                   npm run start
-            - name: Generate directory listing
-              uses: jayanta525/github-pages-directory-listing@v4.0.0
+            - name: Setup Pages
+              uses: actions/configure-pages@v5
+            - name: Build
+              uses: actions/jekyll-build-pages@v1
               with:
-                  FOLDER: feeds
-            - name: Upload feeds as artifact
+                source: ./pages
+                destination: ./pages/_site
+            - name: Upload artifact
               uses: actions/upload-pages-artifact@v3
               with:
-                  path: feeds
+                path: ./pages/_site
             - name: Delete old feed cache
               if: inputs.type == 'full' || github.event.schedule == '0 6 * * 1'
               uses: prantlf/delete-cache-action@v3
@@ -72,7 +75,7 @@ jobs:
               uses: actions/cache/save@v4
               with:
                   key: feed-cache
-                  path: feeds/*.xml
+                  path: pages/feeds/*.xml
     deployPages:
         needs: generateXMLFeeds
         permissions:
