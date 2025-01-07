@@ -299,12 +299,13 @@
         "om_id": 1830
     },
     {
-        "$comment": "TODO: https://max-emden.de",
+        "$comment": "https://max-emden.de",
         "provider": "mensalokal.de",
         "p": "EMD999",
         "e": "MAX",
         "name": "Max-Windmüller-Gymnasium Emden",
-        "loc": "Emden"
+        "loc": "Emden",
+        "om_id": 1848
     },
     {
         "$comment": "Feed has no data, but school website lists this data as correct. https://www.michael-bauer-schule.de/unsere-schule/schulkueche.html",
@@ -340,20 +341,22 @@
         "om_id": 1834
     },
     {
-        "$comment": "TODO: https://www.petrinum-brilon.de/schulleben/mensa/",
+        "$comment": "https://www.petrinum-brilon.de/schulleben/mensa/",
         "provider": "mensaweb.de",
         "p": "Brilon",
         "e": "Petrinum",
         "name": "Gymnasium Petrinum",
-        "loc": "Brilon"
+        "loc": "Brilon",
+        "om_id": 1849
     },
     {
-        "$comment": "TODO: https://www.gymnasium-wentorf.de/service/cafeteria.html",
+        "$comment": "https://www.gymnasium-wentorf.de/service/cafeteria.html",
         "provider": "mensaland.de",
         "p": "RZ222",
         "e": "CGW",
         "name": "Cafeteria des Gymnasiums Wentorf e.V.",
-        "loc": "Wentorf bei Hamburg"
+        "loc": "Wentorf bei Hamburg",
+        "om_id": 1847
     },
     {
         "provider": "mensaland.de",
@@ -364,12 +367,13 @@
         "om_id": 1835
     },
     {
-        "$comment": "TODO: All Below are un-mapped. https://www.umkirch.de/Kinder-Jugend-Senioren/Kinderbildungszentrum-KiZ/Grundschule-Uebersicht",
+        "$comment": "https://www.umkirch.de/Kinder-Jugend-Senioren/Kinderbildungszentrum-KiZ/Grundschule-Uebersicht",
         "provider": "mensaland.de",
         "name": "Grundschule Umkirch",
         "loc": "Umkirch",
         "p": "FR333",
-        "e": "GS"
+        "e": "GS",
+        "om_id": 1851
     },
     {
         "$comment": "https://euregio-gymnasium.bocholt.de/formulare-service/",
@@ -377,7 +381,8 @@
         "p": "BOR2587",
         "e": "Euregio",
         "name": "Euregio-Gymnasium",
-        "loc": "Bocholt"
+        "loc": "Bocholt",
+        "om_id": 1846
     },
     {
         "$comment": "https://www.werkgymnasium.de/schule/mensa/",
@@ -385,7 +390,8 @@
         "p": "HDH111",
         "e": "WG",
         "name": "Werkgymnasium",
-        "loc": "Heidenheim"
+        "loc": "Heidenheim",
+        "om_id": 1850
     },
     {
         "provider": "mensaservice.de",
