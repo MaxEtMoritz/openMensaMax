@@ -108,14 +108,6 @@
         "om_id": 1810
     },
     {
-        "provider": "mensadigital.de",
-        "p": "F197",
-        "e": "MPS",
-        "name": "Max-Planck-Schule Rüsselsheim",
-        "loc": "Rüsselsheim am Main",
-        "om_id": 1811
-    },
-    {
         "$comment": "https://www.fr.de/rhein-main/wiesbaden/neuer-lieferant-alter-preis-11663978.html (from 2019) states that El Tucano (with code WI243) took over catering for Leibniz Schule. https://leibnizschule.de/menuebestellung has different project code (new caterer WISAG). probably outdated feed (but still having data)...",
         "provider": "mensadigital.de",
         "p": "WI243",
@@ -311,9 +303,11 @@
         "provider": "mensalokal.de",
         "p": "EMD999",
         "e": "MAX",
-        "name": "Max-Windmüller-Gymnasium Emden"
+        "name": "Max-Windmüller-Gymnasium Emden",
+        "loc": "Emden"
     },
     {
+        "$comment": "Feed has no data, but school website lists this data as correct. https://www.michael-bauer-schule.de/unsere-schule/schulkueche.html",
         "provider": "mensaonline.de",
         "p": "S243",
         "e": "MBS",
@@ -350,14 +344,16 @@
         "provider": "mensaweb.de",
         "p": "Brilon",
         "e": "Petrinum",
-        "name": "Gymnasium Petrinum"
+        "name": "Gymnasium Petrinum",
+        "loc": "Brilon"
     },
     {
         "$comment": "TODO: https://www.gymnasium-wentorf.de/service/cafeteria.html",
         "provider": "mensaland.de",
         "p": "RZ222",
         "e": "CGW",
-        "name": "Cafeteria des Gymnasiums Wentorf e.V."
+        "name": "Cafeteria des Gymnasiums Wentorf e.V.",
+        "loc": "Wentorf bei Hamburg"
     },
     {
         "provider": "mensaland.de",
@@ -368,25 +364,28 @@
         "om_id": 1835
     },
     {
-        "$comment": "TODO: All Below are un-mapped.",
+        "$comment": "TODO: All Below are un-mapped. https://www.umkirch.de/Kinder-Jugend-Senioren/Kinderbildungszentrum-KiZ/Grundschule-Uebersicht",
         "provider": "mensaland.de",
+        "name": "Grundschule Umkirch",
+        "loc": "Umkirch",
         "p": "FR333",
         "e": "GS"
     },
     {
-        "provider": "mensaonline.de",
-        "p": "BOR000",
-        "e": "Euregio"
+        "$comment": "https://euregio-gymnasium.bocholt.de/formulare-service/",
+        "provider": "mensahaus.de",
+        "p": "BOR2587",
+        "e": "Euregio",
+        "name": "Euregio-Gymnasium",
+        "loc": "Bocholt"
     },
     {
-        "provider": "mensaonline.de",
-        "p": "PF111",
-        "e": "kepler"
-    },
-    {
+        "$comment": "https://www.werkgymnasium.de/schule/mensa/",
         "provider": "mensaweb.de",
         "p": "HDH111",
-        "e": "WG"
+        "e": "WG",
+        "name": "Werkgymnasium",
+        "loc": "Heidenheim"
     },
     {
         "provider": "mensaservice.de",
@@ -523,11 +522,6 @@
         "p": "S419",
         "e": "Hegel",
         "name": "Hegel-Gymnasium Stuttgart"
-    },
-    {
-        "provider": "mensastadt.de",
-        "p": "UN2396",
-        "e": "Mensa"
     },
     {
         "provider": "mensastadt.de",
