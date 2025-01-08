@@ -394,190 +394,184 @@
         "om_id": 1850
     },
     {
+        "$comment": "TODO: https://www.als-kusterdingen.de/unsere-schule/betreuung/",
         "provider": "mensaservice.de",
         "p": "TUE124",
-        "e": "ALS"
+        "e": "ALS",
+        "name": "Astrid-Lindgren-Schule",
+        "loc": "Kusterdingen"
     },
     {
+        "$comment": "TODO: https://www.rohraeckerschulzentrum.de/aktuelles",
         "provider": "mensaservice.de",
         "p": "ES222",
-        "e": "Sprache"
+        "e": "Sprache",
+        "name": "Rohräckerschulzentrum",
+        "loc": "Esslingen"
     },
     {
-        "provider": "mensaland.de",
-        "p": "DA124",
-        "e": "FES"
+        "$comment": "TODO: https://www.fes-pfungstadt.de/mensa.html.",
+        "provider": "mensadigital.de",
+        "p": "STA2336",
+        "e": "Pfungstadt",
+        "name": "Friedrich-Ebert-Schule",
+        "loc": "Pfungstadt"
     },
     {
-        "provider": "mensaland.de",
-        "p": "MR222",
-        "e": "RGS"
+        "$comment": "TODO: https://www.richtsbergschule.de/mittagessen/",
+        "provider": "mensahaus.de",
+        "p": "MR2468",
+        "e": "RGS",
+        "name": "Richtsberg-Gesamtschule",
+        "loc": "Marburg"
     },
     {
+        "$comment": "TODO: https://www.gesamtschule-stade.de/?page_id=1330",
         "provider": "mensaland.de",
         "p": "CUX124",
-        "e": "IGS-Stade"
+        "e": "IGS-Stade",
+        "name": "Intgrierte Gesamtschule Stade",
+        "loc": "Stade"
     },
     {
+        "$comment": "TODO: https://www.lugkirchheim.de/lugeria/",
         "provider": "mensaland.de",
         "p": "ES243",
-        "e": "LUG"
+        "e": "LUG",
+        "name": "Lugeria (Ludwig-Uhland-Gymnasium)",
+        "loc": "Kirchheim unter Teck"
     },
     {
+        "$comment": "TODO: https://www.richard-linde-weg.de/unterricht/ganztagsschule/schulmensa.html",
         "provider": "mensaland.de",
         "p": "HH666",
-        "e": "RLW"
+        "e": "RLW",
+        "name": "STS Richard-Linde-Weg",
+        "loc": "Hamburg"
     },
+    // The plans only contain "Tagesessen". the real menu is under https://www.drk-solferino.de/fileadmin/Eigene_Bilder_und_Videos/0_speiseplaene/menu-schulen.pdf
+    // {
+    //     "$comment": "TODO: https://www.drk-solferino.de/angebote/schulversorgung/schulen.html, https://www.gs-karlchen.de/",
+    //     "provider": "mensaservice.de",
+    //     "p": "WF111",
+    //     "e": "KarlGS",
+    //     "name": "Grundschule Karlstraße",
+    //     "loc": "Wolfenbüttel"
+    // },
+    // {
+    //     "$comment": "TODO: They eat at EKHS! https://www.drk-solferino.de/angebote/schulversorgung/schulen.html, https://www.wilhelmbusch-wf.de/unsere-schule/offene-ganztagsschule/mittagessen/",
+    //     "provider": "mensaservice.de",
+    //     "p": "WF111",
+    //     "e": "WBGS",
+    //     "name": "Wilhelm-Busch-Grundschule",
+    //     "loc": "Wolfenbüttel"
+    // },
+    // {
+    //     "$comment": "TODO: https://www.drk-solferino.de/angebote/schulversorgung/schulen.html, http://www.eks-wf.de/index.php/jdownload/viewcategory/5-schulessen",
+    //     "provider": "mensaservice.de",
+    //     "p": "WF111",
+    //     "e": "EKHS",
+    //     "name": "Erich-Kästner-Hauptschule",
+    //     "loc": "Wolfenbüttel"
+    // },
+    // {
+    //     "$comment": "TODO: https://www.drk-solferino.de/angebote/schulversorgung/schulen.html, https://www.leibniz-realschule.de/ganztag/schulspeiseplan",
+    //     "provider": "mensaservice.de",
+    //     "p": "WF111",
+    //     "e": "LeibnizRS",
+    //     "name": "Leibniz-Realschule",
+    //     "loc": "Wolfenbüttel"
+    // },
     {
-        "provider": "mensaservice.de",
-        "p": "WF111",
-        "e": "KarlGS"
-    },
-    {
-        "provider": "mensaservice.de",
-        "p": "WF111",
-        "e": "WBGS"
-    },
-    {
-        "provider": "mensaservice.de",
-        "p": "WF111",
-        "e": "EKHS"
-    },
-    {
-        "provider": "mensaservice.de",
-        "p": "WF111",
-        "e": "LeibnizRS"
-    },
-    {
-        "provider": "mensaservice.de",
-        "p": "WF111",
-        "e": "WRS"
-    },
-    {
-        "provider": "mensaservice.de",
-        "p": "WF111",
-        "e": "DenkteGS"
-    },
-    {
-        "provider": "mensaservice.de",
-        "p": "WF111",
-        "e": "KissenGS"
-    },
-    {
-        "provider": "mensaservice.de",
-        "p": "WF111",
-        "e": "SchuleRemlingen"
-    },
-    {
-        "provider": "mensaservice.de",
-        "p": "WF111",
-        "e": "GsSchoepp"
-    },
-    {
-        "provider": "mensaservice.de",
-        "p": "WF111",
-        "e": "WinnigstedtGS"
-    },
-    {
-        "provider": "mensaservice.de",
-        "p": "WF111",
-        "e": "HortSchoeppenstedt"
-    },
-    {
-        "provider": "mensaservice.de",
-        "p": "WF111",
-        "e": "KitaAhlum"
-    },
-    {
-        "provider": "mensaservice.de",
-        "p": "WF111",
-        "e": "Phantasia"
-    },
-    {
-        "provider": "mensaservice.de",
-        "p": "WF111",
-        "e": "Sonnenschein"
-    },
-    {
-        "provider": "mensaservice.de",
-        "p": "WF111",
-        "e": "KitaHummelburg"
-    },
-    {
-        "provider": "mensaservice.de",
-        "p": "WF111",
-        "e": "KitaRasselbande"
-    },
-    {
-        "provider": "mensaservice.de",
-        "p": "WF111",
-        "e": "Assewind"
-    },
-    {
+        "$comment": "TODO: https://www.kleineburg.de",
         "provider": "mensawelten.de",
         "p": "BS111",
-        "e": "KB"
+        "e": "KB",
+        "name": "Gymnasium Kleine Burg",
+        "loc": "Braunschweig"
     },
     {
+        "$comment": "TODO: https://www.schuleambotanischengarten.de/mittagessen-mensamax/",
         "provider": "mensawelten.de",
         "p": "GOE197",
-        "e": "SaBG"
+        "e": "SaBG",
+        "name": "Schule am Botanischen Garten",
+        "loc": "Hann. Münden"
     },
     {
+        "$comment": "TODO: https://www.hegelgymnasium.de/",
         "provider": "mensaland.de",
         "p": "S419",
         "e": "Hegel",
-        "name": "Hegel-Gymnasium Stuttgart"
+        "name": "Hegel-Gymnasium Stuttgart",
+        "loc": "Stuttgart"
     },
     {
+        "$comment": "TODO: https://ernst-goebel-schule.de/unsere-schule/mensa",
         "provider": "mensastadt.de",
         "p": "ERB2378",
         "e": "EGS",
-        "name": "Ernst-Göbel-Schule - Höchst im Odenwald"
+        "name": "Ernst-Göbel-Schule",
+        "loc": "Höchst im Odenwald"
     },
     {
+        "$comment": "TODO: https://www.droste-haus.de/de/in-schulen/mensa.php",
         "provider": "mensastadt.de",
         "p": "GT2435",
         "e": "Droste-Haus",
-        "name": "Droste-Haus - Jugendaustauschwerk im Kreis Gütersloh e.V."
+        "name": "Konrad Adenauer Schulzentrum",
+        "loc": "Verl"
     },
     {
+        "$comment": "TODO: https://www.rutesheim.de/start/familie+_+bildung/mensa.html",
         "provider": "mensastadt.de",
         "p": "BB2369",
         "e": "SZ",
-        "name": "Stadt Rutesheim"
+        "name": "Mensa im Schulzentrum",
+        "loc": "Rutesheim"
     },
     {
+        "$comment": "TODO: https://bebelschule-wetzlar.de/mensa/",
         "provider": "mensastadt.de",
         "p": "LDK2427",
         "e": "ABS",
-        "name": "August-Bebel-Gesamtschule Wetzlar"
+        "name": "August-Bebel-Gesamtschule",
+        "loc": "Wetzlar"
     },
     {
+        "$comment": "TODO: https://www.dalheim-schule.de/ (probably)",
         "provider": "mensastadt.de",
         "p": "LDK2427",
         "e": "GS-Dalheim",
-        "name": "Dalheim-Schule Wetzlar"
+        "name": "Dalheim-Schule",
+        "loc": "Wetzlar"
     },
     {
+        "$comment": "TODO: https://grundschuleanderlahnaue.de/speiseplaene/",
         "provider": "mensastadt.de",
         "p": "LDK2427",
         "e": "GS-Lahnaue",
-        "name": "Grundschule an der Lahnaue / Lahnau"
+        "name": "Grundschule an der Lahnaue",
+        "loc": "Lahnau"
     },
     {
+        "$comment": "TODO: https://www.wadersloh.de/bildung-und-soziales/schulen/mittagessen-in-den-schulen",
         "provider": "mensastadt.de",
         "p": "WAF2455",
         "e": "GSVW",
-        "name": "Gemeinde Wadersloh"
+        "name": "Grundschulverbund Wadersloh",
+        "loc": "Wadersloh"
     },
     {
+        "$comment": "TODO: https://www.wadersloh.de/bildung-und-soziales/schulen/mittagessen-in-den-schulen resp. https://www.sekundarschule-wadersloh.de/verpflegung-an-der-sekundarschule-wadersloh-csc-79.html",
         "provider": "mensastadt.de",
         "p": "WAF2455",
         "e": "SKW",
-        "name": "Sekundarschule Wadersloh"
+        "name": "Sekundarschule Wadersloh",
+        "loc": "Wadersloh"
     },
     {
+        "$comment": "TODO: research all below",
         "provider": "mensastadt.de",
         "p": "KN2387",
         "e": "Teggingerschule",
