@@ -3,7 +3,7 @@ const build = require("./openmensa_feed_builder.js");
 const { readFile, writeFile, mkdir } = require("fs/promises");
 const { readFileSync, existsSync } = require("fs");
 const { join } = require("path");
-const JSON5 = require("json5");
+const JSON5 = JSON; //require("json5");
 require("dotenv");
 require("./gh_workflow_annotations.js");
 
