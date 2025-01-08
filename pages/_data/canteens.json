@@ -449,39 +449,6 @@
         "name": "STS Richard-Linde-Weg",
         "loc": "Hamburg"
     },
-    // The plans only contain "Tagesessen". the real menu is under https://www.drk-solferino.de/fileadmin/Eigene_Bilder_und_Videos/0_speiseplaene/menu-schulen.pdf
-    // {
-    //     "$comment": "TODO: https://www.drk-solferino.de/angebote/schulversorgung/schulen.html, https://www.gs-karlchen.de/",
-    //     "provider": "mensaservice.de",
-    //     "p": "WF111",
-    //     "e": "KarlGS",
-    //     "name": "Grundschule Karlstraße",
-    //     "loc": "Wolfenbüttel"
-    // },
-    // {
-    //     "$comment": "TODO: They eat at EKHS! https://www.drk-solferino.de/angebote/schulversorgung/schulen.html, https://www.wilhelmbusch-wf.de/unsere-schule/offene-ganztagsschule/mittagessen/",
-    //     "provider": "mensaservice.de",
-    //     "p": "WF111",
-    //     "e": "WBGS",
-    //     "name": "Wilhelm-Busch-Grundschule",
-    //     "loc": "Wolfenbüttel"
-    // },
-    // {
-    //     "$comment": "TODO: https://www.drk-solferino.de/angebote/schulversorgung/schulen.html, http://www.eks-wf.de/index.php/jdownload/viewcategory/5-schulessen",
-    //     "provider": "mensaservice.de",
-    //     "p": "WF111",
-    //     "e": "EKHS",
-    //     "name": "Erich-Kästner-Hauptschule",
-    //     "loc": "Wolfenbüttel"
-    // },
-    // {
-    //     "$comment": "TODO: https://www.drk-solferino.de/angebote/schulversorgung/schulen.html, https://www.leibniz-realschule.de/ganztag/schulspeiseplan",
-    //     "provider": "mensaservice.de",
-    //     "p": "WF111",
-    //     "e": "LeibnizRS",
-    //     "name": "Leibniz-Realschule",
-    //     "loc": "Wolfenbüttel"
-    // },
     {
         "$comment": "TODO: https://www.kleineburg.de",
         "provider": "mensawelten.de",
@@ -571,128 +538,141 @@
         "loc": "Wadersloh"
     },
     {
-        "$comment": "TODO: research all below",
+        "$comment": "TODO: https://www.teggingerschule.de/ganztag/ganztag.htm",
         "provider": "mensastadt.de",
         "p": "KN2387",
         "e": "Teggingerschule",
-        "name": "Teggingerschule Radolfzell"
+        "name": "Teggingerschule Radolfzell",
+        "loc": "Radolfzell"
     },
     {
+        "$comment": "TODO: https://scholl-konstanz.de/schule/mensa-cafe",
         "provider": "mensastadt.de",
         "p": "MeineMensa",
         "e": "KN-GSS",
-        "name": "Geschwister-Scholl-Schule Konstanz"
+        "name": "Geschwister-Scholl-Schule",
+        "loc": "Konstanz"
     },
     {
+        "$comment": "TODO: https://gymnasium-vegesack.schule.bremen.de/aktivitaten/mensa-14136",
         "provider": "mensastadt.de",
         "p": "HB2385",
         "e": "GyVege",
-        "name": "Gymnasium Vegesack"
+        "name": "Gymnasium Vegesack",
+        "loc": "Bremen"
     },
     {
-        "provider": "mensastadt.de",
-        "p": "HR2454",
-        "e": "EVS",
-        "name": "EVS - Treysa"
-    },
-    {
+        "$comment": "TODO: https://www.schule-teichgarten.de/index.php/schule/ganztagsschule",
         "provider": "mensalokal.de",
         "p": "WF2247",
         "e": "Teichgarten",
-        "name": "Schule am Teichgarten - Wolfenbüttel"
+        "name": "Schule am Teichgarten",
+        "loc": "Wolfenbüttel"
     },
     {
-        "provider": "mensalokal.de",
-        "p": "H2289",
-        "e": "GBG"
+        "$comment": "https://www.gbgseelze.de/schulleben/mensa/, caterer change in Feb 2025, no need to register on OpenMensa (loc=Seelze-Letter)",
+        "provider": "mensahaus.de",
+        "p": "H2648",
+        "e": "GBG",
+        "name": "Georg-Büchner-Gymnasium"
     },
     {
+        "$comment": "TODO: https://jawlenskyschule.de/ganztag/",
         "provider": "mensalokal.de",
         "p": "WI2237",
-        "e": "IGS"
+        "e": "IGS",
+        "name": "IGS Alexej von Jawlensky",
+        "loc": "Wiesbaden"
     },
     {
-        "provider": "mensalokal.de",
-        "p": "FO2224",
-        "e": "MensaGym"
-    },
-    {
+        "$comment": "TODO: https://www.ritzefeld.eu/angebote/mensa/",
         "provider": "mensalokal.de",
         "p": "AC333",
-        "e": "Ritzefeld"
+        "e": "Ritzefeld",
+        "name": "Ritzefeld-Gymnasium",
+        "loc": "Stolberg"
     },
     {
+        "$comment": "TODO: https://www.valckenburgschule.de/",
         "provider": "mensalokal.de",
         "p": "UL271",
-        "e": "VBS"
+        "e": "VBS",
+        "name": "Valckenburgschule",
+        "loc": "Ulm"
     },
     {
+        "$comment": "https://www.igs-buessingweg.de/mensa/, Data is current, but plan is empty. other IGS moved to Kanteenie, maybe website is just outdated? loc=Hannover",
         "provider": "mensalokal.de",
         "p": "H2289",
         "e": "IGSBüss",
         "name": "IGS Büssingweg"
     },
     {
-        "provider": "mensalokal.de",
-        "p": "H2289",
-        "e": "Roderbruch",
-        "name": "IGS Roderbruch"
-    },
-    {
+        "$comment": "TODO: https://www.jcgms.de/mensamax",
         "provider": "mensaservice.de",
         "p": "BC243",
         "e": "JCGS",
-        "name": "Joseph-Christian-Gemeinschaftsschule Riedlingen"
+        "name": "Joseph-Christian-Gemeinschaftsschule",
+        "loc": "Riedlingen"
     },
     {
+        "$comment": "TODO: where/how can we validate this company canteen? https://maxcluster.de",
         "provider": "mensahaus.de",
         "p": "PB2499",
         "e": "maxcluster",
         "name": "maxcluster GmbH"
     },
     {
+        "$comment": "TODO: https://309.sixcms.schule.bremen.de/mensa-1477",
         "provider": "mensaweb.de",
         "p": "HB309",
         "e": "Horn",
-        "name": "Schulverein Gymnasium Horn e.V."
+        "name": "Schulcafeteria Green-Horn (Gymnasium Horn)",
+        "loc": "Bremen"
     },
     {
+        "$comment": "TODO: https://gsst.hamburg.de/ganztagsschule/cafeteria/",
         "provider": "mensaonline.de",
         "p": "HH394",
-        "e": "Scholl"
+        "e": "Scholl",
+        "name": "Geschwister-Scholl-Stadtteilschule",
+        "loc": "Hamburg"
     },
     {
+        "$comment": "TODO: https://www.heilwig.de/service/mensa/",
         "provider": "mensaonline.de",
         "p": "HH394",
-        "e": "Heilwig"
+        "e": "Heilwig",
+        "name": "Heilwig Gymnasium",
+        "loc": "Hamburg"
     },
     {
-        "provider": "mensaonline.de",
-        "p": "HH394",
-        "e": "FSS",
-        "name": "Fritz-Schumacher-Schule Hamburg"
-    },
-    {
+        "$comment": "TODO: ???",
         "provider": "mensaonline.de",
         "p": "H-U",
         "e": "Gym"
     },
     {
+        "$comment": "TODO: ???",
         "provider": "mensaonline.de",
         "p": "hdh000",
         "e": "mensa"
     },
     {
-        "provider": "mensaonline.de",
-        "p": "R000",
+        "$comment": "TODO: https://www.gymnasium-lappersdorf.de/organisatorisches/mensa/",
+        "provider": "mensapoint.de",
+        "p": "R444",
         "e": "GL",
-        "name": "Gymnasium Lappersdorf"
+        "name": "Gymnasium Lappersdorf",
+        "loc": "Lappersdorf"
     },
     {
+        "$comment": "TODO: https://www.mgm-monschau.de/go/profil-details/25-mensa/10-mensa-co-.html",
         "provider": "mensaonline.de",
         "p": "AC000",
         "e": "SMG",
-        "name": "St.-Michael-Gymnasium Monschau"
+        "name": "St.-Michael-Gymnasium",
+        "loc": "Monschau"
     },
     {
         "provider": "mensaonline.de",
@@ -791,5 +771,29 @@
         "p": "DD111",
         "e": "fws",
         "name": "Freie Waldorfschule Dresden"
+    },
+    {
+        "$comment": "TODO: https://mpghdh.de/mensa/",
+        "provider": "mensaweb.de",
+        "p": "HDH111",
+        "e": "MPG",
+        "name": "Max-Planck-Gymnasium",
+        "loc": "Heidenheim"
+    },
+    {
+        "$comment": "TODO: https://silcherschule-heidenheim.de/downloads",
+        "provider": "mensaweb.de",
+        "p": "HDH111",
+        "e": "SIS",
+        "name": "Silcherschule Mergelstetten",
+        "loc": "Heidenheim"
+    },
+    {
+        "$comment": "TODO: https://www.hellenstein-gymnasium.de/unser-gtb-konzept/",
+        "provider": "mensaweb.de",
+        "p": "HDH111",
+        "e": "HG",
+        "name": "Hellenstein-Gymnasium",
+        "loc": "Heidenheim"
     }
 ]
