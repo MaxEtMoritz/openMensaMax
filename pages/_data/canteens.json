@@ -64,24 +64,12 @@
         "om_id": 1806
     },
     {
-        "$comment": "maybe https://www.stadtteilschule-bramfeld.de/, but mensa plans on website and OpenMensa do not match (https://www.stadtteilschule-bramfeld.de/wir-ueber-uns/mittagessen/#c663 vs. https://mensadigital.de/loginplan.aspx?p=hh2306&e=sts-hegholt).",
-        "provider": "mensadigital.de",
-        "p": "HH2306",
-        "e": "STS-Hegholt"
-    },
-    {
         "provider": "mensadigital.de",
         "p": "HH2306",
         "e": "GS-Hegholt",
         "name": "Grundschule Bramfeld",
         "loc": "Hamburg",
         "om_id": 1807
-    },
-    {
-        "$comment":"maybe also https://www.stadtteilschule-bramfeld.de, but the plan has no meals so no need to figure out if that's true. BraDo = Bramfeld Dorfplatz?",
-        "provider": "mensadigital.de",
-        "p": "HH2306",
-        "e": "STS-Brado"
     },
     {
         "provider": "mensadigital.de",
@@ -108,13 +96,6 @@
         "om_id": 1810
     },
     {
-        "$comment": "https://www.fr.de/rhein-main/wiesbaden/neuer-lieferant-alter-preis-11663978.html (from 2019) states that El Tucano (with code WI243) took over catering for Leibniz Schule. https://leibnizschule.de/menuebestellung has different project code (new caterer WISAG). probably outdated feed (but still having data)...",
-        "provider": "mensadigital.de",
-        "p": "WI243",
-        "e": "Leibniz",
-        "name": "Leibnizschule Wiesbaden"
-    },
-    {
         "$comment": "New Feed for Leibniz Schule for caterer WISAG",
         "provider": "mensadigital.de",
         "p": "WI2372",
@@ -122,13 +103,6 @@
         "name": "Leibnizschule Wiesbaden",
         "loc": "Wiesbaden",
         "om_id": 1836
-    },
-    {
-        "$comment": "Same story as Leibnizschule. linked flyer lists WISAG project code (WI2372): https://oranienschule.de/mensa.html",
-        "provider": "mensadigital.de",
-        "p": "WI243",
-        "e": "Oranien",
-        "name": "Oranienschule Wiesbaden"
     },
     {
         "$comment": "New Feed for Oranienschule, Caterer WISAG.",
@@ -236,13 +210,6 @@
         "om_id": 1823
     },
     {
-        "$comment": "should be https://www.grundschule-herzogenaurach.de/, but the menus from https://www.grundschule-herzogenaurach.de/ganztag/speiseplaene-sj-23-24/ do not match. Maybe one of the \"Hort\"? https://kitas-asg.de/unsere-einrichtungen/kinder-und-jugendhort-1/ or https://kitas-asg.de/unsere-einrichtungen/kinder-und-jugendhort-2/",
-        "provider": "mensaaktiv.de",
-        "p": "FO111",
-        "e": "GSHerzogenaurach",
-        "name": "Grundschule Herzogenaurach"
-    },
-    {
         "provider": "mensapoint.de",
         "p": "KEH111",
         "e": "ggm",
@@ -308,7 +275,7 @@
         "om_id": 1848
     },
     {
-        "$comment": "Feed has no data, but school website lists this data as correct. https://www.michael-bauer-schule.de/unsere-schule/schulkueche.html",
+        "$comment": "https://www.michael-bauer-schule.de/unsere-schule/schulkueche.html",
         "provider": "mensaonline.de",
         "p": "S243",
         "e": "MBS",
@@ -434,12 +401,11 @@
         "loc": "Stade"
     },
     {
-        "$comment": "TODO: https://www.lugkirchheim.de/lugeria/",
+        "$comment": "Feed is empty but website lists this data. https://www.lugkirchheim.de/lugeria/, loc=Kirchheim unter Teck",
         "provider": "mensaland.de",
         "p": "ES243",
         "e": "LUG",
-        "name": "Lugeria (Ludwig-Uhland-Gymnasium)",
-        "loc": "Kirchheim unter Teck"
+        "name": "Lugeria (Ludwig-Uhland-Gymnasium)"
     },
     {
         "$comment": "TODO: https://www.richard-linde-weg.de/unterricht/ganztagsschule/schulmensa.html",
@@ -554,12 +520,11 @@
         "loc": "Konstanz"
     },
     {
-        "$comment": "TODO: https://gymnasium-vegesack.schule.bremen.de/aktivitaten/mensa-14136",
+        "$comment": "Plan is empty, but info is correct. https://gymnasium-vegesack.schule.bremen.de/aktivitaten/mensa-14136, https://305.schule.bremen.de/sixcms/media.php/13/Einf%C3%BChrung_MensaMax_20210618.pdf, loc=Bremen",
         "provider": "mensastadt.de",
         "p": "HB2385",
         "e": "GyVege",
-        "name": "Gymnasium Vegesack",
-        "loc": "Bremen"
+        "name": "Gymnasium Vegesack"
     },
     {
         "$comment": "TODO: https://www.schule-teichgarten.de/index.php/schule/ganztagsschule",
@@ -675,102 +640,160 @@
         "loc": "Monschau"
     },
     {
+        "$comment": "TODO: https://www.stromberg-gymnasium.de/?page_id=592",
         "provider": "mensaonline.de",
         "p": "PF111",
-        "e": "Stromberg"
+        "e": "Stromberg",
+        "name": "Stromberg-Gymnasium",
+        "loc": "Vaihingen an der Enz"
     },
     {
-        "provider": "mensaonline.de",
-        "p": "PF111",
-        "e": "Nordstadt"
+        "$comment": "TODO: https://www.igs-stromberg.de/service/mensa",
+        "provider": "mensacenter.de",
+        "p": "KH111",
+        "e": "IGSSTROM",
+        "name": "IGS Stromberg",
+        "loc": "Stromberg"
     },
     {
+        "$comment": "TODO: https://www.nordstadtschule.de/infos/mittagessen/",
+        "provider": "mensahaus.de",
+        "p": "PF2586",
+        "e": "Nordstadt",
+        "name": "Nordstadtschule",
+        "loc": "Pforzheim"
+    },
+    {
+        "$comment": "TODO: https://oberschule-beverstedt.de/speiseplan/",
         "provider": "mensaonline.de",
         "p": "CUX000",
-        "e": "OBSB"
+        "e": "OBSB",
+        "name": "Oberschule Beverstedt",
+        "loc": "Beverstedt"
     },
     {
+        "$comment": "TODO: https://www.schule-am-wiesendamm.de/an-alle-eltern-und-lehrkraefte/",
         "provider": "mensaonline.de",
         "p": "CUX000",
-        "e": "SaW"
+        "e": "SaW",
+        "name": "Schule am Wiesendamm",
+        "loc": "Geestland"
     },
     {
+        "$comment": "TODO: https://www.obs-bederkesa.de/mensa/mittagessen-in-der-schule-an-der-muehle/",
         "provider": "mensaonline.de",
         "p": "CUX000",
-        "e": "SAM"
+        "e": "SAM",
+        "name": "Schule an der Mühle",
+        "loc": "Geestland"
     },
     {
+        "$comment": "TODO: https://www.gymnasium-otterndorf.de/page/mensa",
         "provider": "mensaonline.de",
         "p": "CUX000",
-        "e": "SZO"
+        "e": "SZO",
+        "name": "Schulzentrum Otterndorf",
+        "loc": "Otterndorf"
     },
     {
+        "$comment": "TODO: https://realschule-cuxhaven.de/.cm4all/uproc.php/0/Mensaflyer%20neu.pdf?cdp=a&_=192f25a6398",
+        "provider": "mensaonline.de",
+        "p": "CUX000",
+        "e": "RS",
+        "name": "Kombüse (Realschule Cuxhaven, Amandus-Abendroth-Gymnasium, Lichtenberg-Gymnasium)",
+        "loc": "Cuxhaven"
+    },
+    {
+        "$comment": "probably https://www.gskluftern.de/Home/, but there is no canteen info on the web site.",
         "provider": "mensaonline.de",
         "p": "FN000",
         "e": "Kluftern"
     },
     {
+        "$comment": "TODO: https://www.grundschule-ailingen.de/index.php/mensa (https://www.grundschule-ailingen.de/images/2022_23/Neuzugnge_in_MensaMax_AILINGEN.pdf)",
         "provider": "mensaonline.de",
         "p": "FN000",
-        "e": "AilingenGS"
+        "e": "AilingenGS",
+        "name": "Grundschule Ailingen",
+        "loc": "Friedrichshafen"
     },
     {
+        "$comment": "TODO: https://www.grundschule-ailingen.de/index.php/bildungshaus-berg",
         "provider": "mensaonline.de",
         "p": "FN000",
-        "e": "Berg"
+        "e": "Berg",
+        "name": "Bildungshaus Berg",
+        "loc": "Friedrichshafen"
     },
     {
+        "$comment": "TODO: https://gzg-fn.de/zusatzangebote/mensa",
         "provider": "mensaonline.de",
         "p": "FN000",
-        "e": "GZG"
+        "e": "GZG",
+        "name": "Graf-Zeppelin-Gymnasium",
+        "loc": "Friedrichshafen"
     },
     {
+        "$comment": "TODO: https://oshelgolander.de/mensa/#tab-2196b30c925fc9ae72a",
         "provider": "mensaonline.de",
         "p": "FHBOSH",
-        "e": "424"
+        "e": "424",
+        "name": "Oberschule an der Helgolander Straße",
+        "loc": "Bremen"
     },
     {
+        "$comment": "https://rs-schömberg.de/Infos.html (deprecated homepage) lists MensaMax, new one has Valerias Kinderessen in a PDF, like on https://gwrsschömberg.de/mensa-2/",
         "provider": "mensaonline.de",
         "p": "BL111",
-        "e": "SZ"
+        "e": "SZ",
+        "name": "Schulzentrum Schömberg"
     },
     {
-        "provider": "mensaonline.de",
-        "p": "HB111",
+        "$comment": "TODO: https://wilhelm-focke-oberschule.de/mensa/",
+        "provider": "mensahaus.de",
+        "p": "HB2582",
         "e": "WFO",
-        "name": "Wilhelm-Focke-Oberschule Bremen"
+        "name": "Wilhelm-Focke-Oberschule",
+        "loc": "Bremen"
     },
     {
+        "$comment": "https://ksa-bremen.de/mensa/ new caterer since 05/2024 but no MensaMax infos listed",
         "provider": "mensaonline.de",
         "p": "HB111",
         "e": "KSA",
         "name": "Oberschule an der Kurt-Schumacher-Allee Bremen"
     },
     {
+        "$comment": "TODO: https://igs-nastaetten.de/service/mittagessen",
         "provider": "mensaonline.de",
         "p": "EMS012",
-        "e": "IGS"
+        "e": "IGS",
+        "name": "Nicolaus-August-Otto-Schule",
+        "loc": "Nastätten"
     },
     {
+        "$comment": "TODO: https://mensaverein-renningen.de/Startseite.html",
         "provider": "mensaonline.de",
         "p": "Renningen",
-        "e": "Mensaverein"
+        "e": "Mensaverein",
+        "name": "Mensaverein Renningen",
+        "loc": "Renningen"
     },
     {
+        "$comment": "TODO: https://www.igslist.de/sonstiges/anleitung-mensa-max/",
         "provider": "mensaonline.de",
         "p": "H012",
-        "e": "List"
+        "e": "List",
+        "name": "IGS List",
+        "loc": "Hannover"
     },
     {
-        "provider": "mensaonline.de",
-        "p": "CUX000",
-        "e": "AAG"
-    },
-    {
+        "$comment": "TODO: https://www.waldorfschule-dresden.de resp. http://www.voll-wert-kueche.de/speiseplan.html",
         "provider": "mensaweb.de",
         "p": "DD111",
         "e": "fws",
-        "name": "Freie Waldorfschule Dresden"
+        "name": "Freie Waldorfschule Dresden",
+        "loc": "Dresden"
     },
     {
         "$comment": "TODO: https://mpghdh.de/mensa/",
