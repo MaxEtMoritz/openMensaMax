@@ -13,12 +13,12 @@ const thisWeekOnly = !process.argv.includes("preview");
 const weeksForward = thisWeekOnly ? 1 : MAX_WEEKS_FORWARD;
 
 /**
- * 
- * @param {string} p 
- * @param {string} e 
- * @param {string} provider 
- * @param {string|undefined} name 
- * @param {string|undefined} loc 
+ *
+ * @param {string} p
+ * @param {string} e
+ * @param {string} provider
+ * @param {string|undefined} name
+ * @param {string|undefined} loc
  */
 async function processCanteen(p, e, provider, name = undefined, loc = undefined) {
     const parsed = {};
@@ -87,6 +87,27 @@ async function processCanteen(p, e, provider, name = undefined, loc = undefined)
         //console.debug(parsed_date, Object.getOwnPropertyNames(meals));
         if (isDateInThisWeek(parsed_date)) todayResult.push(day);
         else result.push(day);
+    }
+    /** @type {string|null} */
+    let firstMealName = null;
+    if (
+        !result
+            .map((r) => r.categories.map((c) => c.meals.map((m) => m.name)))
+            .flat(2)
+            .some((n) => {
+                if (n && !firstMealName) firstMealName = n;
+                return n && n != firstMealName;
+            }) &&
+        !todayResult
+            .map((r) => r.categories.map((c) => c.meals.map((m) => m.name)))
+            .flat(2)
+            .some((n) => {
+                if (n && !firstMealName) firstMealName = n;
+                return n && n != firstMealName;
+            }) &&
+        firstMealName
+    ) {
+        console.warn("The plan of canteen", `${name ? name + " (" : ""}${p} ${e}${name ? ")" : ""}`, "contains the same text every day:", firstMealName);
     }
     if (todayResult.length == 0 && result.length == 0) {
         console.info("Canteen", `${name ? name + " (" : ""}${p} ${e}${name ? ")" : ""}`, "has no data.");
