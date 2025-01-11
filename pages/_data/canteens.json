@@ -401,13 +401,6 @@
         "loc": "Stade"
     },
     {
-        "$comment": "Feed is empty but website lists this data. https://www.lugkirchheim.de/lugeria/, loc=Kirchheim unter Teck",
-        "provider": "mensaland.de",
-        "p": "ES243",
-        "e": "LUG",
-        "name": "Lugeria (Ludwig-Uhland-Gymnasium)"
-    },
-    {
         "$comment": "TODO: https://www.richard-linde-weg.de/unterricht/ganztagsschule/schulmensa.html",
         "provider": "mensaland.de",
         "p": "HH666",
@@ -464,14 +457,6 @@
         "loc": "Rutesheim"
     },
     {
-        "$comment": "TODO: https://bebelschule-wetzlar.de/mensa/",
-        "provider": "mensastadt.de",
-        "p": "LDK2427",
-        "e": "ABS",
-        "name": "August-Bebel-Gesamtschule",
-        "loc": "Wetzlar"
-    },
-    {
         "$comment": "TODO: https://www.dalheim-schule.de/ (probably)",
         "provider": "mensastadt.de",
         "p": "LDK2427",
@@ -486,14 +471,6 @@
         "e": "GS-Lahnaue",
         "name": "Grundschule an der Lahnaue",
         "loc": "Lahnau"
-    },
-    {
-        "$comment": "TODO: https://www.wadersloh.de/bildung-und-soziales/schulen/mittagessen-in-den-schulen",
-        "provider": "mensastadt.de",
-        "p": "WAF2455",
-        "e": "GSVW",
-        "name": "Grundschulverbund Wadersloh",
-        "loc": "Wadersloh"
     },
     {
         "$comment": "TODO: https://www.wadersloh.de/bildung-und-soziales/schulen/mittagessen-in-den-schulen resp. https://www.sekundarschule-wadersloh.de/verpflegung-an-der-sekundarschule-wadersloh-csc-79.html",
@@ -520,13 +497,6 @@
         "loc": "Konstanz"
     },
     {
-        "$comment": "Plan is empty, but info is correct. https://gymnasium-vegesack.schule.bremen.de/aktivitaten/mensa-14136, https://305.schule.bremen.de/sixcms/media.php/13/Einf%C3%BChrung_MensaMax_20210618.pdf, loc=Bremen",
-        "provider": "mensastadt.de",
-        "p": "HB2385",
-        "e": "GyVege",
-        "name": "Gymnasium Vegesack"
-    },
-    {
         "$comment": "TODO: https://www.schule-teichgarten.de/index.php/schule/ganztagsschule",
         "provider": "mensalokal.de",
         "p": "WF2247",
@@ -540,14 +510,6 @@
         "p": "H2648",
         "e": "GBG",
         "name": "Georg-Büchner-Gymnasium"
-    },
-    {
-        "$comment": "TODO: https://jawlenskyschule.de/ganztag/",
-        "provider": "mensalokal.de",
-        "p": "WI2237",
-        "e": "IGS",
-        "name": "IGS Alexej von Jawlensky",
-        "loc": "Wiesbaden"
     },
     {
         "$comment": "TODO: https://www.ritzefeld.eu/angebote/mensa/",
@@ -566,13 +528,6 @@
         "loc": "Ulm"
     },
     {
-        "$comment": "https://www.igs-buessingweg.de/mensa/, Data is current, but plan is empty. other IGS moved to Kanteenie, maybe website is just outdated? loc=Hannover",
-        "provider": "mensalokal.de",
-        "p": "H2289",
-        "e": "IGSBüss",
-        "name": "IGS Büssingweg"
-    },
-    {
         "$comment": "TODO: https://www.jcgms.de/mensamax",
         "provider": "mensaservice.de",
         "p": "BC243",
@@ -586,14 +541,6 @@
         "p": "PB2499",
         "e": "maxcluster",
         "name": "maxcluster GmbH"
-    },
-    {
-        "$comment": "TODO: https://309.sixcms.schule.bremen.de/mensa-1477",
-        "provider": "mensaweb.de",
-        "p": "HB309",
-        "e": "Horn",
-        "name": "Schulcafeteria Green-Horn (Gymnasium Horn)",
-        "loc": "Bremen"
     },
     {
         "$comment": "TODO: https://gsst.hamburg.de/ganztagsschule/cafeteria/",
@@ -732,36 +679,6 @@
         "e": "GZG",
         "name": "Graf-Zeppelin-Gymnasium",
         "loc": "Friedrichshafen"
-    },
-    {
-        "$comment": "TODO: https://oshelgolander.de/mensa/#tab-2196b30c925fc9ae72a",
-        "provider": "mensaonline.de",
-        "p": "FHBOSH",
-        "e": "424",
-        "name": "Oberschule an der Helgolander Straße",
-        "loc": "Bremen"
-    },
-    {
-        "$comment": "https://rs-schömberg.de/Infos.html (deprecated homepage) lists MensaMax, new one has Valerias Kinderessen in a PDF, like on https://gwrsschömberg.de/mensa-2/",
-        "provider": "mensaonline.de",
-        "p": "BL111",
-        "e": "SZ",
-        "name": "Schulzentrum Schömberg"
-    },
-    {
-        "$comment": "TODO: https://wilhelm-focke-oberschule.de/mensa/",
-        "provider": "mensahaus.de",
-        "p": "HB2582",
-        "e": "WFO",
-        "name": "Wilhelm-Focke-Oberschule",
-        "loc": "Bremen"
-    },
-    {
-        "$comment": "https://ksa-bremen.de/mensa/ new caterer since 05/2024 but no MensaMax infos listed",
-        "provider": "mensaonline.de",
-        "p": "HB111",
-        "e": "KSA",
-        "name": "Oberschule an der Kurt-Schumacher-Allee Bremen"
     },
     {
         "$comment": "TODO: https://igs-nastaetten.de/service/mittagessen",
