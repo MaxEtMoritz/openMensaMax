@@ -366,7 +366,8 @@
         "p": "TUE124",
         "e": "ALS",
         "name": "Astrid-Lindgren-Schule",
-        "loc": "Kusterdingen"
+        "loc": "Kusterdingen",
+        "om_id": 1856
     },
     {
         "$comment": "TODO: https://www.rohraeckerschulzentrum.de/aktuelles",
@@ -374,7 +375,8 @@
         "p": "ES222",
         "e": "Sprache",
         "name": "Rohräckerschulzentrum",
-        "loc": "Esslingen"
+        "loc": "Esslingen",
+        "om_id": 1862
     },
     {
         "$comment": "TODO: https://www.fes-pfungstadt.de/mensa.html.",
@@ -382,7 +384,8 @@
         "p": "STA2336",
         "e": "Pfungstadt",
         "name": "Friedrich-Ebert-Schule",
-        "loc": "Pfungstadt"
+        "loc": "Pfungstadt",
+        "om_id": 1885
     },
     {
         "$comment": "TODO: https://www.richtsbergschule.de/mittagessen/",
@@ -390,7 +393,8 @@
         "p": "MR2468",
         "e": "RGS",
         "name": "Richtsberg-Gesamtschule",
-        "loc": "Marburg"
+        "loc": "Marburg",
+        "om_id": 1858
     },
     {
         "$comment": "TODO: https://www.gesamtschule-stade.de/?page_id=1330",
@@ -398,7 +402,8 @@
         "p": "CUX124",
         "e": "IGS-Stade",
         "name": "Intgrierte Gesamtschule Stade",
-        "loc": "Stade"
+        "loc": "Stade",
+        "om_id": 1871
     },
     {
         "$comment": "TODO: https://www.richard-linde-weg.de/unterricht/ganztagsschule/schulmensa.html",
@@ -406,7 +411,8 @@
         "p": "HH666",
         "e": "RLW",
         "name": "STS Richard-Linde-Weg",
-        "loc": "Hamburg"
+        "loc": "Hamburg",
+        "om_id": 1876
     },
     {
         "$comment": "TODO: https://www.kleineburg.de",
@@ -414,7 +420,8 @@
         "p": "BS111",
         "e": "KB",
         "name": "Gymnasium Kleine Burg",
-        "loc": "Braunschweig"
+        "loc": "Braunschweig",
+        "om_id": 1854
     },
     {
         "$comment": "TODO: https://www.schuleambotanischengarten.de/mittagessen-mensamax/",
@@ -422,7 +429,8 @@
         "p": "GOE197",
         "e": "SaBG",
         "name": "Schule am Botanischen Garten",
-        "loc": "Hann. Münden"
+        "loc": "Hann. Münden",
+        "om_id": 1859
     },
     {
         "$comment": "TODO: https://www.hegelgymnasium.de/",
@@ -430,7 +438,8 @@
         "p": "S419",
         "e": "Hegel",
         "name": "Hegel-Gymnasium Stuttgart",
-        "loc": "Stuttgart"
+        "loc": "Stuttgart",
+        "om_id": 1879
     },
     {
         "$comment": "TODO: https://ernst-goebel-schule.de/unsere-schule/mensa",
@@ -438,7 +447,8 @@
         "p": "ERB2378",
         "e": "EGS",
         "name": "Ernst-Göbel-Schule",
-        "loc": "Höchst im Odenwald"
+        "loc": "Höchst im Odenwald",
+        "om_id": 1852
     },
     {
         "$comment": "TODO: https://www.droste-haus.de/de/in-schulen/mensa.php",
@@ -446,7 +456,8 @@
         "p": "GT2435",
         "e": "Droste-Haus",
         "name": "Konrad Adenauer Schulzentrum",
-        "loc": "Verl"
+        "loc": "Verl",
+        "om_id": 1855
     },
     {
         "$comment": "TODO: https://www.rutesheim.de/start/familie+_+bildung/mensa.html",
@@ -454,15 +465,17 @@
         "p": "BB2369",
         "e": "SZ",
         "name": "Mensa im Schulzentrum",
-        "loc": "Rutesheim"
+        "loc": "Rutesheim",
+        "om_id": 1863
     },
     {
-        "$comment": "TODO: https://www.dalheim-schule.de/ (probably)",
+        "$comment": "TODO: https://www.dalheim-schule.de/ (probably), https://eichendorffschule-wetzlar.de/ganztag/ with same plan contents (both schools have same address)",
         "provider": "mensastadt.de",
         "p": "LDK2427",
         "e": "GS-Dalheim",
-        "name": "Dalheim-Schule",
-        "loc": "Wetzlar"
+        "name": "Eichendorff-Schule, Dalheim-Grundschule",
+        "loc": "Wetzlar",
+        "om_id": 1872
     },
     {
         "$comment": "TODO: https://grundschuleanderlahnaue.de/speiseplaene/",
@@ -470,7 +483,8 @@
         "p": "LDK2427",
         "e": "GS-Lahnaue",
         "name": "Grundschule an der Lahnaue",
-        "loc": "Lahnau"
+        "loc": "Lahnau",
+        "om_id": 1875
     },
     {
         "$comment": "TODO: https://www.wadersloh.de/bildung-und-soziales/schulen/mittagessen-in-den-schulen resp. https://www.sekundarschule-wadersloh.de/verpflegung-an-der-sekundarschule-wadersloh-csc-79.html",
@@ -478,7 +492,8 @@
         "p": "WAF2455",
         "e": "SKW",
         "name": "Sekundarschule Wadersloh",
-        "loc": "Wadersloh"
+        "loc": "Wadersloh",
+        "om_id": 1878
     },
     {
         "$comment": "TODO: https://www.teggingerschule.de/ganztag/ganztag.htm",
@@ -486,7 +501,8 @@
         "p": "KN2387",
         "e": "Teggingerschule",
         "name": "Teggingerschule Radolfzell",
-        "loc": "Radolfzell"
+        "loc": "Radolfzell",
+        "om_id": 1880
     },
     {
         "$comment": "TODO: https://scholl-konstanz.de/schule/mensa-cafe",
@@ -494,7 +510,8 @@
         "p": "MeineMensa",
         "e": "KN-GSS",
         "name": "Geschwister-Scholl-Schule",
-        "loc": "Konstanz"
+        "loc": "Konstanz",
+        "om_id": 1882
     },
     {
         "$comment": "TODO: https://www.schule-teichgarten.de/index.php/schule/ganztagsschule",
@@ -502,10 +519,11 @@
         "p": "WF2247",
         "e": "Teichgarten",
         "name": "Schule am Teichgarten",
-        "loc": "Wolfenbüttel"
+        "loc": "Wolfenbüttel",
+        "om_id": 1853
     },
     {
-        "$comment": "https://www.gbgseelze.de/schulleben/mensa/, caterer change in Feb 2025, no need to register on OpenMensa (loc=Seelze-Letter)",
+        "$comment": "https://www.gbgseelze.de/schulleben/mensa/, caterer change in Feb 2025 (new one has other system), no need to register on OpenMensa (loc=Seelze-Letter)",
         "provider": "mensahaus.de",
         "p": "H2648",
         "e": "GBG",
@@ -517,7 +535,8 @@
         "p": "AC333",
         "e": "Ritzefeld",
         "name": "Ritzefeld-Gymnasium",
-        "loc": "Stolberg"
+        "loc": "Stolberg",
+        "om_id": 1860
     },
     {
         "$comment": "TODO: https://www.valckenburgschule.de/",
@@ -525,7 +544,8 @@
         "p": "UL271",
         "e": "VBS",
         "name": "Valckenburgschule",
-        "loc": "Ulm"
+        "loc": "Ulm",
+        "om_id": 1864
     },
     {
         "$comment": "TODO: https://www.jcgms.de/mensamax",
@@ -533,7 +553,8 @@
         "p": "BC243",
         "e": "JCGS",
         "name": "Joseph-Christian-Gemeinschaftsschule",
-        "loc": "Riedlingen"
+        "loc": "Riedlingen",
+        "om_id": 1865
     },
     {
         "$comment": "TODO: where/how can we validate this company canteen? https://maxcluster.de",
@@ -548,7 +569,8 @@
         "p": "HH394",
         "e": "Scholl",
         "name": "Geschwister-Scholl-Stadtteilschule",
-        "loc": "Hamburg"
+        "loc": "Hamburg",
+        "om_id": 1869
     },
     {
         "$comment": "TODO: https://www.heilwig.de/service/mensa/",
@@ -556,7 +578,8 @@
         "p": "HH394",
         "e": "Heilwig",
         "name": "Heilwig Gymnasium",
-        "loc": "Hamburg"
+        "loc": "Hamburg",
+        "om_id": 1874
     },
     {
         "$comment": "TODO: ???",
@@ -576,7 +599,8 @@
         "p": "R444",
         "e": "GL",
         "name": "Gymnasium Lappersdorf",
-        "loc": "Lappersdorf"
+        "loc": "Lappersdorf",
+        "om_id": 1881
     },
     {
         "$comment": "TODO: https://www.mgm-monschau.de/go/profil-details/25-mensa/10-mensa-co-.html",
@@ -584,7 +608,8 @@
         "p": "AC000",
         "e": "SMG",
         "name": "St.-Michael-Gymnasium",
-        "loc": "Monschau"
+        "loc": "Monschau",
+        "om_id": 1884
     },
     {
         "$comment": "TODO: https://www.stromberg-gymnasium.de/?page_id=592",
@@ -592,7 +617,8 @@
         "p": "PF111",
         "e": "Stromberg",
         "name": "Stromberg-Gymnasium",
-        "loc": "Vaihingen an der Enz"
+        "loc": "Vaihingen an der Enz",
+        "om_id": 1889
     },
     {
         "$comment": "TODO: https://www.igs-stromberg.de/service/mensa",
@@ -600,7 +626,8 @@
         "p": "KH111",
         "e": "IGSSTROM",
         "name": "IGS Stromberg",
-        "loc": "Stromberg"
+        "loc": "Stromberg",
+        "om_id": 1887
     },
     {
         "$comment": "TODO: https://www.nordstadtschule.de/infos/mittagessen/",
@@ -608,7 +635,8 @@
         "p": "PF2586",
         "e": "Nordstadt",
         "name": "Nordstadtschule",
-        "loc": "Pforzheim"
+        "loc": "Pforzheim",
+        "om_id": 1888
     },
     {
         "$comment": "TODO: https://oberschule-beverstedt.de/speiseplan/",
@@ -616,7 +644,8 @@
         "p": "CUX000",
         "e": "OBSB",
         "name": "Oberschule Beverstedt",
-        "loc": "Beverstedt"
+        "loc": "Beverstedt",
+        "om_id": 1890
     },
     {
         "$comment": "TODO: https://www.schule-am-wiesendamm.de/an-alle-eltern-und-lehrkraefte/",
@@ -624,7 +653,8 @@
         "p": "CUX000",
         "e": "SaW",
         "name": "Schule am Wiesendamm",
-        "loc": "Geestland"
+        "loc": "Geestland",
+        "om_id": 1891
     },
     {
         "$comment": "TODO: https://www.obs-bederkesa.de/mensa/mittagessen-in-der-schule-an-der-muehle/",
@@ -632,7 +662,8 @@
         "p": "CUX000",
         "e": "SAM",
         "name": "Schule an der Mühle",
-        "loc": "Geestland"
+        "loc": "Geestland",
+        "om_id": 1892
     },
     {
         "$comment": "TODO: https://www.gymnasium-otterndorf.de/page/mensa",
@@ -640,7 +671,8 @@
         "p": "CUX000",
         "e": "SZO",
         "name": "Schulzentrum Otterndorf",
-        "loc": "Otterndorf"
+        "loc": "Otterndorf",
+        "om_id": 1893
     },
     {
         "$comment": "TODO: https://realschule-cuxhaven.de/.cm4all/uproc.php/0/Mensaflyer%20neu.pdf?cdp=a&_=192f25a6398",
