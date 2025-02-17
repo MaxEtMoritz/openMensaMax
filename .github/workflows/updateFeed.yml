@@ -67,9 +67,15 @@ jobs:
                 path: ./pages/_site
             - name: Delete old feed cache
               if: inputs.type == 'full' || github.event.schedule == '0 6 * * 1'
-              uses: prantlf/delete-cache-action@v3
-              with:
-                  key: feed-cache
+              run: |
+                  set +e
+                  echo "Deleting caches..."
+                  gh cache delete feed-cache
+                  echo "Done."
+              env:
+                GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                GH_REPO: ${{ github.repository }}
+                BRANCH: ${{ github.ref | 'refs/heads/main' }}
             - name: Save new feed cache # only for full runs.
               if: inputs.type == 'full' || github.event.schedule == '0 6 * * 1'
               uses: actions/cache/save@v4
