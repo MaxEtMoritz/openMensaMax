@@ -774,5 +774,93 @@
         "name": "Hellenstein-Gymnasium",
         "loc": "Heidenheim",
         "om_id": 1870
+    },
+    {
+        "$comment": "Kroatenwuhne 3, 39116 Magdeburg, Germany; eMail: vollwertkueche@waldorfschule-magdeburg.de, Telefon: 0391 611619-500, https://www.waldorfschule-magdeburg.de/schulleben/schulkueche/, https://github.com/philippdormann/mensamax-api/issues/30",
+        "provider": "app.mensamax.de",
+        "p": "MD2769",
+        "e": "FWS",
+        "name": "Freie Waldorfschule Magdeburg",
+        "loc": "Magdeburg"
+    },
+    {
+        "$comment": "Weitmarer Straße 115A, 44795 Bochum, Germany; 0234/94365-370; schulgenuss@mcs-bochum.schule; https://gesamtschule.mcs-bochum.de/aus-dem-schulleben/mensa",
+        "provider": "app.mensamax.de",
+        "p": "BO2736",
+        "e": "MCS",
+        "name": "SCHULGENUSS by matthias-claudius-schule",
+        "loc": "Bochum"
+    },
+    {
+        "$comment": "Am Lindener Berge 11, 30449 Hannover, Germany; https://igs-linden.de/mensa-2/",
+        "provider": "app.mensamax.de",
+        "p": "H2728",
+        "e": "IGSLinden",
+        "name": "IGS Linden",
+        "loc": "Hannover"
+    },
+    {
+        "$comment": "Bleekerstraße 2, 25436 Uetersen, Germany; 04122 8436143; https://www.rosenstadtschule-uetersen.de/seite/721607/mensa.html",
+        "provider": "app.mensamax.de",
+        "p": "HH2776",
+        "e": "MensaUetersen",
+        "name": "Rosenstadtschule",
+        "loc": "Uetersen"
+    },
+    {
+        "$comment": "Mönchweilerstraße 5, 78126 Königsfeld, Germany; https://www.zinzendorfschulen.de/schueler-eltern/mensa-speiseplan/",
+        "provider": "app.mensamax.de",
+        "p": "VS2755",
+        "e": "ZZDS",
+        "name": "Zinzendorfschulen",
+        "loc": "Königsfeld"
+    },
+    {
+        "$comment": "Holtzendorfferstr. 1, 66740 Saarlouis, Germany; https://www.sgs-saar.de/aktuelles/essensplan-bistro",
+        "provider": "app.mensamax.de",
+        "p": "SLS2762",
+        "e": "SGS",
+        "name": "Saarlouiser Gymnasium am Stadtgarten",
+        "loc": "Saarlouis"
+    },
+    {
+        "$comment": "Carl-Diem-Str. 118, 72760 Reutlingen, Germany; https://foerderverein-msg.de/mittagessen/",
+        "provider": "app.mensamax.de",
+        "p": "RT2787",
+        "e": "GS",
+        "name": "Minna-Specht-Gemeinschaftsschule (Grundschule)",
+        "loc": "Reutlingen"
+    },
+    {
+        "$comment": "Carl-Diem-Str. 118, 72760 Reutlingen, Germany; https://foerderverein-msg.de/mittagessen/",
+        "provider": "app.mensamax.de",
+        "p": "RT2787",
+        "e": "SEK",
+        "name": "Minna-Specht-Gemeinschaftsschule (Sekundarstufe)",
+        "loc": "Reutlingen"
+    },
+    {
+        "$comment": "Freybergstraße 34, 86925 Fuchstal, Germany; 08243/9609022; fuxmensa1@gmx.de; https://www.mittelschule-fuchstal.de/betreuung/mensa",
+        "provider": "app.mensamax.de",
+        "p": "LL2754",
+        "e": "Mensa",
+        "name": "Mittelschule Fuchstal",
+        "loc": "Fuchstal"
+    },
+    {
+        "$comment": "Schulstraße 6, 02692 Obergurig, Germany; https://www.schule-obergurig.de/fur-eltern/antraege-formularservice",
+        "provider": "app.mensamax.de",
+        "p": "BZ2774",
+        "e": "Obergurig",
+        "name": "Grundschule Obergurig",
+        "loc": "Obergurig"
+    },
+    {
+        "$comment": "Parkstr. 7, 89558 Böhmenkirch, Germany; https://gs.boehmenkirch.de/downloads",
+        "provider": "app.mensamax.de",
+        "p": "GP2743",
+        "e": "GS-Boehmenkirch",
+        "name": "Grundschule Böhmenkirch",
+        "loc": "Böhmenkirch"
     }
 ]
