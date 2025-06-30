@@ -361,7 +361,7 @@
         "om_id": 1850
     },
     {
-        "$comment": "TODO: https://www.als-kusterdingen.de/unsere-schule/betreuung/",
+        "$comment": "https://www.als-kusterdingen.de/unsere-schule/betreuung/",
         "provider": "mensaservice.de",
         "p": "TUE124",
         "e": "ALS",
@@ -370,7 +370,7 @@
         "om_id": 1856
     },
     {
-        "$comment": "TODO: https://www.rohraeckerschulzentrum.de/aktuelles",
+        "$comment": "https://www.rohraeckerschulzentrum.de/aktuelles",
         "provider": "mensaservice.de",
         "p": "ES222",
         "e": "Sprache",
@@ -379,7 +379,7 @@
         "om_id": 1862
     },
     {
-        "$comment": "TODO: https://www.fes-pfungstadt.de/mensa.html.",
+        "$comment": "https://www.fes-pfungstadt.de/mensa.html.",
         "provider": "mensadigital.de",
         "p": "STA2336",
         "e": "Pfungstadt",
@@ -388,7 +388,7 @@
         "om_id": 1885
     },
     {
-        "$comment": "TODO: https://www.richtsbergschule.de/mittagessen/",
+        "$comment": "https://www.richtsbergschule.de/mittagessen/",
         "provider": "mensahaus.de",
         "p": "MR2468",
         "e": "RGS",
@@ -397,7 +397,7 @@
         "om_id": 1858
     },
     {
-        "$comment": "TODO: https://www.gesamtschule-stade.de/?page_id=1330",
+        "$comment": "https://www.gesamtschule-stade.de/?page_id=1330",
         "provider": "mensaland.de",
         "p": "CUX124",
         "e": "IGS-Stade",
@@ -406,7 +406,7 @@
         "om_id": 1871
     },
     {
-        "$comment": "TODO: https://www.richard-linde-weg.de/unterricht/ganztagsschule/schulmensa.html",
+        "$comment": "https://www.richard-linde-weg.de/unterricht/ganztagsschule/schulmensa.html",
         "provider": "mensaland.de",
         "p": "HH666",
         "e": "RLW",
@@ -415,7 +415,7 @@
         "om_id": 1876
     },
     {
-        "$comment": "TODO: https://www.kleineburg.de",
+        "$comment": "https://www.kleineburg.de",
         "provider": "mensawelten.de",
         "p": "BS111",
         "e": "KB",
@@ -424,7 +424,7 @@
         "om_id": 1854
     },
     {
-        "$comment": "TODO: https://www.schuleambotanischengarten.de/mittagessen-mensamax/",
+        "$comment": "https://www.schuleambotanischengarten.de/mittagessen-mensamax/",
         "provider": "mensawelten.de",
         "p": "GOE197",
         "e": "SaBG",
@@ -433,7 +433,7 @@
         "om_id": 1859
     },
     {
-        "$comment": "TODO: https://www.hegelgymnasium.de/",
+        "$comment": "https://www.hegelgymnasium.de/",
         "provider": "mensaland.de",
         "p": "S419",
         "e": "Hegel",
@@ -442,7 +442,7 @@
         "om_id": 1879
     },
     {
-        "$comment": "TODO: https://ernst-goebel-schule.de/unsere-schule/mensa",
+        "$comment": "https://ernst-goebel-schule.de/unsere-schule/mensa",
         "provider": "mensastadt.de",
         "p": "ERB2378",
         "e": "EGS",
@@ -451,7 +451,7 @@
         "om_id": 1852
     },
     {
-        "$comment": "TODO: https://www.droste-haus.de/de/in-schulen/mensa.php",
+        "$comment": "https://www.droste-haus.de/de/in-schulen/mensa.php",
         "provider": "mensastadt.de",
         "p": "GT2435",
         "e": "Droste-Haus",
@@ -460,7 +460,7 @@
         "om_id": 1855
     },
     {
-        "$comment": "TODO: https://www.rutesheim.de/start/familie+_+bildung/mensa.html",
+        "$comment": "https://www.rutesheim.de/start/familie+_+bildung/mensa.html",
         "provider": "mensastadt.de",
         "p": "BB2369",
         "e": "SZ",
@@ -469,7 +469,7 @@
         "om_id": 1863
     },
     {
-        "$comment": "TODO: https://www.dalheim-schule.de/ (probably), https://eichendorffschule-wetzlar.de/ganztag/ with same plan contents (both schools have same address)",
+        "$comment": "https://www.dalheim-schule.de/ (probably), https://eichendorffschule-wetzlar.de/ganztag/ with same plan contents (both schools have same address)",
         "provider": "mensastadt.de",
         "p": "LDK2427",
         "e": "GS-Dalheim",
@@ -478,7 +478,7 @@
         "om_id": 1872
     },
     {
-        "$comment": "TODO: https://grundschuleanderlahnaue.de/speiseplaene/",
+        "$comment": "https://grundschuleanderlahnaue.de/speiseplaene/",
         "provider": "mensastadt.de",
         "p": "LDK2427",
         "e": "GS-Lahnaue",
@@ -487,7 +487,7 @@
         "om_id": 1875
     },
     {
-        "$comment": "TODO: https://www.wadersloh.de/bildung-und-soziales/schulen/mittagessen-in-den-schulen resp. https://www.sekundarschule-wadersloh.de/verpflegung-an-der-sekundarschule-wadersloh-csc-79.html",
+        "$comment": "https://www.wadersloh.de/bildung-und-soziales/schulen/mittagessen-in-den-schulen resp. https://www.sekundarschule-wadersloh.de/verpflegung-an-der-sekundarschule-wadersloh-csc-79.html",
         "provider": "mensastadt.de",
         "p": "WAF2455",
         "e": "SKW",
@@ -496,7 +496,7 @@
         "om_id": 1878
     },
     {
-        "$comment": "TODO: https://www.teggingerschule.de/ganztag/ganztag.htm",
+        "$comment": "https://www.teggingerschule.de/ganztag/ganztag.htm",
         "provider": "mensastadt.de",
         "p": "KN2387",
         "e": "Teggingerschule",
@@ -505,7 +505,7 @@
         "om_id": 1880
     },
     {
-        "$comment": "TODO: https://scholl-konstanz.de/schule/mensa-cafe",
+        "$comment": "https://scholl-konstanz.de/schule/mensa-cafe",
         "provider": "mensastadt.de",
         "p": "MeineMensa",
         "e": "KN-GSS",
@@ -514,7 +514,7 @@
         "om_id": 1882
     },
     {
-        "$comment": "TODO: https://www.schule-teichgarten.de/index.php/schule/ganztagsschule",
+        "$comment": "https://www.schule-teichgarten.de/index.php/schule/ganztagsschule",
         "provider": "mensalokal.de",
         "p": "WF2247",
         "e": "Teichgarten",
@@ -523,14 +523,7 @@
         "om_id": 1853
     },
     {
-        "$comment": "https://www.gbgseelze.de/schulleben/mensa/, caterer change in Feb 2025 (new one has other system), no need to register on OpenMensa (loc=Seelze-Letter)",
-        "provider": "mensahaus.de",
-        "p": "H2648",
-        "e": "GBG",
-        "name": "Georg-Büchner-Gymnasium"
-    },
-    {
-        "$comment": "TODO: https://www.ritzefeld.eu/angebote/mensa/",
+        "$comment": "https://www.ritzefeld.eu/angebote/mensa/",
         "provider": "mensalokal.de",
         "p": "AC333",
         "e": "Ritzefeld",
@@ -539,7 +532,7 @@
         "om_id": 1860
     },
     {
-        "$comment": "TODO: https://www.valckenburgschule.de/",
+        "$comment": "https://www.valckenburgschule.de/",
         "provider": "mensalokal.de",
         "p": "UL271",
         "e": "VBS",
@@ -548,7 +541,7 @@
         "om_id": 1864
     },
     {
-        "$comment": "TODO: https://www.jcgms.de/mensamax",
+        "$comment": "https://www.jcgms.de/mensamax",
         "provider": "mensaservice.de",
         "p": "BC243",
         "e": "JCGS",
@@ -564,7 +557,7 @@
         "name": "maxcluster GmbH"
     },
     {
-        "$comment": "TODO: https://gsst.hamburg.de/ganztagsschule/cafeteria/",
+        "$comment": "https://gsst.hamburg.de/ganztagsschule/cafeteria/",
         "provider": "mensaonline.de",
         "p": "HH394",
         "e": "Scholl",
@@ -573,7 +566,7 @@
         "om_id": 1869
     },
     {
-        "$comment": "TODO: https://www.heilwig.de/service/mensa/",
+        "$comment": "https://www.heilwig.de/service/mensa/",
         "provider": "mensaonline.de",
         "p": "HH394",
         "e": "Heilwig",
@@ -594,7 +587,7 @@
         "e": "mensa"
     },
     {
-        "$comment": "TODO: https://www.gymnasium-lappersdorf.de/organisatorisches/mensa/",
+        "$comment": "https://www.gymnasium-lappersdorf.de/organisatorisches/mensa/",
         "provider": "mensapoint.de",
         "p": "R444",
         "e": "GL",
@@ -603,7 +596,7 @@
         "om_id": 1881
     },
     {
-        "$comment": "TODO: https://www.mgm-monschau.de/go/profil-details/25-mensa/10-mensa-co-.html",
+        "$comment": "https://www.mgm-monschau.de/go/profil-details/25-mensa/10-mensa-co-.html",
         "provider": "mensaonline.de",
         "p": "AC000",
         "e": "SMG",
@@ -612,7 +605,7 @@
         "om_id": 1884
     },
     {
-        "$comment": "TODO: https://www.stromberg-gymnasium.de/?page_id=592",
+        "$comment": "https://www.stromberg-gymnasium.de/?page_id=592",
         "provider": "mensaonline.de",
         "p": "PF111",
         "e": "Stromberg",
@@ -621,7 +614,7 @@
         "om_id": 1889
     },
     {
-        "$comment": "TODO: https://www.igs-stromberg.de/service/mensa",
+        "$comment": "https://www.igs-stromberg.de/service/mensa",
         "provider": "mensacenter.de",
         "p": "KH111",
         "e": "IGSSTROM",
@@ -630,7 +623,7 @@
         "om_id": 1887
     },
     {
-        "$comment": "TODO: https://www.nordstadtschule.de/infos/mittagessen/",
+        "$comment": "https://www.nordstadtschule.de/infos/mittagessen/",
         "provider": "mensahaus.de",
         "p": "PF2586",
         "e": "Nordstadt",
@@ -639,7 +632,7 @@
         "om_id": 1888
     },
     {
-        "$comment": "TODO: https://oberschule-beverstedt.de/speiseplan/",
+        "$comment": "https://oberschule-beverstedt.de/speiseplan/",
         "provider": "mensaonline.de",
         "p": "CUX000",
         "e": "OBSB",
@@ -648,7 +641,7 @@
         "om_id": 1890
     },
     {
-        "$comment": "TODO: https://www.schule-am-wiesendamm.de/an-alle-eltern-und-lehrkraefte/",
+        "$comment": "https://www.schule-am-wiesendamm.de/an-alle-eltern-und-lehrkraefte/",
         "provider": "mensaonline.de",
         "p": "CUX000",
         "e": "SaW",
@@ -657,7 +650,7 @@
         "om_id": 1891
     },
     {
-        "$comment": "TODO: https://www.obs-bederkesa.de/mensa/mittagessen-in-der-schule-an-der-muehle/",
+        "$comment": "https://www.obs-bederkesa.de/mensa/mittagessen-in-der-schule-an-der-muehle/",
         "provider": "mensaonline.de",
         "p": "CUX000",
         "e": "SAM",
@@ -666,7 +659,7 @@
         "om_id": 1892
     },
     {
-        "$comment": "TODO: https://www.gymnasium-otterndorf.de/page/mensa",
+        "$comment": "https://www.gymnasium-otterndorf.de/page/mensa",
         "provider": "mensaonline.de",
         "p": "CUX000",
         "e": "SZO",
@@ -675,97 +668,110 @@
         "om_id": 1893
     },
     {
-        "$comment": "TODO: https://realschule-cuxhaven.de/.cm4all/uproc.php/0/Mensaflyer%20neu.pdf?cdp=a&_=192f25a6398",
+        "$comment": "https://realschule-cuxhaven.de/.cm4all/uproc.php/0/Mensaflyer%20neu.pdf?cdp=a&_=192f25a6398",
         "provider": "mensaonline.de",
         "p": "CUX000",
         "e": "RS",
         "name": "Kombüse (Realschule Cuxhaven, Amandus-Abendroth-Gymnasium, Lichtenberg-Gymnasium)",
-        "loc": "Cuxhaven"
+        "loc": "Cuxhaven",
+        "om_id": 1894
     },
     {
-        "$comment": "probably https://www.gskluftern.de/Home/, but there is no canteen info on the web site.",
+        "$comment": "TODO: https://www.gskluftern.de/Betreuung-Ganztag/ (https://www.gskluftern.de/.cm4all/uproc.php/0/2025_01_GSK%20Neuzuga%CC%88nge%20in%20MensaMax.pdf?cdp=a&_=194d7f09de8)",
         "provider": "mensaonline.de",
         "p": "FN000",
-        "e": "Kluftern"
+        "e": "Kluftern",
+        "name": "Grundschule Kluftern",
+        "loc": "Friedrichshafen"
     },
     {
-        "$comment": "TODO: https://www.grundschule-ailingen.de/index.php/mensa (https://www.grundschule-ailingen.de/images/2022_23/Neuzugnge_in_MensaMax_AILINGEN.pdf)",
+        "$comment": "https://www.grundschule-ailingen.de/index.php/mensa (https://www.grundschule-ailingen.de/images/2022_23/Neuzugnge_in_MensaMax_AILINGEN.pdf)",
         "provider": "mensaonline.de",
         "p": "FN000",
         "e": "AilingenGS",
         "name": "Grundschule Ailingen",
-        "loc": "Friedrichshafen"
+        "loc": "Friedrichshafen",
+        "om_id": 1895
     },
     {
-        "$comment": "TODO: https://www.grundschule-ailingen.de/index.php/bildungshaus-berg",
+        "$comment": "https://www.grundschule-ailingen.de/index.php/bildungshaus-berg",
         "provider": "mensaonline.de",
         "p": "FN000",
         "e": "Berg",
         "name": "Bildungshaus Berg",
-        "loc": "Friedrichshafen"
+        "loc": "Friedrichshafen",
+        "om_id": 1896
     },
     {
-        "$comment": "TODO: https://gzg-fn.de/zusatzangebote/mensa",
+        "$comment": "https://gzg-fn.de/zusatzangebote/mensa",
         "provider": "mensaonline.de",
         "p": "FN000",
         "e": "GZG",
         "name": "Graf-Zeppelin-Gymnasium",
-        "loc": "Friedrichshafen"
+        "loc": "Friedrichshafen",
+        "om_id": 1897
     },
     {
-        "$comment": "TODO: https://igs-nastaetten.de/service/mittagessen",
+        "$comment": "https://igs-nastaetten.de/service/mittagessen",
         "provider": "mensaonline.de",
         "p": "EMS012",
         "e": "IGS",
         "name": "Nicolaus-August-Otto-Schule",
-        "loc": "Nastätten"
+        "loc": "Nastätten",
+        "om_id": 1898
     },
     {
-        "$comment": "TODO: https://mensaverein-renningen.de/Startseite.html",
+        "$comment": "https://mensaverein-renningen.de/Startseite.html",
         "provider": "mensaonline.de",
         "p": "Renningen",
         "e": "Mensaverein",
         "name": "Mensaverein Renningen",
-        "loc": "Renningen"
+        "loc": "Renningen",
+        "om_id": 1899
     },
     {
-        "$comment": "TODO: https://www.igslist.de/sonstiges/anleitung-mensa-max/",
+        "$comment": "https://www.igslist.de/sonstiges/anleitung-mensa-max/",
         "provider": "mensaonline.de",
         "p": "H012",
         "e": "List",
         "name": "IGS List",
-        "loc": "Hannover"
+        "loc": "Hannover",
+        "om_id": 1900
     },
     {
-        "$comment": "TODO: https://www.waldorfschule-dresden.de resp. http://www.voll-wert-kueche.de/speiseplan.html",
+        "$comment": "https://www.waldorfschule-dresden.de resp. http://www.voll-wert-kueche.de/speiseplan.html",
         "provider": "mensaweb.de",
         "p": "DD111",
         "e": "fws",
         "name": "Freie Waldorfschule Dresden",
-        "loc": "Dresden"
+        "loc": "Dresden",
+        "om_id": 1886
     },
     {
-        "$comment": "TODO: https://mpghdh.de/mensa/",
+        "$comment": "https://mpghdh.de/mensa/",
         "provider": "mensaweb.de",
         "p": "HDH111",
         "e": "MPG",
         "name": "Max-Planck-Gymnasium",
-        "loc": "Heidenheim"
+        "loc": "Heidenheim",
+        "om_id": 1867
     },
     {
-        "$comment": "TODO: https://silcherschule-heidenheim.de/downloads",
+        "$comment": "https://silcherschule-heidenheim.de/downloads",
         "provider": "mensaweb.de",
         "p": "HDH111",
         "e": "SIS",
         "name": "Silcherschule Mergelstetten",
-        "loc": "Heidenheim"
+        "loc": "Heidenheim",
+        "om_id": 1868
     },
     {
-        "$comment": "TODO: https://www.hellenstein-gymnasium.de/unser-gtb-konzept/",
+        "$comment": "https://www.hellenstein-gymnasium.de/unser-gtb-konzept/",
         "provider": "mensaweb.de",
         "p": "HDH111",
         "e": "HG",
         "name": "Hellenstein-Gymnasium",
-        "loc": "Heidenheim"
+        "loc": "Heidenheim",
+        "om_id": 1870
     }
 ]
