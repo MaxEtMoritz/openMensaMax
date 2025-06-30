@@ -682,7 +682,8 @@
         "p": "FN000",
         "e": "Kluftern",
         "name": "Grundschule Kluftern",
-        "loc": "Friedrichshafen"
+        "loc": "Friedrichshafen",
+        "om_id": 1925
     },
     {
         "$comment": "https://www.grundschule-ailingen.de/index.php/mensa (https://www.grundschule-ailingen.de/images/2022_23/Neuzugnge_in_MensaMax_AILINGEN.pdf)",
