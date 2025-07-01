@@ -781,7 +781,8 @@
         "p": "MD2769",
         "e": "FWS",
         "name": "Freie Waldorfschule Magdeburg",
-        "loc": "Magdeburg"
+        "loc": "Magdeburg",
+        "om_id": 1926
     },
     {
         "$comment": "Weitmarer Straße 115A, 44795 Bochum, Germany; 0234/94365-370; schulgenuss@mcs-bochum.schule; https://gesamtschule.mcs-bochum.de/aus-dem-schulleben/mensa",
@@ -789,7 +790,8 @@
         "p": "BO2736",
         "e": "MCS",
         "name": "SCHULGENUSS by matthias-claudius-schule",
-        "loc": "Bochum"
+        "loc": "Bochum",
+        "om_id": 1927
     },
     {
         "$comment": "Am Lindener Berge 11, 30449 Hannover, Germany; https://igs-linden.de/mensa-2/",
@@ -797,7 +799,8 @@
         "p": "H2728",
         "e": "IGSLinden",
         "name": "IGS Linden",
-        "loc": "Hannover"
+        "loc": "Hannover",
+        "om_id": 1928
     },
     {
         "$comment": "Bleekerstraße 2, 25436 Uetersen, Germany; 04122 8436143; https://www.rosenstadtschule-uetersen.de/seite/721607/mensa.html",
@@ -805,7 +808,8 @@
         "p": "HH2776",
         "e": "MensaUetersen",
         "name": "Rosenstadtschule",
-        "loc": "Uetersen"
+        "loc": "Uetersen",
+        "om_id": 1929
     },
     {
         "$comment": "Mönchweilerstraße 5, 78126 Königsfeld, Germany; https://www.zinzendorfschulen.de/schueler-eltern/mensa-speiseplan/",
@@ -813,7 +817,8 @@
         "p": "VS2755",
         "e": "ZZDS",
         "name": "Zinzendorfschulen",
-        "loc": "Königsfeld"
+        "loc": "Königsfeld",
+        "om_id": 1930
     },
     {
         "$comment": "Holtzendorfferstr. 1, 66740 Saarlouis, Germany; https://www.sgs-saar.de/aktuelles/essensplan-bistro",
@@ -821,7 +826,8 @@
         "p": "SLS2762",
         "e": "SGS",
         "name": "Saarlouiser Gymnasium am Stadtgarten",
-        "loc": "Saarlouis"
+        "loc": "Saarlouis",
+        "om_id": 1931
     },
     {
         "$comment": "Carl-Diem-Str. 118, 72760 Reutlingen, Germany; https://foerderverein-msg.de/mittagessen/",
@@ -829,7 +835,8 @@
         "p": "RT2787",
         "e": "GS",
         "name": "Minna-Specht-Gemeinschaftsschule (Grundschule)",
-        "loc": "Reutlingen"
+        "loc": "Reutlingen",
+        "om_id": 1932
     },
     {
         "$comment": "Carl-Diem-Str. 118, 72760 Reutlingen, Germany; https://foerderverein-msg.de/mittagessen/",
@@ -837,7 +844,8 @@
         "p": "RT2787",
         "e": "SEK",
         "name": "Minna-Specht-Gemeinschaftsschule (Sekundarstufe)",
-        "loc": "Reutlingen"
+        "loc": "Reutlingen",
+        "om_id": 1933
     },
     {
         "$comment": "Freybergstraße 34, 86925 Fuchstal, Germany; 08243/9609022; fuxmensa1@gmx.de; https://www.mittelschule-fuchstal.de/betreuung/mensa",
@@ -845,7 +853,8 @@
         "p": "LL2754",
         "e": "Mensa",
         "name": "Mittelschule Fuchstal",
-        "loc": "Fuchstal"
+        "loc": "Fuchstal",
+        "om_id": 1934
     },
     {
         "$comment": "Schulstraße 6, 02692 Obergurig, Germany; https://www.schule-obergurig.de/fur-eltern/antraege-formularservice",
@@ -853,7 +862,8 @@
         "p": "BZ2774",
         "e": "Obergurig",
         "name": "Grundschule Obergurig",
-        "loc": "Obergurig"
+        "loc": "Obergurig",
+        "om_id": 1935
     },
     {
         "$comment": "Parkstr. 7, 89558 Böhmenkirch, Germany; https://gs.boehmenkirch.de/downloads",
@@ -861,6 +871,63 @@
         "p": "GP2743",
         "e": "GS-Boehmenkirch",
         "name": "Grundschule Böhmenkirch",
-        "loc": "Böhmenkirch"
+        "loc": "Böhmenkirch",
+        "om_id": 1936
+    },
+    {
+        "$comment": "Grandlstraße 5, 81247 München, Germany; https://rsb.musin.de/wordpress/mensa/",
+        "provider": "parentsmensa.de",
+        "p": "M2564",
+        "e": "Blutenburg",
+        "name": "Realschule an der Blutenburg",
+        "loc": "München"
+    },
+    {
+        "$comment": "Chrysanderstraße 40, 21029 Hamburg, Germany; https://schule12.katholischer-schulverband-hamburg.de/ganztag-gbs/mittagessen/, Project, Institution codes guessed",
+        "provider": "mammasmensa.de",
+        "p": "HH222",
+        "e": "KSB",
+        "name": "Katholische Schule Bergedorf",
+        "loc": "Hamburg"
+    },
+    {
+        "$comment": "07356/9377229; hblersch@dornahof.de; Schulstraße 12, 88433 Schemmerhofen, Germany; https://mühlbachschule.de/mensa",
+        "provider": "mensahome.de",
+        "p": "BC271",
+        "e": "Mensa",
+        "name": "Mühlbachschule",
+        "loc": "Schemmerhofen"
+    },
+    {
+        "$comment": "Brehmweg 60, 22527 Hamburg, Germany; https://stadtteilschule-stellingen.hamburg.de/service/alraune/, https://www.alraune-schulgastronomie.de/weiterfuehrende",
+        "provider": "mensahome.de",
+        "p": "HH000",
+        "e": "Stellingen",
+        "name": "Stadtteilschule Stellingen",
+        "loc": "Hamburg"
+    },
+    {
+        "$comment": "Röthmoorweg 9, 22459 Hamburg, Germany; https://www.alraune-schulgastronomie.de/weiterfuehrende",
+        "provider": "mensahome.de",
+        "p": "HH000",
+        "e": "CS",
+        "name": "Campus Schnelsen",
+        "loc": "Hamburg"
+    },
+    {
+        "$comment": "Holstenhofweg 86, 22043 Hamburg, Germany; https://www.gymnasium-marienthal.de/aktivitaeten/cafeteria-1",
+        "provider": "mensahome.de",
+        "p": "HH000",
+        "e": "GyMa",
+        "name": "Gymnasium Marienthal",
+        "loc": "Hamburg"
+    },
+    {
+        "$comment": "Scharbeutzer Straße 36, 22147 Hamburg, Germany; https://www.gymnasium-rahlstedt.de/speiseplan-der-mensa/",
+        "provider": "mensahome.de",
+        "p": "HH000",
+        "e": "GyRa",
+        "name": "Gymnasium Rahlstedt",
+        "loc": "Hamburg"
     }
 ]
