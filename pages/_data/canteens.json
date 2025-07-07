@@ -929,5 +929,101 @@
         "e": "GyRa",
         "name": "Gymnasium Rahlstedt",
         "loc": "Hamburg"
+    },
+    {
+        "$comment": "Denksteinweg 17, 22043 Hamburg, Germany; https://www.max-schmeling-stadtteilschule.de/unsere-schule/mensa.html",
+        "provider": "mensahome.de",
+        "p": "HH000",
+        "e": "MSS",
+        "name": "Max-Schmeling-Stadtteilschule",
+        "loc": "Hamburg"
+    },
+    {
+        "$comment": "Jenfelder Allee 53, 22043 Hamburg, Germany; https://otto-hahn-schule-hamburg.de/mittagessen",
+        "provider": "mensahome.de",
+        "p": "HH000",
+        "e": "OHS",
+        "name": "Otto-Hahn-Schule",
+        "loc": "Hamburg"
+    },
+    {
+        "$comment": "Bei der Paul-Gerhardt-Kirche 1-3, 22761 Hamburg, Germany; https://www.maxbrauerschule.de/cafeteria/ For Standort D see http://max-brauer-mensa.de (not using MensaMax)",
+        "provider": "mensahome.de",
+        "p": "HH000",
+        "e": "MBS",
+        "name": "Max-Brauer-Schule (Standort B)",
+        "loc": "Hamburg"
+    },
+    {
+        "$comment": "Bekassinenau 32, 22147 Hamburg, Germany; https://bekassinenau.hamburg.de/mittagessen-2/",
+        "provider": "mensahome.de",
+        "p": "HH000",
+        "e": "Bekassinenau",
+        "name": "Grundschule Bekassinenau",
+        "loc": "Hamburg"
+    },
+    {
+        "$comment": "Dringsheide 10-12, 22119 Hamburg, Germany; https://schulefuchsbergredder.hamburg.de/downloads/infomappe/",
+        "provider": "mensahome.de",
+        "p": "HH000",
+        "e": "Fuchsbergredder",
+        "name": "Grundschule Fuchsbergredder",
+        "loc": "Hamburg"
+    },
+    {
+        "$comment": "Bismarckstraße 83-85, 20253 Hamburg, Germany; https://schule-an-der-isebek.hamburg.de/?page_id=80",
+        "provider": "mensahome.de",
+        "p": "HH000",
+        "e": "Isebek",
+        "name": "Schule an der Isebek",
+        "loc": "Hamburg"
+    },
+    {
+        "$comment": "Röthmoorweg 9, 22459 Hamburg, Germany; https://roethmoorweg.de/mittagessen/",
+        "provider": "mensahome.de",
+        "p": "HH000",
+        "e": "RMW",
+        "name": "Schule Röthmoorweg",
+        "loc": "Hamburg"
+    },
+    {
+        "$comment": "Ahrenshooper Straße 1-3, 22147 Hamburg, Germany; https://schule-rahlstedterhoehe.hamburg.de/nachmittag/mittagessen/",
+        "provider": "mensahome.de",
+        "p": "HH000",
+        "e": "RaHoe",
+        "name": "Grundschule Rahlstedter Höhe",
+        "loc": "Hamburg"
+    },
+    {
+        "$comment": "Rönnkamp 5, 22457 Hamburg, Germany; https://www.roennkamp.de/Schulessen",
+        "provider": "mensahome.de",
+        "p": "HH000",
+        "e": "Roennkamp",
+        "name": "Schule Rönnkamp",
+        "loc": "Hamburg"
+    },
+    {
+        "$comment": "Othmarscher Kirchenweg 145, 22763 Hamburg, Germany; https://loki.hamburg.de/gbs/mittagessen/",
+        "provider": "mensahome.de",
+        "p": "HH000",
+        "e": "Loki",
+        "name": "Loki-Schmidt-Schule",
+        "loc": "Hamburg"
+    },
+    {
+        "$comment": "Brehmweg 62, 22527 Hamburg, Germany; https://schule-brehmweg.hamburg.de/mittagessen-2/",
+        "provider": "mensahome.de",
+        "p": "HH000",
+        "e": "Brehmweg",
+        "name": "Schule Brehmweg",
+        "loc": "Hamburg"
+    },
+    {
+        "$comment": "Schimmelmannstraße 70, 22043 Hamburg, Germany; https://grundschule-marienthal.hamburg.de/nachmittagsbetreuung/mittagstisch/",
+        "provider": "mensahome.de",
+        "p": "HH000",
+        "e": "Schimmelmann",
+        "name": "Grundschule Marienthal",
+        "loc": "Hamburg"
     }
 ]
