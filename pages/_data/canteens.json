@@ -575,16 +575,20 @@
         "om_id": 1874
     },
     {
-        "$comment": "TODO: ???",
+        "$comment": "Maurepasstraße 67, 24558 Henstedt-Ulzburg, Germany; anne.beitz84@gmail.com; 04193-8098377; https://alstergymnasium.de/angebote/mensa-cafeteria",
         "provider": "mensaonline.de",
         "p": "H-U",
-        "e": "Gym"
+        "e": "Gym",
+        "name": "Alstergymnasium",
+        "loc": "Henstedt-Ulzburg"
     },
     {
-        "$comment": "TODO: ???",
+        "$comment": "Forststr. 18, 89547 Gerstetten, Germany; https://www.bz-gerstetten.de/index.php/ganztagsschule/mensa",
         "provider": "mensaonline.de",
         "p": "hdh000",
-        "e": "mensa"
+        "e": "mensa",
+        "name": "Bildungszentrum Gerstetter Alb",
+        "loc": "Gerstetten"
     },
     {
         "$comment": "https://www.gymnasium-lappersdorf.de/organisatorisches/mensa/",
