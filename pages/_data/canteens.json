@@ -627,6 +627,54 @@
         "om_id": 1887
     },
     {
+        "$comment": "Ringstraße 112, 55543 Bad Kreuznach, Germany; https://www.cruceniarsplus-kh.de/anmeldeunterlagen/ / https://www.kreis-badkreuznach.de/fileadmin/media/downloads/02_Aemter/Amt_6_Bauen_und_Schulen/Schulen/Ganztagsschulen/MensaMax_Anleitung2023.pdf",
+        "provider": "mensacenter.de",
+        "p": "KH111",
+        "e": "RSKH",
+        "name": "Crucenia-Realschule plus",
+        "loc": "Bad Kreuznach"
+    },
+    {
+        "$comment": "Cremerstraße 4, 55595 Wallhausen, Germany; https://www.gs-schule.net/wichtige-formulare/ / https://www.kreis-badkreuznach.de/fileadmin/media/downloads/02_Aemter/Amt_6_Bauen_und_Schulen/Schulen/Ganztagsschulen/MensaMax_Anleitung2023.pdf",
+        "provider": "mensacenter.de",
+        "p": "KH111",
+        "e": "WALL",
+        "name": "Geschwister-Scholl-Schule",
+        "loc": "Wallhausen"
+    },
+    {
+        "$comment": "Präses-Held-Straße 1, 55590 Meisenheim, Germany; https://www.realschule-plus-meisenheim.de/ganztagsschule / https://www.kreis-badkreuznach.de/fileadmin/media/downloads/02_Aemter/Amt_6_Bauen_und_Schulen/Schulen/Ganztagsschulen/MensaMax_Anleitung2023.pdf, eat @ Paul-Schneider-Gymnasium",
+        "provider": "mensacenter.de",
+        "p": "KH111",
+        "e": "RSM",
+        "name": "Charlotte-Friederike-Realschule plus",
+        "loc": "Meisenheim"
+    },
+    {
+        "$comment": "Poststraße 36, 55566 Bad Sobernheim, Germany; https://emanuel-felke-gymnasium.de/ganztag/mensa / https://www.kreis-badkreuznach.de/fileadmin/media/downloads/02_Aemter/Amt_6_Bauen_und_Schulen/Schulen/Ganztagsschulen/MensaMax_Anleitung2023.pdf, eat @ Paul-Schneider-Gymnasium",
+        "provider": "mensacenter.de",
+        "p": "KH111",
+        "e": "EFG",
+        "name": "Emanuel-Felke-Gymnasium",
+        "loc": "Bad Sobernheim"
+    },
+    {
+        "$comment": "Münchwiesen 41, 55566 Bad Sobernheim, Germany; https://realschule-badsobernheim.de/mensa-pausenverkauf-und-mittagessen/ / https://www.kreis-badkreuznach.de/fileadmin/media/downloads/02_Aemter/Amt_6_Bauen_und_Schulen/Schulen/Ganztagsschulen/MensaMax_Anleitung2023.pdf, eat @ Paul-Schneider-Gymnasium",
+        "provider": "mensacenter.de",
+        "p": "KH111",
+        "e": "RSBS",
+        "name": "Disibod-Realschule plus",
+        "loc": "Bad Sobernheim"
+    },
+    {
+        "$comment": "https://www.kreis-badkreuznach.de/fileadmin/media/downloads/02_Aemter/Amt_6_Bauen_und_Schulen/Schulen/Ganztagsschulen/MensaMax_Anleitung2023.pdf, eat @ Paul-Schneider-Gymnasium",
+        "provider": "mensacenter.de",
+        "p": "KH111",
+        "e": "LaLo",
+        "name": "Sonnenberg-Realschule plus",
+        "loc": "Langenlonsheim"
+    },
+    {
         "$comment": "https://www.nordstadtschule.de/infos/mittagessen/",
         "provider": "mensahaus.de",
         "p": "PF2586",
@@ -1048,5 +1096,141 @@
         "name": "Grundschule Marienthal",
         "loc": "Hamburg",
         "om_id": 1956
+    },
+    {
+        "$comment": "Bei St. Johannis 1-3, 23552 Lübeck, Germany; https://www.johanneum-luebeck.de/schulleben/mensa-brandts/",
+        "provider": "mensalokal.de",
+        "p": "HL124",
+        "e": "Johanneum",
+        "name": "Brandt's (Mensa Johanneum)",
+        "loc": "Lübeck"
+    },
+    {
+        "$comment": "Ravensburger Straße 18, 88255 Baienfurt, Germany; 0751 56960-35; mensa@achtalschule.de; http://www.achtalschule.de/index.php?id=53",
+        "provider": "mensalokal.de",
+        "p": "RV444",
+        "e": "Achtal",
+        "name": "Achtalschule",
+        "loc": "Baienfurt"
+    },
+    {
+        "$comment": "Marienstraße 2, 30982 Pattensen, Germany; https://www.grundschule-pattensen-mitte.de/unsere-schule/",
+        "provider": "mensalokal.de",
+        "p": "H2289",
+        "e": "GSPatt",
+        "name": "Grundschule Pattensen",
+        "loc": "Pattensen"
+    },
+    {
+        "$comment": "Albert-Mager-Straße 12, 78658 Zimmern ob Rottweil, Germany; https://schule-zimmern.de/ganztagsschule/",
+        "provider": "parentsmensa.de",
+        "p": "RW2569",
+        "e": "GWRS",
+        "name": "Grund- und Werkrealschule Zimmern",
+        "loc": "Zimmern ob Rottweil"
+    },
+    {
+        "$comment": "Alexanderstr. 90, 26121 Oldenburg, Germany; https://www.schulfruehstueck-ev.de/mensa/#bestellen-mm",
+        "provider": "mensawelten.de",
+        "p": "OL999",
+        "e": "NGO",
+        "name": "Schulfrühstück e.V. (Neues Gymnasium Oldenburg, Oberschule Alexanderstraße)",
+        "loc": "Oldenburg"
+    },
+    {
+        "$comment": "Windmühlenstraße 9, 27283 Verden, Germany; 04231 92 18-0; info@fitverein.de; https://www.dheuer.net/mensavereingaw/info-bezahlsystem/ / https://www.gaw-verden.de/index.php/mensa",
+        "provider": "mensawelten.de",
+        "p": "VER111",
+        "e": "gaw-verden",
+        "name": "Gymnasium am Wall",
+        "loc": "Verden"
+    },
+    {
+        "$comment": "Pichterichstraße 25, 74172 Neckarsulm, Germany; https://franz-binder-vbs.de/mensa",
+        "provider": "mensahaus.de",
+        "p": "HN2693",
+        "e": "FBV",
+        "name": "Franz-Binder-Verbundschule",
+        "loc": "Neckarsulm"
+    },
+    {
+        "$comment": "Eberhofweg 75, 22415 Hamburg, Germany; kvs@mammscanteen.de; https://schule3.katholischer-schulverband-hamburg.de/gbs/das-mittagessen/ project/institution code guessed",
+        "provider": "mammasmensa.de",
+        "p": "HH222",
+        "e": "KVS",
+        "name": "Katharina-von-Siena-Schule",
+        "loc": "Hamburg"
+    },
+    {
+        "$comment": "Alter Postweg 30-38, 21075 Hamburg, Germany; https://feg-hamburg.de/show_content_with_navbar.php?c=52",
+        "provider": "mammasmensa.de",
+        "p": "HH222",
+        "e": "Ebert",
+        "name": "Friedrich-Ebert-Gymnasium",
+        "loc": "Hamburg"
+    },
+    {
+        "$comment": "Eißendorfer Straße 26, 21073 Hamburg, Germany; https://goethe-schule-harburg.hamburg.de/?page_id=684",
+        "provider": "mammasmensa.de",
+        "p": "HH222",
+        "e": "Goethe",
+        "name": "Goetheschule Harburg",
+        "loc": "Hamburg"
+    },
+    {
+        "$comment": "Bogenstraße 32, 20144 Hamburg, Germany; https://www.hlg-hamburg.de/kantine/",
+        "provider": "mammasmensa.de",
+        "p": "HH222",
+        "e": "Helene-Lange",
+        "name": "Helene-Lange-Gymnasium",
+        "loc": "Hamburg"
+    },
+    {
+        "$comment": "Barmbeker Straße 30-32, 22303 Hamburg, Germany; https://schule-forsmannstrasse.de/kindercampus/anmeldung-mittagessen/, institution guessed from support mail",
+        "provider": "mammasmensa.de",
+        "p": "HH222",
+        "e": "Forsmannstrasse",
+        "name": "Schule Forsmannstraße",
+        "loc": "Hamburg"
+    },
+    {
+        "$comment": "Klosterstieg 17, 20149 Hamburg, Germany; https://www.wilhelm-gymnasium.de/service/kapheneion-speiseplan-2/",
+        "provider": "mammasmensa.de",
+        "p": "HH222",
+        "e": "Kapheneion",
+        "name": "Kapheneion (Wilhelm-Gymnasium)",
+        "loc": "Hamburg"
+    },
+    {
+        "$comment": "Schulstraße 1, 21481 Lauenburg, Germany; https://albinus-gemeinschaftsschule.de/mensa",
+        "provider": "mensaweb.de",
+        "p": "RZ000",
+        "e": "Albinus",
+        "name": "Albinus-Gemeinschaftsschule",
+        "loc": "Lauenburg"
+    },
+    {
+        "$comment": "Rosterstraße 143, 57074 Siegen, Germany; https://pprgymnasium.de/leben/#mensa",
+        "provider": "mensahaus.de",
+        "p": "SI2694",
+        "e": "PPRG-Siegen",
+        "name": "Peter-Paul-Rubens-Gymnasium",
+        "loc": "Siegen"
+    },
+    {
+        "$comment": "Freiherr-vom-Stein-Straße 14, 54550 Daun, Germany; https://www.tmg-daun.de/mensa",
+        "provider": "mensaweb.de",
+        "p": "StMartin",
+        "e": "TMG-Daun",
+        "name": "Thomas-Morus-Gymnasium",
+        "loc": "Daun"
+    },
+    {
+        "$comment": "https://stmartin-gastronomie.de/schulen-und-kindertagesstaetten/",
+        "provider": "mensaweb.de",
+        "p": "StMartin",
+        "e": "GS+Dockweiler",
+        "name": "St. Martin Gastronomie (verschiedene Schulen)",
+        "loc": "Vulkaneifel"
     }
 ]
