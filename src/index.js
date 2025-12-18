@@ -1,4 +1,4 @@
-const { fetchHTML, parser } = require("@philippdormann/mensamax-api");
+const { fetchHTML, fetchImpressum, parser, parseImpressum } = require("@philippdormann/mensamax-api");
 const build = require("./openmensa_feed_builder.js");
 const { readFile, writeFile, mkdir } = require("fs/promises");
 const { readFileSync, existsSync } = require("fs");
@@ -118,10 +118,15 @@ async function processCanteen(p, e, provider, name = undefined, loc = undefined)
     if (!thisWeekOnly) {
         xml_doc_preview = build(result, null, package_json.version);
     }
+    let imprintHtml = await fetchImpressum(provider, p, e);
+    let imprintInformation = await parseImpressum(imprintHtml);
     /**@type {build.CanteenMeta} */
     let meta = {
-        name,
-        city: loc,
+        name: imprintInformation.canteenInfo?.Einrichtung ? imprintInformation.canteenInfo.Einrichtung : name,
+        city: imprintInformation.canteenInfo?.Ort ? imprintInformation.canteenInfo?.Ort.replace(/\d/g, "").trim() : loc,
+        phone: imprintInformation.canteenInfo?.Telefon ? imprintInformation.canteenInfo.Telefon : undefined,
+        email: imprintInformation.canteenInfo["E-Mail"] ? imprintInformation.canteenInfo["E-Mail"] : undefined,
+        address: imprintInformation.canteenInfo?.Straße && imprintInformation.canteenInfo?.Ort ? `${imprintInformation.canteenInfo.Straße}, ${imprintInformation.canteenInfo.Ort}` : undefined,
         additionalFeeds: [
             {
                 name: "thisWeek",
