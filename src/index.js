@@ -1,5 +1,5 @@
 const { fetchHTML, fetchImpressum, parser, parseImpressum } = require("@philippdormann/mensamax-api");
-const build = require("./openmensa_feed_builder.js");
+const builder = require("@maxetmoritz/openmensa-core");
 const { readFile, writeFile, mkdir } = require("fs/promises");
 const { readFileSync, existsSync } = require("fs");
 const { join } = require("path");
@@ -48,7 +48,7 @@ async function processCanteen(p, e, provider, name = undefined, loc = undefined)
         if (parse_result.json && Object.getOwnPropertyNames(parse_result.json).length > 0) Object.assign(parsed, parse_result.json);
         if (!parse_result.hasNext) console.log("No next after KW", html.kw, "for", p, e);
     } while (next && i <= weeksForward);
-    /** @type {build.Day[]} */
+    /** @type {builder.Day[]} */
     const result = [];
     const todayResult = [];
     for (let [date, days] of Object.entries(parsed)) {
@@ -56,13 +56,13 @@ async function processCanteen(p, e, provider, name = undefined, loc = undefined)
         date = date.trim();
         const [d, m, y] = date.split(".", 3);
         const parsed_date = new Date(+y, +m - 1, +d, 0, 0, 0, 0);
-        /**@type {build.Day}*/
+        /**@type {builder.Day}*/
         const day = {};
         day.date = parsed_date;
-        /**@type {build.Category[]}*/
+        /**@type {builder.Category[]}*/
         const categories = [];
         for (const [category_name, meals] of Object.entries(days)) {
-            /**@type {build.Category}*/
+            /**@type {builder.Category}*/
             const cat = {
                 name: category_name,
             };
@@ -113,14 +113,14 @@ async function processCanteen(p, e, provider, name = undefined, loc = undefined)
         console.info("Canteen", `${name ? name + " (" : ""}${p} ${e}${name ? ")" : ""}`, "has no data.");
     }
     //console.log(Object.getOwnPropertyNames(parsed.json), parsed.hinweis);
-    const xml_doc_today = build(todayResult, null, package_json.version);
+    const xml_doc_today = builder.buildMealFeed(todayResult, package_json.version, 'lightgreen');
     let xml_doc_preview;
     if (!thisWeekOnly) {
-        xml_doc_preview = build(result, null, package_json.version);
+        xml_doc_preview = builder.buildMealFeed(result, package_json.version, 'lightgreen');
     }
     let imprintHtml = await fetchImpressum(provider, p, e);
     let imprintInformation = await parseImpressum(imprintHtml);
-    /**@type {build.CanteenMeta} */
+    /**@type {builder.CanteenMeta} */
     let meta = {
         name: imprintInformation.canteenInfo?.Einrichtung ? imprintInformation.canteenInfo.Einrichtung : name,
         city: imprintInformation.canteenInfo?.Ort ? imprintInformation.canteenInfo?.Ort.replace(/\d/g, "").trim() : loc,
@@ -158,7 +158,7 @@ async function processCanteen(p, e, provider, name = undefined, loc = undefined)
             sunday: !open_days.includes("so") ? false : undefined,
         };
     }
-    const meta_feed = build(null, meta, package_json.version);
+    const meta_feed = builder.buildMetaFeed(meta, package_json.version, 'lightgreen');
     if (!existsSync(join(__dirname, "..", "pages", "feeds"))) await mkdir(join(__dirname, "..", "pages", "feeds"), { recursive: true });
     let tasks = [
         writeFile(join(__dirname, "..", "pages", "feeds", p + " " + e + ".today.xml"), xml_doc_today, { encoding: "utf-8" }),
