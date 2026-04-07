@@ -31,11 +31,11 @@ jobs:
         env:
             BASE_URL: https://maxetmoritz.github.io/openMensaMax
         steps:
-            - uses: actions/checkout@v4
+            - uses: actions/checkout@v6
             - name: Set up NodeJS
-              uses: actions/setup-node@v4
+              uses: actions/setup-node@v6
               with:
-                  node-version: "22"
+                  node-version: "24"
                   cache: "npm"
                   registry-url: 'https://npm.pkg.github.com/'
               env:
@@ -45,7 +45,7 @@ jobs:
                   npm install
             - name: Restore feed cache # only for partial runs, to preserve full feeds.
               if: inputs.type == 'partial' || github.event.schedule == '0 6 * * 0,2-6'
-              uses: actions/cache/restore@v4
+              uses: actions/cache/restore@v5
               with:
                   key: feed-cache
                   path: pages/feeds/*.xml
@@ -58,14 +58,14 @@ jobs:
               run: |
                   npm run start
             - name: Setup Pages
-              uses: actions/configure-pages@v5
+              uses: actions/configure-pages@v6
             - name: Build
               uses: actions/jekyll-build-pages@v1
               with:
                 source: ./pages
                 destination: ./pages/_site
             - name: Upload artifact
-              uses: actions/upload-pages-artifact@v3
+              uses: actions/upload-pages-artifact@v4
               with:
                 path: ./pages/_site
             - name: Delete old feed cache
@@ -81,7 +81,7 @@ jobs:
                 BRANCH: ${{ github.ref || 'refs/heads/main' }}
             - name: Save new feed cache # only for full runs.
               if: inputs.type == 'full' || github.event.schedule == '0 6 * * 1'
-              uses: actions/cache/save@v4
+              uses: actions/cache/save@v5
               with:
                   key: feed-cache
                   path: pages/feeds/*.xml
@@ -97,7 +97,7 @@ jobs:
         steps:
             - name: Deploy to GitHub pages
               id: deployment
-              uses: actions/deploy-pages@v4
+              uses: actions/deploy-pages@v5
 
     workflow-keepalive:
         if: github.event_name == 'schedule'
