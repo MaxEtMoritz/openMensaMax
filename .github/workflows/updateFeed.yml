@@ -1,11 +1,6 @@
 name: 🔁 RunParsers
 
 on:
-    # push:
-    #     branches: [main]
-    #     paths-ignore:
-    #     - "docs/**"
-    #     - 'luxembourg/**'
     schedule:
         - cron: "0 6 * * 1" # Run on Monday, 6:00 (to check if full run is due or not)
         - cron: "0 6 * * 0,2-6" # Run 6:00 every day except monday
@@ -65,7 +60,7 @@ jobs:
                 source: ./pages
                 destination: ./pages/_site
             - name: Upload artifact
-              uses: actions/upload-pages-artifact@v4
+              uses: actions/upload-pages-artifact@v5
               with:
                 path: ./pages/_site
             - name: Delete old feed cache
