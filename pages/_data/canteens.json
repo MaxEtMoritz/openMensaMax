@@ -522,7 +522,8 @@
         "p": "H-U",
         "e": "Gym",
         "name": "Alstergymnasium",
-        "loc": "Henstedt-Ulzburg"
+        "loc": "Henstedt-Ulzburg",
+        "om_id": 2084
     },
     {
         "$comment": "Forststr. 18, 89547 Gerstetten, Germany; https://www.bz-gerstetten.de/index.php/ganztagsschule/mensa",
@@ -530,7 +531,8 @@
         "p": "hdh000",
         "e": "mensa",
         "name": "Bildungszentrum Gerstetter Alb",
-        "loc": "Gerstetten"
+        "loc": "Gerstetten",
+        "om_id": 2085
     },
     {
         "$comment": "https://www.gymnasium-lappersdorf.de/organisatorisches/mensa/",
@@ -574,7 +576,8 @@
         "p": "KH111",
         "e": "RSKH",
         "name": "Crucenia-Realschule plus",
-        "loc": "Bad Kreuznach"
+        "loc": "Bad Kreuznach",
+        "om_id": 1961
     },
     {
         "$comment": "Cremerstraße 4, 55595 Wallhausen, Germany; https://www.gs-schule.net/wichtige-formulare/ / https://www.kreis-badkreuznach.de/fileadmin/media/downloads/02_Aemter/Amt_6_Bauen_und_Schulen/Schulen/Ganztagsschulen/MensaMax_Anleitung2023.pdf",
@@ -582,7 +585,8 @@
         "p": "KH111",
         "e": "WALL",
         "name": "Geschwister-Scholl-Schule",
-        "loc": "Wallhausen"
+        "loc": "Wallhausen",
+        "om_id": 1966
     },
     {
         "$comment": "Präses-Held-Straße 1, 55590 Meisenheim, Germany; https://www.realschule-plus-meisenheim.de/ganztagsschule / https://www.kreis-badkreuznach.de/fileadmin/media/downloads/02_Aemter/Amt_6_Bauen_und_Schulen/Schulen/Ganztagsschulen/MensaMax_Anleitung2023.pdf, eat @ Paul-Schneider-Gymnasium",
@@ -590,7 +594,8 @@
         "p": "KH111",
         "e": "RSM",
         "name": "Charlotte-Friederike-Realschule plus",
-        "loc": "Meisenheim"
+        "loc": "Meisenheim",
+        "om_id": 1969
     },
     {
         "$comment": "Poststraße 36, 55566 Bad Sobernheim, Germany; https://emanuel-felke-gymnasium.de/ganztag/mensa / https://www.kreis-badkreuznach.de/fileadmin/media/downloads/02_Aemter/Amt_6_Bauen_und_Schulen/Schulen/Ganztagsschulen/MensaMax_Anleitung2023.pdf, eat @ Paul-Schneider-Gymnasium",
@@ -598,7 +603,8 @@
         "p": "KH111",
         "e": "EFG",
         "name": "Emanuel-Felke-Gymnasium",
-        "loc": "Bad Sobernheim"
+        "loc": "Bad Sobernheim",
+        "om_id": 1976
     },
     {
         "$comment": "Münchwiesen 41, 55566 Bad Sobernheim, Germany; https://realschule-badsobernheim.de/mensa-pausenverkauf-und-mittagessen/ / https://www.kreis-badkreuznach.de/fileadmin/media/downloads/02_Aemter/Amt_6_Bauen_und_Schulen/Schulen/Ganztagsschulen/MensaMax_Anleitung2023.pdf, eat @ Paul-Schneider-Gymnasium",
@@ -606,7 +612,8 @@
         "p": "KH111",
         "e": "RSBS",
         "name": "Disibod-Realschule plus",
-        "loc": "Bad Sobernheim"
+        "loc": "Bad Sobernheim",
+        "om_id": 1978
     },
     {
         "$comment": "https://www.kreis-badkreuznach.de/fileadmin/media/downloads/02_Aemter/Amt_6_Bauen_und_Schulen/Schulen/Ganztagsschulen/MensaMax_Anleitung2023.pdf, eat @ Paul-Schneider-Gymnasium",
@@ -614,7 +621,8 @@
         "p": "KH111",
         "e": "LaLo",
         "name": "Sonnenberg-Realschule plus",
-        "loc": "Langenlonsheim"
+        "loc": "Langenlonsheim",
+        "om_id": 1980
     },
     {
         "$comment": "https://www.nordstadtschule.de/infos/mittagessen/",
@@ -1045,7 +1053,8 @@
         "p": "HL124",
         "e": "Johanneum",
         "name": "Brandt's (Mensa Johanneum)",
-        "loc": "Lübeck"
+        "loc": "Lübeck",
+        "om_id": 1964
     },
     {
         "$comment": "Ravensburger Straße 18, 88255 Baienfurt, Germany; 0751 56960-35; mensa@achtalschule.de; http://www.achtalschule.de/index.php?id=53",
@@ -1053,7 +1062,8 @@
         "p": "RV444",
         "e": "Achtal",
         "name": "Achtalschule",
-        "loc": "Baienfurt"
+        "loc": "Baienfurt",
+        "om_id": 1967
     },
     {
         "$comment": "Marienstraße 2, 30982 Pattensen, Germany; https://www.grundschule-pattensen-mitte.de/unsere-schule/",
@@ -1061,7 +1071,8 @@
         "p": "H2289",
         "e": "GSPatt",
         "name": "Grundschule Pattensen",
-        "loc": "Pattensen"
+        "loc": "Pattensen",
+        "om_id": 1973
     },
     {
         "$comment": "Albert-Mager-Straße 12, 78658 Zimmern ob Rottweil, Germany; https://schule-zimmern.de/ganztagsschule/",
@@ -1069,7 +1080,8 @@
         "p": "RW2569",
         "e": "GWRS",
         "name": "Grund- und Werkrealschule Zimmern",
-        "loc": "Zimmern ob Rottweil"
+        "loc": "Zimmern ob Rottweil",
+        "om_id": 1960
     },
     {
         "$comment": "Alexanderstr. 90, 26121 Oldenburg, Germany; https://www.schulfruehstueck-ev.de/mensa/#bestellen-mm",
@@ -1077,7 +1089,8 @@
         "p": "OL999",
         "e": "NGO",
         "name": "Schulfrühstück e.V. (Neues Gymnasium Oldenburg, Oberschule Alexanderstraße)",
-        "loc": "Oldenburg"
+        "loc": "Oldenburg",
+        "om_id": 1962
     },
     {
         "$comment": "Windmühlenstraße 9, 27283 Verden, Germany; 04231 92 18-0; info@fitverein.de; https://www.dheuer.net/mensavereingaw/info-bezahlsystem/ / https://www.gaw-verden.de/index.php/mensa",
@@ -1085,7 +1098,8 @@
         "p": "VER111",
         "e": "gaw-verden",
         "name": "Gymnasium am Wall",
-        "loc": "Verden"
+        "loc": "Verden",
+        "om_id": 1965
     },
     {
         "$comment": "Pichterichstraße 25, 74172 Neckarsulm, Germany; https://franz-binder-vbs.de/mensa",
@@ -1093,7 +1107,8 @@
         "p": "HN2693",
         "e": "FBV",
         "name": "Franz-Binder-Verbundschule",
-        "loc": "Neckarsulm"
+        "loc": "Neckarsulm",
+        "om_id": 1972
     },
     {
         "$comment": "Eberhofweg 75, 22415 Hamburg, Germany; kvs@mammscanteen.de; https://schule3.katholischer-schulverband-hamburg.de/gbs/das-mittagessen/ project/institution code guessed",
@@ -1101,7 +1116,8 @@
         "p": "HH222",
         "e": "KVS",
         "name": "Katharina-von-Siena-Schule",
-        "loc": "Hamburg"
+        "loc": "Hamburg",
+        "om_id": 1963
     },
     {
         "$comment": "Alter Postweg 30-38, 21075 Hamburg, Germany; https://feg-hamburg.de/show_content_with_navbar.php?c=52",
@@ -1109,7 +1125,8 @@
         "p": "HH222",
         "e": "Ebert",
         "name": "Friedrich-Ebert-Gymnasium",
-        "loc": "Hamburg"
+        "loc": "Hamburg",
+        "om_id": 1968
     },
     {
         "$comment": "Eißendorfer Straße 26, 21073 Hamburg, Germany; https://goethe-schule-harburg.hamburg.de/?page_id=684",
@@ -1117,7 +1134,8 @@
         "p": "HH222",
         "e": "Goethe",
         "name": "Goetheschule Harburg",
-        "loc": "Hamburg"
+        "loc": "Hamburg",
+        "om_id": 1971
     },
     {
         "$comment": "Bogenstraße 32, 20144 Hamburg, Germany; https://www.hlg-hamburg.de/kantine/",
@@ -1125,7 +1143,8 @@
         "p": "HH222",
         "e": "Helene-Lange",
         "name": "Helene-Lange-Gymnasium",
-        "loc": "Hamburg"
+        "loc": "Hamburg",
+        "om_id": 1977
     },
     {
         "$comment": "Barmbeker Straße 30-32, 22303 Hamburg, Germany; https://schule-forsmannstrasse.de/kindercampus/anmeldung-mittagessen/, institution guessed from support mail",
@@ -1133,7 +1152,8 @@
         "p": "HH222",
         "e": "Forsmannstrasse",
         "name": "Schule Forsmannstraße",
-        "loc": "Hamburg"
+        "loc": "Hamburg",
+        "om_id": 1979
     },
     {
         "$comment": "Klosterstieg 17, 20149 Hamburg, Germany; https://www.wilhelm-gymnasium.de/service/kapheneion-speiseplan-2/",
@@ -1141,7 +1161,8 @@
         "p": "HH222",
         "e": "Kapheneion",
         "name": "Kapheneion (Wilhelm-Gymnasium)",
-        "loc": "Hamburg"
+        "loc": "Hamburg",
+        "om_id": 1981
     },
     {
         "$comment": "Schulstraße 1, 21481 Lauenburg, Germany; https://albinus-gemeinschaftsschule.de/mensa",
@@ -1149,7 +1170,8 @@
         "p": "RZ000",
         "e": "Albinus",
         "name": "Albinus-Gemeinschaftsschule",
-        "loc": "Lauenburg"
+        "loc": "Lauenburg",
+        "om_id": 1970
     },
     {
         "$comment": "Freiherr-vom-Stein-Straße 14, 54550 Daun, Germany; https://www.tmg-daun.de/mensa",
@@ -1157,7 +1179,8 @@
         "p": "StMartin",
         "e": "TMG-Daun",
         "name": "Thomas-Morus-Gymnasium",
-        "loc": "Daun"
+        "loc": "Daun",
+        "om_id": 1974
     },
     {
         "$comment": "https://stmartin-gastronomie.de/schulen-und-kindertagesstaetten/",
@@ -1165,6 +1188,7 @@
         "p": "StMartin",
         "e": "GS Dockweiler",
         "name": "St. Martin Gastronomie (verschiedene Schulen)",
-        "loc": "Vulkaneifel"
+        "loc": "Vulkaneifel",
+        "om_id": 2042
     }
 ]
