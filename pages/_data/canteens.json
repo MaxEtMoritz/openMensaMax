@@ -796,15 +796,6 @@
         "om_id": 1927
     },
     {
-        "$comment": "Am Lindener Berge 11, 30449 Hannover, Germany; https://igs-linden.de/mensa-2/",
-        "provider": "app.mensamax.de",
-        "p": "H2728",
-        "e": "IGSLinden",
-        "name": "IGS Linden",
-        "loc": "Hannover",
-        "om_id": 1928
-    },
-    {
         "$comment": "Bleekerstraße 2, 25436 Uetersen, Germany; 04122 8436143; https://www.rosenstadtschule-uetersen.de/seite/721607/mensa.html",
         "provider": "app.mensamax.de",
         "p": "HH2776",
@@ -884,15 +875,6 @@
         "name": "Realschule an der Blutenburg",
         "loc": "München",
         "om_id": 1937
-    },
-    {
-        "$comment": "Chrysanderstraße 40, 21029 Hamburg, Germany; https://schule12.katholischer-schulverband-hamburg.de/ganztag-gbs/mittagessen/, Project, Institution codes guessed",
-        "provider": "mammasmensa.de",
-        "p": "HH222",
-        "e": "KSB",
-        "name": "Katholische Schule Bergedorf",
-        "loc": "Hamburg",
-        "om_id": 1939
     },
     {
         "$comment": "07356/9377229; hblersch@dornahof.de; Schulstraße 12, 88433 Schemmerhofen, Germany; https://mühlbachschule.de/mensa",
@@ -1109,60 +1091,6 @@
         "name": "Franz-Binder-Verbundschule",
         "loc": "Neckarsulm",
         "om_id": 1972
-    },
-    {
-        "$comment": "Eberhofweg 75, 22415 Hamburg, Germany; kvs@mammscanteen.de; https://schule3.katholischer-schulverband-hamburg.de/gbs/das-mittagessen/ project/institution code guessed",
-        "provider": "mammasmensa.de",
-        "p": "HH222",
-        "e": "KVS",
-        "name": "Katharina-von-Siena-Schule",
-        "loc": "Hamburg",
-        "om_id": 1963
-    },
-    {
-        "$comment": "Alter Postweg 30-38, 21075 Hamburg, Germany; https://feg-hamburg.de/show_content_with_navbar.php?c=52",
-        "provider": "mammasmensa.de",
-        "p": "HH222",
-        "e": "Ebert",
-        "name": "Friedrich-Ebert-Gymnasium",
-        "loc": "Hamburg",
-        "om_id": 1968
-    },
-    {
-        "$comment": "Eißendorfer Straße 26, 21073 Hamburg, Germany; https://goethe-schule-harburg.hamburg.de/?page_id=684",
-        "provider": "mammasmensa.de",
-        "p": "HH222",
-        "e": "Goethe",
-        "name": "Goetheschule Harburg",
-        "loc": "Hamburg",
-        "om_id": 1971
-    },
-    {
-        "$comment": "Bogenstraße 32, 20144 Hamburg, Germany; https://www.hlg-hamburg.de/kantine/",
-        "provider": "mammasmensa.de",
-        "p": "HH222",
-        "e": "Helene-Lange",
-        "name": "Helene-Lange-Gymnasium",
-        "loc": "Hamburg",
-        "om_id": 1977
-    },
-    {
-        "$comment": "Barmbeker Straße 30-32, 22303 Hamburg, Germany; https://schule-forsmannstrasse.de/kindercampus/anmeldung-mittagessen/, institution guessed from support mail",
-        "provider": "mammasmensa.de",
-        "p": "HH222",
-        "e": "Forsmannstrasse",
-        "name": "Schule Forsmannstraße",
-        "loc": "Hamburg",
-        "om_id": 1979
-    },
-    {
-        "$comment": "Klosterstieg 17, 20149 Hamburg, Germany; https://www.wilhelm-gymnasium.de/service/kapheneion-speiseplan-2/",
-        "provider": "mammasmensa.de",
-        "p": "HH222",
-        "e": "Kapheneion",
-        "name": "Kapheneion (Wilhelm-Gymnasium)",
-        "loc": "Hamburg",
-        "om_id": 1981
     },
     {
         "$comment": "Schulstraße 1, 21481 Lauenburg, Germany; https://albinus-gemeinschaftsschule.de/mensa",
