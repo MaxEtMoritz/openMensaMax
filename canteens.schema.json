@@ -35,7 +35,8 @@
                     "parentsmensa.de",
                     "mensaaktiv.de",
                     "mensacenter.de",
-                    "app.mensamax.de"
+                    "app.mensamax.de",
+                    "mensaskb.de"
                 ],
                 "not": {
                     "type": "string",

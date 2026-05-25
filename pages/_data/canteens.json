@@ -1190,5 +1190,32 @@
         "name": "St. Martin Gastronomie (verschiedene Schulen)",
         "loc": "Vulkaneifel",
         "om_id": 2042
+    },
+    {
+        "provider": "mensaskb.de",
+        "p": "HB-WS",
+        "e": "418",
+        "name": "Oberschule an der Ronzelenstraße",
+        "loc": "Bremen"
+    },
+    {
+        "$comment": "Alleestr. 117a/b, 44793 Bochum, https://www.jks-bochum.de/Aktuelles/Aktivitaeten/Caterer2025/index.php/",
+        "provider": "parentsmensa.de",
+        "p": "D2892",
+        "e": "JKS",
+        "name": "Janusz-Korczak-Schule",
+        "loc": "Bochum"
+    },
+    {
+        "$comment": "https://www.realschule-weilheim.de/downloads",
+        "provider": "mensahaome.de",
+        "p": "ES197",
+        "e": "BZW"
+    },
+    {
+        "$comment": "https://dbg-filderstadt.de/mensamax/",
+        "provider": "mensahome.de",
+        "p": "ES111",
+        "e": "DBG"
     }
 ]
