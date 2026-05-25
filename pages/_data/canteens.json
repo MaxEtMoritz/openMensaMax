@@ -18,14 +18,6 @@
     {
         "provider": "mensaaktiv.de",
         "p": "FO111",
-        "e": "DSK",
-        "name": "Dreiberg Schule Knetzgau",
-        "loc": "Knetzgau",
-        "om_id": 1801
-    },
-    {
-        "provider": "mensaaktiv.de",
-        "p": "FO111",
         "e": "ghr",
         "name": "Georg-Hartmann-Realschule Forchheim",
         "loc": "Forchheim",
@@ -86,14 +78,6 @@
         "name": "Johannes-Gutenberg-Schule Gernsheim",
         "loc": "Gernsheim",
         "om_id": 1809
-    },
-    {
-        "provider": "mensadigital.de",
-        "p": "HB2349",
-        "e": "AG",
-        "name": "Altes Gymnasium Bremen",
-        "loc": "Bremen",
-        "om_id": 1810
     },
     {
         "$comment": "New Feed for Leibniz Schule for caterer WISAG",
@@ -211,14 +195,6 @@
     },
     {
         "provider": "mensapoint.de",
-        "p": "KEH111",
-        "e": "ggm",
-        "name": "Gabelsberger-Gymnasium Mainburg",
-        "loc": "Mainburg",
-        "om_id": 1824
-    },
-    {
-        "provider": "mensapoint.de",
         "p": "GOE444",
         "e": "BBS",
         "name": "Berufsbildende Schule Osterode",
@@ -240,14 +216,6 @@
         "name": "Grundschule Ramsharde",
         "loc": "Flensburg",
         "om_id": 1827
-    },
-    {
-        "provider": "mammasmensa.de",
-        "p": "HH222",
-        "e": "STS-Lohbruegge",
-        "name": "Stadtteilschule Lohbrügge",
-        "loc": "Hamburg",
-        "om_id": 1829
     },
     {
         "provider": "mensaonline.de",
@@ -369,15 +337,6 @@
         "name": "Rohräckerschulzentrum",
         "loc": "Esslingen",
         "om_id": 1862
-    },
-    {
-        "$comment": "https://www.fes-pfungstadt.de/mensa.html.",
-        "provider": "mensadigital.de",
-        "p": "STA2336",
-        "e": "Pfungstadt",
-        "name": "Friedrich-Ebert-Schule",
-        "loc": "Pfungstadt",
-        "om_id": 1885
     },
     {
         "$comment": "https://www.richtsbergschule.de/mittagessen/",
@@ -513,15 +472,6 @@
         "name": "Schule am Teichgarten",
         "loc": "Wolfenbüttel",
         "om_id": 1853
-    },
-    {
-        "$comment": "https://www.ritzefeld.eu/angebote/mensa/",
-        "provider": "mensalokal.de",
-        "p": "AC333",
-        "e": "Ritzefeld",
-        "name": "Ritzefeld-Gymnasium",
-        "loc": "Stolberg",
-        "om_id": 1860
     },
     {
         "$comment": "https://www.valckenburgschule.de/",
@@ -1200,14 +1150,6 @@
         "e": "Albinus",
         "name": "Albinus-Gemeinschaftsschule",
         "loc": "Lauenburg"
-    },
-    {
-        "$comment": "Rosterstraße 143, 57074 Siegen, Germany; https://pprgymnasium.de/leben/#mensa",
-        "provider": "mensahaus.de",
-        "p": "SI2694",
-        "e": "PPRG-Siegen",
-        "name": "Peter-Paul-Rubens-Gymnasium",
-        "loc": "Siegen"
     },
     {
         "$comment": "Freiherr-vom-Stein-Straße 14, 54550 Daun, Germany; https://www.tmg-daun.de/mensa",
