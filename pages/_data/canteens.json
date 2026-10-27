@@ -98,14 +98,6 @@
         "om_id": 1837
     },
     {
-        "provider": "mensadigital.de",
-        "p": "EN2322",
-        "e": "GySue",
-        "name": "Gymnasium Süderelbe",
-        "loc": "Hamburg",
-        "om_id": 1812
-    },
-    {
         "provider": "mensaaktiv.de",
         "p": "FO111",
         "e": "frid",
@@ -144,14 +136,6 @@
         "name": "Georg-Paul-Amberger Grundschule",
         "loc": "Nürnberg",
         "om_id": 1817
-    },
-    {
-        "provider": "mensaaktiv.de",
-        "p": "FO111",
-        "e": "Schulhaus",
-        "name": "Evangelisches Montessori Kinderhaus Röttenbach",
-        "loc": "Röttenbach",
-        "om_id": 1818
     },
     {
         "provider": "mensaaktiv.de",
@@ -848,15 +832,6 @@
         "name": "Mittelschule Fuchstal",
         "loc": "Fuchstal",
         "om_id": 1934
-    },
-    {
-        "$comment": "Schulstraße 6, 02692 Obergurig, Germany; https://www.schule-obergurig.de/fur-eltern/antraege-formularservice",
-        "provider": "app.mensamax.de",
-        "p": "BZ2774",
-        "e": "Obergurig",
-        "name": "Grundschule Obergurig",
-        "loc": "Obergurig",
-        "om_id": 1935
     },
     {
         "$comment": "Parkstr. 7, 89558 Böhmenkirch, Germany; https://gs.boehmenkirch.de/downloads",
