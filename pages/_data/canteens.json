@@ -132,14 +132,6 @@
     {
         "provider": "mensaaktiv.de",
         "p": "FO111",
-        "e": "gpa",
-        "name": "Georg-Paul-Amberger Grundschule",
-        "loc": "Nürnberg",
-        "om_id": 1817
-    },
-    {
-        "provider": "mensaaktiv.de",
-        "p": "FO111",
         "e": "ggo",
         "name": "Grundschule Großgründlach",
         "loc": "Nürnberg",
@@ -474,13 +466,6 @@
         "name": "Joseph-Christian-Gemeinschaftsschule",
         "loc": "Riedlingen",
         "om_id": 1865
-    },
-    {
-        "$comment": "TODO: where/how can we validate this company canteen? https://maxcluster.de",
-        "provider": "mensahaus.de",
-        "p": "PB2499",
-        "e": "maxcluster",
-        "name": "maxcluster GmbH"
     },
     {
         "$comment": "https://gsst.hamburg.de/ganztagsschule/cafeteria/",
@@ -1099,7 +1084,8 @@
         "p": "HB-WS",
         "e": "418",
         "name": "Oberschule an der Ronzelenstraße",
-        "loc": "Bremen"
+        "loc": "Bremen",
+        "om_id": 2086
     },
     {
         "$comment": "Alleestr. 117a/b, 44793 Bochum, https://www.jks-bochum.de/Aktuelles/Aktivitaeten/Caterer2025/index.php/",
@@ -1107,24 +1093,28 @@
         "p": "D2892",
         "e": "JKS",
         "name": "Janusz-Korczak-Schule",
-        "loc": "Bochum"
+        "loc": "Bochum",
+        "om_id": 2087
     },
     {
         "$comment": "https://www.realschule-weilheim.de/downloads",
         "provider": "mensahome.de",
         "p": "ES197",
-        "e": "BZW"
+        "e": "BZW",
+        "om_id": 2110
     },
     {
         "$comment": "https://dbg-filderstadt.de/mensamax/",
         "provider": "mensahome.de",
         "p": "ES111",
-        "e": "DBG"
+        "e": "DBG",
+        "om_id": 2088
     },
     {
         "$comment": "https://github.com/MaxEtMoritz/openMensaMax/issues/6#issuecomment-6442827431",
         "provider": "mensahome.de",
         "p": "SL124",
-        "e": "SN"
+        "e": "SN",
+        "om_id": 2111
     }
 ]
