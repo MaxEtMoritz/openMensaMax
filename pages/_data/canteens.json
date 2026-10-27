@@ -1145,5 +1145,11 @@
         "provider": "mensahome.de",
         "p": "ES111",
         "e": "DBG"
+    },
+    {
+        "$comment": "https://github.com/MaxEtMoritz/openMensaMax/issues/6#issuecomment-6442827431",
+        "provider": "mensahome.de",
+        "p": "SL124",
+        "e": "SN"
     }
 ]
