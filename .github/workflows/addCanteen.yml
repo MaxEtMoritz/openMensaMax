@@ -12,20 +12,20 @@ jobs:
             contents: write
             pull-requests: write
         steps:
-            - uses: actions/checkout@v4
+            - uses: actions/checkout@v7
             - uses: stefanbuck/github-issue-parser@v3
               id: issue-parser
               with:
                   template-path: .github/ISSUE_TEMPLATE/newcanteen.yml
             - name: Update canteens.json
-              run: node utils/add_new_canteen.js "${{ steps.issue-parser.outputs.issueparser_provider }}" "${{ steps.issue-parser.outputs.issueparser_project }}" "${{steps.issue-parser.outputs.issueparser_institution}}" "${{steps.issue-parser.outputs.issueparser_name}}"
+              run: node src/utils/add_new_canteen.js "${{ steps.issue-parser.outputs.issueparser_provider }}" "${{ steps.issue-parser.outputs.issueparser_project }}" "${{steps.issue-parser.outputs.issueparser_institution}}" "${{steps.issue-parser.outputs.issueparser_name}}"
             - name: Open Pull Request
               id: pr
               # Note: If you want pull requests created by this action to trigger an on: push or on: pull_request workflow then you cannot use the default GITHUB_TOKEN.
               # See the [documentation here](https://github.com/peter-evans/create-pull-request/blob/main/docs/concepts-guidelines.md#triggering-further-workflow-runs) for workarounds.
-              uses: peter-evans/create-pull-request@v5
+              uses: peter-evans/create-pull-request@v8
               with:
-                  commit-message: Add new canteen to canteens.json
+                  commit-message: Add ${{ steps.issue-parser.outputs.issueparser_name }}
                   branch: newcanteen/${{steps.issue-parser.outputs.issueparser_project}}_${{steps.issue-parser.outputs.issueparser_institution}}
                   delete-branch: true
                   title: ${{github.event.issue.title}}
