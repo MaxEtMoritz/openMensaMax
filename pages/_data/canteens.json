@@ -1116,5 +1116,11 @@
         "p": "SL124",
         "e": "SN",
         "om_id": 2111
+    },
+    {
+        "provider": "mensahome.de",
+        "p": "SL124",
+        "e": "LS",
+        "name": "Lornsenschule Schleswig"
     }
 ]
