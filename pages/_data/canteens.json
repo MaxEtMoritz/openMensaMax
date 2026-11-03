@@ -1121,12 +1121,14 @@
         "provider": "mensahome.de",
         "p": "SL124",
         "e": "LS",
-        "name": "Lornsenschule Schleswig"
+        "name": "Lornsenschule Schleswig",
+        "om_id": 2112
     },
     {
         "provider": "mensahome.de",
         "p": "SL124",
         "e": "BLS",
-        "name": "Bruno-Lorenzen-Schule Schleswig"
+        "name": "Bruno-Lorenzen-Schule Schleswig",
+        "om_id": 2113
     }
 ]
