@@ -1136,5 +1136,11 @@
         "p": "SL2669",
         "e": "GEESTLANDSCHULE",
         "name": "Geestlandschule Kropp"
+    },
+    {
+        "provider": "mensahome.de",
+        "p": "SL124",
+        "e": "STJ",
+        "name": "St. Jürgen-Schule"
     }
 ]
