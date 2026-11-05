@@ -1148,5 +1148,11 @@
         "p": "SL124",
         "e": "DOM",
         "name": "Domschule"
+    },
+    {
+        "provider": "mensahome",
+        "p": "SL124",
+        "e": "WHS",
+        "name": "Wilhelminenschule"
     }
 ]
