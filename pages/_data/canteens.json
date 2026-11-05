@@ -1142,5 +1142,11 @@
         "p": "SL124",
         "e": "STJ",
         "name": "St. Jürgen-Schule"
+    },
+    {
+        "provider": "mensahome.de",
+        "p": "SL124",
+        "e": "DOM",
+        "name": "Domschule"
     }
 ]
