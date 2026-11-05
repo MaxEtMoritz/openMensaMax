@@ -1160,5 +1160,11 @@
         "p": "SL124",
         "e": "DWS",
         "name": "Dannewerkschule"
+    },
+    {
+        "provider": "mensahome.de",
+        "p": "SL124",
+        "e": "BHS",
+        "name": "Bugenhagenschule"
     }
 ]
