@@ -1130,5 +1130,11 @@
         "e": "BLS",
         "name": "Bruno-Lorenzen-Schule Schleswig",
         "om_id": 2113
+    },
+    {
+        "provider": "mensahome.de",
+        "p": "SL124",
+        "e": "DWS",
+        "name": "Dannewerkschule"
     }
 ]
