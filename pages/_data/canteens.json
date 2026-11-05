@@ -1154,5 +1154,11 @@
         "p": "SL124",
         "e": "WHS",
         "name": "Wilhelminenschule"
+    },
+    {
+        "provider": "mensahome.de",
+        "p": "SL124",
+        "e": "DWS",
+        "name": "Dannewerkschule"
     }
 ]
