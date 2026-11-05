@@ -1130,5 +1130,11 @@
         "e": "BLS",
         "name": "Bruno-Lorenzen-Schule Schleswig",
         "om_id": 2113
+    },
+    {
+        "provider": "mensahaus.de",
+        "p": "SL2669",
+        "e": "GEESTLANDSCHULE",
+        "name": "Geestlandschule Kropp"
     }
 ]
