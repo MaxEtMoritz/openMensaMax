@@ -1,0 +1,119 @@
+name: Test new canteen
+on:
+    pull_request:
+        types: [opened, synchronize, reopened, labeled]
+jobs:
+    test_canteen:
+        name: Test newly added canteen
+        if: ${{ contains(github.event.pull_request.labels.*.name, 'new-canteen') && github.event.pull_request.head.repo.full_name == github.repository }}
+        runs-on: ubuntu-latest
+        permissions:
+            contents: read
+            issues: write
+            packages: read
+            pull-requests: write
+        env:
+            BASE_URL: https://maxetmoritz.github.io/openMensaMax
+        steps:
+            - uses: actions/checkout@v7
+              with:
+                  ref: ${{ github.event.pull_request.head.sha }}
+                  fetch-depth: 0
+            - name: Set up Node.js
+              uses: actions/setup-node@v6
+              with:
+                  node-version: "24"
+                  cache: npm
+                  registry-url: "https://npm.pkg.github.com/"
+            - name: Install dependencies
+              env:
+                  NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              run: npm ci
+            - name: Identify added canteen
+              id: canteen
+              env:
+                  BASE_SHA: ${{ github.event.pull_request.base.sha }}
+              run: |
+                  node <<'NODE'
+                  const { execFileSync } = require("node:child_process");
+                  const { appendFileSync, readFileSync } = require("node:fs");
+
+                  const base = JSON.parse(execFileSync("git", ["show", `${process.env.BASE_SHA}:pages/_data/canteens.json`], { encoding: "utf8" }));
+                  const current = JSON.parse(readFileSync("pages/_data/canteens.json", "utf8"));
+                  const identity = ({ provider, p, e }) => [provider, p, e].map((value) => String(value).toUpperCase()).join("\0");
+                  const existing = new Set(base.map(identity));
+                  const added = current.filter((canteen) => !existing.has(identity(canteen)));
+
+                  if (added.length !== 1) {
+                      console.error(`Expected exactly one newly added canteen, found ${added.length}.`);
+                      process.exit(1);
+                  }
+
+                  const canteen = added[0];
+                  for (const [key, value] of [["provider", canteen.provider], ["project", canteen.p], ["institution", canteen.e]]) {
+                      if (typeof value !== "string" || !value || /[\r\n]/.test(value)) {
+                          console.error(`The new canteen has an invalid ${key}.`);
+                          process.exit(1);
+                      }
+                      appendFileSync(process.env.GITHUB_OUTPUT, `${key}=${value}\n`);
+                  }
+                  NODE
+            - name: Test canteen and generate feeds
+              id: canteen-test
+              env:
+                  PROVIDER: ${{ steps.canteen.outputs.provider }}
+                  PROJECT: ${{ steps.canteen.outputs.project }}
+                  INSTITUTION: ${{ steps.canteen.outputs.institution }}
+              run: node src/utils/test_canteen.js --provider "$PROVIDER" --project "$PROJECT" --institution "$INSTITUTION"
+            - name: Upload generated feeds
+              id: upload-feeds
+              if: steps.canteen-test.outcome == 'success'
+              uses: actions/upload-artifact@v7
+              with:
+                  name: canteen-feeds-${{ steps.canteen.outputs.project }}-${{ steps.canteen.outputs.institution }}
+                  path: |
+                      pages/feeds/${{ steps.canteen.outputs.project }} ${{ steps.canteen.outputs.institution }}.xml
+                      pages/feeds/${{ steps.canteen.outputs.project }} ${{ steps.canteen.outputs.institution }}.today.xml
+                      pages/feeds/${{ steps.canteen.outputs.project }} ${{ steps.canteen.outputs.institution }}.meta.xml
+                  if-no-files-found: error
+                  overwrite: true
+            - name: Post test result to PR
+              if: always()
+              uses: actions/github-script@v8
+              env:
+                  PR_NUMBER: ${{ github.event.pull_request.number }}
+                  TEST_OUTCOME: ${{ steps.canteen-test.outcome }}
+                  UPLOAD_OUTCOME: ${{ steps.upload-feeds.outcome }}
+                  ARTIFACT_URL: ${{ steps.upload-feeds.outputs.artifact-url }}
+              with:
+                  script: |
+                      const marker = "<!-- generated-canteen-feeds -->";
+                      const runUrl = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+                      const body = process.env.TEST_OUTCOME !== "success"
+                          ? [marker, "### Canteen test failed", `Feed files were not uploaded. [View the workflow run](${runUrl}) for details.`].join("\n")
+                          : process.env.UPLOAD_OUTCOME === "success"
+                              ? [marker, "### Canteen test passed", `[Download the generated feed attachments](${process.env.ARTIFACT_URL})`].join("\n")
+                              : [marker, "### Canteen test passed, but feed upload failed", `No feed attachment is available. [View the workflow run](${runUrl}) for details.`].join("\n");
+                      const issueNumber = Number(process.env.PR_NUMBER);
+                      const comments = await github.paginate(github.rest.issues.listComments, {
+                          owner: context.repo.owner,
+                          repo: context.repo.repo,
+                          issue_number: issueNumber,
+                          per_page: 100,
+                      });
+                      const existingComment = comments.find((comment) => comment.user?.type === "Bot" && comment.body?.includes(marker));
+                      if (existingComment) {
+                          await github.rest.issues.updateComment({
+                              owner: context.repo.owner,
+                              repo: context.repo.repo,
+                              comment_id: existingComment.id,
+                              body,
+                          });
+                      } else {
+                          await github.rest.issues.createComment({
+                              owner: context.repo.owner,
+                              repo: context.repo.repo,
+                              issue_number: issueNumber,
+                              body,
+                          });
+                      }
