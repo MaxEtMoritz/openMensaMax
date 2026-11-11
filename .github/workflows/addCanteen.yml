@@ -10,15 +10,33 @@ jobs:
         if: ${{ contains(github.event.issue.labels.*.name, 'new-canteen') }}
         permissions:
             contents: write
+            issues: write
             pull-requests: write
+        env:
+            BASE_URL: https://maxetmoritz.github.io/openMensaMax
         steps:
             - uses: actions/checkout@v7
             - uses: stefanbuck/github-issue-parser@v3
               id: issue-parser
               with:
                   template-path: .github/ISSUE_TEMPLATE/newcanteen.yml
+            - name: Set up Node.js
+              uses: actions/setup-node@v6
+              with:
+                  node-version: "24"
+                  cache: "npm"
+                  registry-url: 'https://npm.pkg.github.com/'
+              env:
+                NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+            - name: Install dependencies
+              run: npm ci
             - name: Update canteens.json
-              run: node src/utils/add_new_canteen.js "${{ steps.issue-parser.outputs.issueparser_provider }}" "${{ steps.issue-parser.outputs.issueparser_project }}" "${{steps.issue-parser.outputs.issueparser_institution}}" "${{steps.issue-parser.outputs.issueparser_name}}"
+              env:
+                  PROVIDER: ${{ steps.issue-parser.outputs.issueparser_provider }}
+                  PROJECT: ${{ steps.issue-parser.outputs.issueparser_project }}
+                  INSTITUTION: ${{ steps.issue-parser.outputs.issueparser_institution }}
+                  CANTEEN_NAME: ${{ steps.issue-parser.outputs.issueparser_name }}
+              run: node src/utils/add_new_canteen.js "$PROVIDER" "$PROJECT" "$INSTITUTION" "$CANTEEN_NAME"
             - name: Open Pull Request
               id: pr
               # Note: If you want pull requests created by this action to trigger an on: push or on: pull_request workflow then you cannot use the default GITHUB_TOKEN.
@@ -29,10 +47,64 @@ jobs:
                   branch: newcanteen/${{steps.issue-parser.outputs.issueparser_project}}_${{steps.issue-parser.outputs.issueparser_institution}}
                   delete-branch: true
                   title: ${{github.event.issue.title}}
-                  body: "fixes #${{github.event.issue.number}}"
+                  body: fixes #${{github.event.issue.number}}
                   labels: new-canteen
-            # - name: Trigger Feed test workflow
-            #   uses: .github/workflows/testNewCanteen.yml@main
-            #   with:
-            #     pr: ${{steps.pr.outputs.pull-request-number}}
-            #     branch: newcanteen/${{steps.issue-parser.outputs.issueparser_project}}_${{steps.issue-parser.outputs.issueparser_institution}}
+            - name: Test canteen and generate feeds
+              id: canteen-test
+              continue-on-error: true
+              env:
+                  PROVIDER: ${{ steps.issue-parser.outputs.issueparser_provider }}
+                  PROJECT: ${{ steps.issue-parser.outputs.issueparser_project }}
+                  INSTITUTION: ${{ steps.issue-parser.outputs.issueparser_institution }}
+              run: node src/utils/test_canteen.js --provider "$PROVIDER" --project "$PROJECT" --institution "$INSTITUTION"
+            - name: Upload generated feeds
+              id: upload-feeds
+              if: steps.canteen-test.outcome == 'success'
+              uses: actions/upload-artifact@v4
+              with:
+                  name: canteen-feeds-${{ steps.issue-parser.outputs.issueparser_project }}-${{ steps.issue-parser.outputs.issueparser_institution }}
+                  path: |
+                      pages/feeds/${{ steps.issue-parser.outputs.issueparser_project }} ${{ steps.issue-parser.outputs.issueparser_institution }}.xml
+                      pages/feeds/${{ steps.issue-parser.outputs.issueparser_project }} ${{ steps.issue-parser.outputs.issueparser_institution }}.today.xml
+                      pages/feeds/${{ steps.issue-parser.outputs.issueparser_project }} ${{ steps.issue-parser.outputs.issueparser_institution }}.meta.xml
+                  if-no-files-found: error
+            - name: Post generated feeds as a PR comment
+              if: steps.pr.outputs.pull-request-number != ''
+              uses: actions/github-script@v8
+              env:
+                  PR_NUMBER: ${{ steps.pr.outputs.pull-request-number }}
+                  TEST_OUTCOME: ${{ steps.canteen-test.outcome }}
+                  UPLOAD_OUTCOME: ${{ steps.upload-feeds.outcome }}
+                  ARTIFACT_URL: ${{ steps.upload-feeds.outputs.artifact-url }}
+              with:
+                  script: |
+                      const marker = "<!-- generated-canteen-feeds -->";
+                      const runUrl = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+                      const body = process.env.TEST_OUTCOME !== "success"
+                          ? [marker, "### Canteen test failed", `Feed files were not uploaded. [View the workflow run](${runUrl}) for details.`].join("\n")
+                          : process.env.UPLOAD_OUTCOME === "success"
+                              ? [marker, "### Canteen test passed", `[Download the generated feed attachments](${process.env.ARTIFACT_URL})`].join("\n")
+                              : [marker, "### Canteen test passed, but feed upload failed", `No feed attachment is available. [View the workflow run](${runUrl}) for details.`].join("\n");
+                      const issueNumber = Number(process.env.PR_NUMBER);
+                      const comments = await github.paginate(github.rest.issues.listComments, {
+                          owner: context.repo.owner,
+                          repo: context.repo.repo,
+                          issue_number: issueNumber,
+                          per_page: 100,
+                      });
+                      const existingComment = comments.find((comment) => comment.user?.type === "Bot" && comment.body?.includes(marker));
+                      if (existingComment) {
+                          await github.rest.issues.updateComment({
+                              owner: context.repo.owner,
+                              repo: context.repo.repo,
+                              comment_id: existingComment.id,
+                              body,
+                          });
+                      } else {
+                          await github.rest.issues.createComment({
+                              owner: context.repo.owner,
+                              repo: context.repo.repo,
+                              issue_number: issueNumber,
+                              body,
+                          });
+                      }

@@ -9,8 +9,6 @@ require("./gh_workflow_annotations.js");
 
 const package_json = JSON.parse(readFileSync(join(__dirname, "..", "package.json"), { encoding: "utf-8" }));
 const MAX_WEEKS_FORWARD = 4;
-const thisWeekOnly = !process.argv.includes("preview");
-const weeksForward = thisWeekOnly ? 1 : MAX_WEEKS_FORWARD;
 
 /**
  *
@@ -19,8 +17,10 @@ const weeksForward = thisWeekOnly ? 1 : MAX_WEEKS_FORWARD;
  * @param {string} provider
  * @param {string|undefined} name
  * @param {string|undefined} loc
+ * @param {boolean} thisWeekOnly
  */
-async function processCanteen(p, e, provider, name = undefined, loc = undefined) {
+async function processCanteen(p, e, provider, name = undefined, loc = undefined, thisWeekOnly = true) {
+    const weeksForward = thisWeekOnly ? 1 : MAX_WEEKS_FORWARD;
     const parsed = {};
     let html = {};
     let open_days = [];
@@ -192,7 +192,8 @@ function isDateInThisWeek(date) {
     return date >= firstDayOfWeek && date < lastDayOfWeek;
 }
 
-(async () => {
+if (require.main === module) (async () => {
+    const thisWeekOnly = !process.argv.includes("preview");
     /**@type {any[]} */
     let canteens = await readFile(join(__dirname, "..", "pages", "_data", "canteens.json"), { encoding: "utf-8" });
     canteens = JSON5.parse(canteens);
@@ -210,7 +211,7 @@ function isDateInThisWeek(date) {
                 for (const canteen of group) {
                     console.log("processing canteen", `${canteen.name ? canteen.name + " (" : ""}${canteen.p} ${canteen.e}${canteen.name ? ")" : ""}`);
                     try {
-                        await processCanteen(canteen.p, canteen.e, canteen.provider, canteen.name, canteen.loc);
+                        await processCanteen(canteen.p, canteen.e, canteen.provider, canteen.name, canteen.loc, thisWeekOnly);
                         feed_index[`${canteen.p}_${canteen.e}`] = encodeURI(`${process.env.BASE_URL}/feeds/${canteen.p} ${canteen.e}.meta.xml`);
                     } catch (e) {
                         if (e instanceof AggregateError && e.errors[0]?.line) {
@@ -229,3 +230,5 @@ function isDateInThisWeek(date) {
     await Promise.all(promises);
     await writeFile(join(__dirname, "..", "pages", "feeds", "index.json"), JSON.stringify(feed_index, undefined, 2));
 })();
+
+module.exports = { processCanteen };
