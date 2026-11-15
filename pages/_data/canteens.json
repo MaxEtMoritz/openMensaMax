@@ -1135,36 +1135,42 @@
         "provider": "mensahaus.de",
         "p": "SL2669",
         "e": "GEESTLANDSCHULE",
-        "name": "Geestlandschule Kropp"
+        "name": "Geestlandschule Kropp",
+        "om_id": 2114
     },
     {
         "provider": "mensahome.de",
         "p": "SL124",
         "e": "STJ",
-        "name": "St. Jürgen-Schule"
+        "name": "St. Jürgen-Schule",
+        "om_id": 2115
     },
     {
         "provider": "mensahome.de",
         "p": "SL124",
         "e": "DOM",
-        "name": "Domschule"
+        "name": "Domschule",
+        "om_id": 2116
     },
     {
         "provider": "mensahome.de",
         "p": "SL124",
         "e": "WHS",
-        "name": "Wilhelminenschule"
+        "name": "Wilhelminenschule",
+        "om_id": 2117
     },
     {
         "provider": "mensahome.de",
         "p": "SL124",
         "e": "DWS",
-        "name": "Dannewerkschule"
+        "name": "Dannewerkschule",
+        "om_id": 2118
     },
     {
         "provider": "mensahome.de",
         "p": "SL124",
         "e": "BHS",
-        "name": "Bugenhagenschule"
+        "name": "Bugenhagenschule",
+        "om_id": 2119
     }
 ]
